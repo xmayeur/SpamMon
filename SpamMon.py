@@ -368,6 +368,7 @@ def mail_monitor(mail_profile):
 
                 if killer.kill_now:
                     log.info('Service killed')
+                    server.logout()
                     break
                 # End of monitoring loop --->
                 continue
