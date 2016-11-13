@@ -1,0 +1,394 @@
+#! /usr/bin/python2.7
+#
+# https://imapclient.readthedocs.io/en/stable/
+# Also see https://gist.github.com/shimofuri/4348943 for use of idle
+#
+
+import ConfigParser
+import email
+import logging
+import sys
+import traceback
+from email.utils import parseaddr
+from logging.handlers import RotatingFileHandler
+from smtplib import SMTP, SMTP_SSL
+from time import sleep
+import signal
+
+from spam import Spam
+import multiprocessing
+
+import eventlet
+from cryptography.fernet import Fernet
+
+INI_file = 'SpamMon.conf'
+LOG_file = 'SpamMon.log'
+log = None
+config = None
+spamDB = Spam()
+imapclient = eventlet.import_patched('imapclient')
+# import imapclient
+
+def open_log(name):
+    # Setup the log handlers to stdout and file.
+    log_ = logging.getLogger(name)
+    log_.setLevel(logging.DEBUG)
+    formatter = logging.Formatter(
+        '%(asctime)s | %(name)s | %(levelname)s | %(message)s'
+    )
+    handler_stdout = logging.StreamHandler(sys.stdout)
+    handler_stdout.setLevel(logging.DEBUG)
+    handler_stdout.setFormatter(formatter)
+    log_.addHandler(handler_stdout)
+    handler_file = RotatingFileHandler(
+        LOG_file,
+        mode='a',
+        maxBytes=200000,
+        backupCount=9,
+        encoding='UTF-8',
+        delay=True
+    )
+    handler_file.setLevel(logging.DEBUG)
+    handler_file.setFormatter(formatter)
+    log_.addHandler(handler_file)
+    return log_
+
+def open_config(f):
+    # Read config file - halt script on failure
+    config_ = None
+    try:
+        config_file = open(f, 'r+')
+        config_ = ConfigParser.SafeConfigParser()
+        config_.readfp(config_file)
+    except IOError:
+        log.critical('configuration file is missing')
+    return config_
+
+# Generate encryption object to decrypt passwords from the .conf file
+key = '6eEwKzh0WQsNYdZWhzyLozc09g-eNDtaRlKm8cnUS3E='
+f = Fernet(key)
+
+class GracefulKiller:
+  kill_now = False
+  def __init__(self):
+    signal.signal(signal.SIGINT, self.exit_gracefully)
+    signal.signal(signal.SIGTERM, self.exit_gracefully)
+
+  def exit_gracefully(self,signum, frame):
+    self.kill_now = True
+
+
+def SendMail(address, subject, content):
+    """
+
+    :param address:
+    :param subject:
+    :param content:
+    :return:
+
+    See http://stackoverflow.com/questions/3362600/how-to-send-email-attachments-with-python
+    """
+    # retrieve the HOST name
+    try:
+        HOST = config.get('smtp', 'host')
+    except ConfigParser.NoOptionError:
+        log.critical('no "host" option in configuration')
+        return
+    # retrieve the port
+    try:
+        PORT = config.get('smtp', 'port')
+    except ConfigParser.NoOptionError:
+        log.critical('no "port" option in configuration')
+        return
+    # retrieve the sender
+    try:
+        SENDER = config.get('smtp', 'sender')
+    except ConfigParser.NoOptionError:
+        log.critical('no "sender" option in configuration')
+        return
+    # retrieve the USERNAME
+    try:
+        USERNAME = config.get('smtp', 'username')
+    except ConfigParser.NoOptionError:
+        log.critical('no "username" option in configuration')
+        return
+
+    # retrieve the PASSWORD
+    try:
+        PASSWORD = config.get('smtp', 'password')
+    except ConfigParser.NoOptionError:
+        log.critical('no "password" option in configuration')
+        return
+
+    # retrieve the ssl flag
+    try:
+        SSL = config.get('smtp', 'ssl')
+    except ConfigParser.NoOptionError:
+        SSL = False
+        return
+
+    try:
+        if SSL:
+            conn = SMTP_SSL(HOST, PORT)
+            conn.ehlo()
+        else:
+            conn = SMTP()
+            conn.connect(HOST, PORT)
+            conn.ehlo()
+            conn.starttls()
+            conn.ehlo()
+
+        conn.set_debuglevel(False)
+        conn.login(USERNAME, f.decrypt(PASSWORD))
+
+        msg = "\r\n".join([
+            "From: %s" % SENDER,
+            "To: %s" % address,
+            "Subject: %s" % subject,
+            "",
+            content])
+        conn.sendmail(SENDER, address, msg)
+        conn.close()
+
+    except Exception:
+        log.critical('Couldn''t send mail: %s' % subject)
+
+def ScanForNewSpamAddresses(server_, spam_):
+    # Select the Spam folder to retrieve new spam addresses
+    server_.select_folder('INBOX.Spam')
+    messages = server_.search(['UNSEEN'])
+
+    # fetch new blocked addresses and store them into the dictionary
+    for msg in messages:
+        try:
+            fetch = server_.fetch(msg, ['RFC822'])
+            mail = email.message_from_string(
+                fetch[msg]['RFC822']
+            )
+            addr, addrfrom = parseaddr(mail['from'])
+
+            if spam_.exist(addrfrom) == False:
+                    spam_.add(addrfrom)
+                    log.info('New spam address added {0}'.format(addrfrom))
+                    server_.add_flags(msg, ['\SEEN'])
+        except:
+            pass
+
+def ScanToRemoveAddresses(server_, spam_):
+    # Select the Spam folder to retrieve new spam addresses
+    try:
+        server_.select_folder('INBOX.NotSpam')
+        messages = server_.search()
+
+        # fetch blocked addresses to remove from the list
+        for msg in messages:
+            fetch = server_.fetch(msg, ['RFC822'])
+            mail = email.message_from_string(
+                fetch[msg]['RFC822']
+            )
+            addr, addrfrom = parseaddr(mail['from'])
+            if spam_.exist(addrfrom):
+                    spam_.remove(addrfrom)
+                    log.info('Address removed from Spam List {0}'.format(addrfrom))
+                    server_.remove_flags(msg, ['\SEEN'])
+                    server_.copy(msg, 'INBOX')
+                    # and delete it from the INBOX
+                    server_.delete_messages(msg)
+    except Exception:
+        log.critical('Folder INBOX.NotSpam does not exist!')
+
+def mail_monitor(mail_profile):
+    killer = GracefulKiller()
+    log=open_log('SpamMon_'+mail_profile)
+    config = open_config(INI_file)
+    log.info('... script started for profile %s' % (mail_profile))
+    while True:
+        # <--- Start configuration script
+
+        # retrieve the HOST name
+        try:
+            HOST = config.get(mail_profile, 'host')
+        except ConfigParser.NoOptionError:
+            log.critical('no "host" option in configuration')
+            return
+        except ConfigParser.NoSectionError:
+            log.critical('no %s section in configuration' % mail_profile)
+            return
+
+        # retrieve the USERNAME
+        try:
+            USERNAME = config.get(mail_profile, 'username')
+        except ConfigParser.NoOptionError:
+            log.critical('no "username" option in configuration')
+            return
+
+        # retrieve the PASSWORD
+        try:
+            PASSWORD = config.get(mail_profile, 'password')
+        except ConfigParser.NoOptionError:
+            log.critical('no "password" option in configuration')
+            return
+
+        # retrieve the cacert.pem file - it is needed under Windows
+        try:
+            cafile = config.get(mail_profile, 'cafile')
+        except ConfigParser.NoOptionError:
+            log.warning('no "cafile" option in configuration')
+            cafile = None
+
+        try:
+            timeout = config.get(mail_profile, 'timeout')
+        except ConfigParser.NoOptionError:
+            timeout = 300
+
+        while True:
+            # <--- start of the IMAP server connection loop
+
+            # attempt connection to the IMAP server
+            try:
+                context = imapclient.create_default_context(cafile=cafile)
+                # create the connection with the email server
+                server = imapclient.IMAPClient(HOST, use_uid=True, ssl=True, ssl_context=context)
+            except Exception:
+                # If connection attempt to IMAP server fails, retry
+                etype, evalue = sys.exc_info()[:2]
+                estr = traceback.format_exception_only(etype, evalue)
+                logstr = 'failed to connect to IMAP server - '
+                for each in estr:
+                    logstr += '{0}; '.format(each.strip('\n'))
+                log.error(logstr)
+                sleep(10)
+                continue
+            log.info('server connection established')
+
+            # attempt to login to IMAP server
+            try:
+                # server = IMAPClient(HOST, use_uid=True, ssl=False)
+                result = server.login(USERNAME, f.decrypt(PASSWORD))
+                log.info('login successful - {0}'.format(result))
+            except Exception:
+                # Halt script when login fails
+                etype, evalue = sys.exc_info()[:2]
+                estr = traceback.format_exception_only(etype, evalue)
+                logstr = 'failed to login to IMAP server - '
+                for each in estr:
+                    logstr += '{0}; '.format(each.strip('\n'))
+                log.critical(logstr)
+                break
+
+            try:
+                ScanForNewSpamAddresses(server, spamDB)
+                # Select the INBOX folder for monitoring
+                server.select_folder('INBOX')
+                # Reads now all INBOX's unseen messages. Should errors occur due to loss of connection,
+                # attempt restablishing connection
+                messages = server.search(['UNSEEN'])
+            except Exception:
+                continue
+
+            for msg in messages:
+                try:
+                    fetch = server.fetch(msg, ['RFC822'])
+                    mail = email.message_from_string(
+                        fetch[msg]['RFC822']
+                    )
+                except Exception:
+                    continue
+
+                server.remove_flags(msg, ['\SEEN'])
+                addr, addrfrom = parseaddr(mail['from'])
+                if spamDB.exist(addrfrom):
+                    # if the mail address exists in the spam list, then move the spam to the Spam folder
+                    log.info("%s is a spam" % addrfrom)
+                    server.copy(msg, 'INBOX.Spam')
+                    # and delete it from the INBOX
+                    server.delete_messages(msg)
+                else:
+                    # do nothing for non blocked mails
+                    # log.info("%s is a mail with subject %s" % (addrfrom, mail['subject']))
+                    pass
+
+            log.info('Start monitoring INBOX')
+
+            while True:
+                # <--- Start of the monitoring loop
+
+                # Check the Spam address list and save it back to file
+                ScanForNewSpamAddresses(server, spamDB)
+                ScanToRemoveAddresses(server, spamDB)
+
+                # select the folder to monitor
+                server.select_folder('INBOX')
+
+                # After all unread emails are cleared on initial login, start
+                # monitoring the folder for new email arrivals and process
+                # accordingly. Use the IDLE check combined with occassional NOOP
+                # to refresh. Should errors occur in this loop (due to loss of
+                # connection), return control to IMAP server connection loop to
+                # attempt restablishing connection instead of halting script.
+
+                server.idle()
+                result = server.idle_check(int(timeout))
+                if result:
+                    server.idle_done()
+                    messages = server.search(['UNSEEN'])
+                    for msg in messages:
+                        try:
+                            fetch = server.fetch(msg, ['RFC822'])
+                            mail = email.message_from_string(
+                                fetch[msg]['RFC822']
+                            )
+                        except Exception:
+                            continue
+                        server.remove_flags(msg, ['\SEEN'])
+                        addr, addrfrom = parseaddr(mail['from'])
+
+                        # if the mail address exists in the spam list, then move the spam to the Spam folder
+                        if spamDB.exist(addrfrom) :
+                            log.info("%s is a spam " % addrfrom)
+                            server.copy(msg, 'INBOX.Spam')
+                            # and delete it from the INBOX
+                            server.delete_messages(msg)
+                        else:
+                            # Handle special request as command string in the message subject
+                            # log.info("%s is a mail with subject %s" % (addrfrom, mail['subject']))
+                            txt = mail['subject']
+                            if txt.split(' ')[0] == "$SENDLOG":
+                                with open(LOG_file, 'r') as logfile:
+                                    log.info('Sending log file to %s' % addrfrom)
+                                    server.add_flags(msg, ['\SEEN'])
+                                    txt = logfile.read()
+                                    SendMail(addrfrom, 'Log file', txt)
+                                    server.delete_messages(msg)
+
+                else:
+                    server.idle_done()
+                    server.noop()
+
+                if killer.kill_now:
+                    log.info('Service killed')
+                    break
+                # End of monitoring loop --->
+                continue
+
+            # end of the IMAP connection loop --->
+            # logout
+            server.logout()
+            break
+
+        # end of configuration section --->
+        break
+
+    log.info('script stopped for profile %s ...' % (mail_profile))
+    return
+
+def main():
+
+    if len(sys.argv) > 1:
+        p = multiprocessing.Process(target = mail_monitor, args = (sys.argv[1],))
+        p.start()
+
+    mail_monitor('xavier')
+
+if __name__ == "__main__":
+    main()
