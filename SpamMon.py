@@ -14,6 +14,7 @@ from logging.handlers import RotatingFileHandler
 from smtplib import SMTP, SMTP_SSL
 from time import sleep
 import signal
+import Key
 
 from spam import Spam
 import multiprocessing
@@ -65,8 +66,8 @@ def open_config(f):
     return config_
 
 # Generate encryption object to decrypt passwords from the .conf file
-key = '6eEwKzh0WQsNYdZWhzyLozc09g-eNDtaRlKm8cnUS3E='
-f = Fernet(key)
+
+f = Fernet(Key.key)
 
 class GracefulKiller:
   kill_now = False

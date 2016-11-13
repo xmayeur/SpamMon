@@ -2,13 +2,14 @@ import pymysql.cursors
 import pymysql
 from configobj import ConfigObj
 from cryptography.fernet import Fernet
+import Key
 
 
 class Spam:
 
     def __init__(self):
         # Connect to the database
-        key = '6eEwKzh0WQsNYdZWhzyLozc09g-eNDtaRlKm8cnUS3E='
+        key = Key.key
         f = Fernet(key)
         INI_file = 'SpamMon.conf'
         config = ConfigObj(INI_file)
