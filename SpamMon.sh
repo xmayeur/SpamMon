@@ -25,8 +25,20 @@ case "$1" in
     pkill -f SpamMon.py
     ;;
   restart)
-    SpamMon stop
-    SPamMon start
+    $0 stop
+    $0 start
+    ;;
+  install)
+    cp $0 /etc/init.d
+    cd /etc/init.d
+    update-rc.d $0 defaults
+    $0 start
+    ;;
+  remove)
+    cd /etc/init.d
+    $0 stop
+    update-rd.d -f $0 remove
+    rm $0
     ;;
   *)
     echo "Usage: /etc/init.d/SpamMon.sh {start|stop|restart}"
