@@ -1,18 +1,25 @@
 import pymysql.cursors
 import pymysql
+from configobj import ConfigObj
+from cryptography.fernet import Fernet
 
 
 class Spam:
 
     def __init__(self):
         # Connect to the database
-        host = 'nas'
-        user = 'admin'
-        password = 'Bretzel58'
-        db = 'mayeur_be'
+        key = '6eEwKzh0WQsNYdZWhzyLozc09g-eNDtaRlKm8cnUS3E='
+        f = Fernet(key)
+        INI_file = 'SpamMon.conf'
+        config = ConfigObj(INI_file)
+
+        host = config['mysql']['host']
+        user = config['mysql']['user']
+        password = config['mysql']['password']
+        db = config['mysql']['db']
         self.connection = pymysql.connect(host=host,
                                      user=user,
-                                     password=password,
+                                     password=f.decrypt(password),
                                      db=db,
                                      charset='utf8mb4',
                                      cursorclass=pymysql.cursors.DictCursor)
