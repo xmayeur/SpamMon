@@ -7,20 +7,20 @@
 import ConfigParser
 import email
 import logging
+import multiprocessing
+import signal
 import sys
 import traceback
 from email.utils import parseaddr
 from logging.handlers import RotatingFileHandler
 from smtplib import SMTP, SMTP_SSL
 from time import sleep
-import signal
+
 import Key
-
-from spam import Spam
-import multiprocessing
-
 import eventlet
 from cryptography.fernet import Fernet
+
+from spam import Spam
 
 INI_file = 'SpamMon.conf'
 LOG_file = 'SpamMon.log'
@@ -193,7 +193,7 @@ def ScanToRemoveAddresses(server_, spam_):
                     log.info('Address removed from Spam List {0}'.format(addrfrom))
                     server_.remove_flags(msg, ['\SEEN'])
                     server_.copy(msg, 'INBOX')
-                    # and delete it from the INBOX
+                    # and delete it from the current folder
                     server_.delete_messages(msg)
     except Exception:
         log.critical('Folder INBOX.NotSpam does not exist!')
