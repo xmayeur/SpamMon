@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='SpamMon',
-    version='0.2',
+    version='0.3',
     packages=[''],
     data_files=[('',['SpamMon.conf', 'cacert.pem'])],
     url='',
