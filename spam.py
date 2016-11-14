@@ -1,8 +1,8 @@
-import pymysql.cursors
+import Key
 import pymysql
+import pymysql.cursors
 from configobj import ConfigObj
 from cryptography.fernet import Fernet
-import Key
 
 
 class Spam:
@@ -12,18 +12,27 @@ class Spam:
         key = Key.key
         f = Fernet(key)
         INI_file = 'SpamMon.conf'
-        config = ConfigObj(INI_file)
+        try:
+            config = ConfigObj(INI_file)
+            host = config['mysql']['host']
+            user = config['mysql']['user']
+            password = config['mysql']['password']
+            db = config['mysql']['db']
 
-        host = config['mysql']['host']
-        user = config['mysql']['user']
-        password = config['mysql']['password']
-        db = config['mysql']['db']
-        self.connection = pymysql.connect(host=host,
-                                     user=user,
-                                     password=f.decrypt(password),
-                                     db=db,
-                                     charset='utf8mb4',
-                                     cursorclass=pymysql.cursors.DictCursor)
+            try:
+                self.connection = pymysql.connect(host=host,
+                                                  user=user,
+                                                  password=f.decrypt(password),
+                                                  db=db,
+                                                  charset='utf8mb4',
+                                                  cursorclass=pymysql.cursors.DictCursor)
+            except:
+                print "Can't connect to the database"
+
+        except:
+            print 'Error: Invalid or missing options in section [mysql] of config file'
+
+
 
     def add(self, address):
         # Add a new record
@@ -70,14 +79,23 @@ class Spam:
     def close_db(self):
         self.connection.close()
 
+    def configure(self):
+        with self.connection.cursor() as cursor:
+            sql = '''CREATE TABLE IF NOT EXISTS `spam` (
+                    `address` varchar(100) NOT NULL,
+                    PRIMARY KEY  (`address`)
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+            '''
+            cursor.execute(sql)
+        self.connection.commit()
 
 def main():
     s = Spam()
-    if s.add("www.ads.com") == False:
+    if s.add("www@ads.com") == False:
         print 'duplicate'
-    if s.exist("www.ads.com"):
+    if s.exist("www@ads.com"):
         print 'found'
-        if s.remove("www.ads.com"):
+        if s.remove("www@ads.com"):
             print 'removed'
 
 if __name__ == "__main__":
