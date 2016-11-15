@@ -28,7 +28,7 @@ case "$1" in
     $0 stop
     $0 start
     ;;
-  install)
+  install)sudo shit
     update-rc.d SpamMon defaults
     service SpamMon start
     ;;
