@@ -1,8 +1,8 @@
 #! /bin/sh
-# /etc/init.d/SpamMon.sh
+# /etc/init.d/SpamMon
 #
 ### BEGIN INIT INFO
-# Provides:          Monitor spam from mailbox
+# Provides:          SpamMon
 # Required-Start:    $remote_fs $syslog
 # Required-Stop:     $remote_fs $syslog
 # Default-Start:     2 3 4 5
@@ -18,7 +18,7 @@ case "$1" in
   start)
     echo "Starting script Spam monitoring "
     cd /home/pi/SpamMon
-    /usr/bin/python /home/pi/SpamMon/SpamMon.py joelle &
+    /usr/bin/python /home/pi/SpamMon/SpamMon.py xavier joelle &
     ;;
   stop)
     echo "Stopping script Spam monitoring"
@@ -29,16 +29,12 @@ case "$1" in
     $0 start
     ;;
   install)
-    cp $0 /etc/init.d
-    cd /etc/init.d
-    update-rc.d $0 defaults
-    $0 start
+    update-rc.d SpamMon defaults
+    service SpamMon start
     ;;
   remove)
-    cd /etc/init.d
-    $0 stop
-    update-rd.d -f $0 remove
-    rm $0
+    service SpamMon stop
+    update-rc.d -f SpamMon remove
     ;;
   *)
     echo "Usage: /etc/init.d/SpamMon {start|stop|restart}"
