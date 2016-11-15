@@ -396,5 +396,9 @@ def main():
         p = multiprocessing.Process(target=mail_monitor, args=(arg,))
         p.start()
 
+    if len(sys.argv) == 1:
+        mail_monitor('xavier')
+
+
 if __name__ == "__main__":
     main()
