@@ -32,8 +32,6 @@ class Spam:
         except:
             print 'Error: Invalid or missing options in section [mysql] of config file'
 
-
-
     def add(self, address):
         # Add a new record
         try:

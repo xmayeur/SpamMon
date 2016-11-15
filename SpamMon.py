@@ -26,8 +26,6 @@ INI_file = 'SpamMon.conf'
 LOG_file = 'SpamMon.log'
 spamDB = Spam()
 imapclient = eventlet.import_patched('imapclient')
-
-
 # import imapclient
 
 
@@ -54,12 +52,10 @@ def open_log(name):
     handler_file.setFormatter(formatter)
     log_.addHandler(handler_file)
     return log_
-
-
 log = open_log('SpamMon')
 
-
 def open_config(f):
+    log = open_log('SpamMon.open_config')
     # Read config file - halt script on failure
     config_ = None
     try:
@@ -99,6 +95,7 @@ def SendMail(address, subject, content):
     See http://stackoverflow.com/questions/3362600/how-to-send-email-attachments-with-python
     """
     # retrieve the HOST name
+
     try:
         HOST = config.get('smtp', 'host')
     except ConfigParser.NoOptionError:
@@ -211,7 +208,7 @@ def ScanToRemoveAddresses(server_, spam_):
 
 def mail_monitor(mail_profile):
     killer = GracefulKiller()
-    log.info('... script started')
+    log.info('%s - ... script started' % mail_profile)
     while True:
         # <--- Start configuration script
 
@@ -219,31 +216,31 @@ def mail_monitor(mail_profile):
         try:
             HOST = config.get(mail_profile, 'host')
         except ConfigParser.NoOptionError:
-            log.critical('no "host" option in configuration')
+            log.critical('%s - no "host" option in configuration' % mail_profile)
             return
         except ConfigParser.NoSectionError:
-            log.critical('no %s section in configuration' % mail_profile)
+            log.critical('%s - no %s section in configuration' % mail_profile)
             return
 
         # retrieve the USERNAME
         try:
             USERNAME = config.get(mail_profile, 'username')
         except ConfigParser.NoOptionError:
-            log.critical('no "username" option in configuration')
+            log.critical('%s - no "username" option in configuration' % mail_profile)
             return
 
         # retrieve the PASSWORD
         try:
             PASSWORD = config.get(mail_profile, 'password')
         except ConfigParser.NoOptionError:
-            log.critical('no "password" option in configuration')
+            log.critical('%s - no "password" option in configuration' % mail_profile)
             return
 
         # retrieve the cacert.pem file - it is needed under Windows
         try:
             cafile = config.get(mail_profile, 'cafile')
         except ConfigParser.NoOptionError:
-            log.warning('no "cafile" option in configuration')
+            log.warning('%s - no "cafile" option in configuration' % mail_profile)
             cafile = None
 
         try:
@@ -263,24 +260,24 @@ def mail_monitor(mail_profile):
                 # If connection attempt to IMAP server fails, retry
                 etype, evalue = sys.exc_info()[:2]
                 estr = traceback.format_exception_only(etype, evalue)
-                logstr = 'failed to connect to IMAP server - '
+                logstr = '%s - failed to connect to IMAP server - ' % mail_profile
                 for each in estr:
                     logstr += '{0}; '.format(each.strip('\n'))
                 log.error(logstr)
                 sleep(10)
                 continue
-            log.info('server connection established')
+            log.info('%s - server connection established' % mail_profile)
 
             # attempt to login to IMAP server
             try:
                 # server = IMAPClient(HOST, use_uid=True, ssl=False)
                 result = server.login(USERNAME, f.decrypt(PASSWORD))
-                log.info('login successful - {0}'.format(result))
+                log.info('%s - login successful - %s' % (mail_profile, result))
             except Exception:
                 # Halt script when login fails
                 etype, evalue = sys.exc_info()[:2]
                 estr = traceback.format_exception_only(etype, evalue)
-                logstr = 'failed to login to IMAP server - '
+                logstr = '%s - failed to login to IMAP server - ' % mail_profile
                 for each in estr:
                     logstr += '{0}; '.format(each.strip('\n'))
                 log.critical(logstr)
@@ -318,7 +315,7 @@ def mail_monitor(mail_profile):
                     # log.info("%s is a mail with subject %s" % (addrfrom, mail['subject']))
                     pass
 
-            log.info('Start monitoring INBOX')
+            log.info('%s - Start monitoring INBOX' % mail_profile)
 
             while True:
                 # <--- Start of the monitoring loop
@@ -376,7 +373,7 @@ def mail_monitor(mail_profile):
                     server.noop()
 
                 if killer.kill_now:
-                    log.info('Service killed')
+                    log.info('%s - Service killed' % mail_profile)
                     server.logout()
                     break
                 # End of monitoring loop --->
@@ -390,7 +387,7 @@ def mail_monitor(mail_profile):
         # end of configuration section --->
         break
 
-    log.info('script stopped for profile %s ...' % mail_profile)
+    log.info('%s - script stopped...' % mail_profile)
     return
 
 
