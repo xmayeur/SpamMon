@@ -24,11 +24,12 @@ from spam import Spam
 
 INI_file = 'SpamMon.conf'
 LOG_file = 'SpamMon.log'
-log = None
-config = None
 spamDB = Spam()
 imapclient = eventlet.import_patched('imapclient')
+
+
 # import imapclient
+
 
 def open_log(name):
     # Setup the log handlers to stdout and file.
@@ -54,6 +55,10 @@ def open_log(name):
     log_.addHandler(handler_file)
     return log_
 
+
+log = open_log('SpamMon')
+
+
 def open_config(f):
     # Read config file - halt script on failure
     config_ = None
@@ -65,18 +70,22 @@ def open_config(f):
         log.critical('configuration file is missing')
     return config_
 
-# Generate encryption object to decrypt passwords from the .conf file
 
+# Open config file
+config = open_config(INI_file)
+# Generate encryption object to decrypt passwords from the .conf file
 f = Fernet(Key.key)
 
-class GracefulKiller:
-  kill_now = False
-  def __init__(self):
-    signal.signal(signal.SIGINT, self.exit_gracefully)
-    signal.signal(signal.SIGTERM, self.exit_gracefully)
 
-  def exit_gracefully(self,signum, frame):
-    self.kill_now = True
+class GracefulKiller:
+    kill_now = False
+
+    def __init__(self):
+        signal.signal(signal.SIGINT, self.exit_gracefully)
+        signal.signal(signal.SIGTERM, self.exit_gracefully)
+
+    def exit_gracefully(self, signum, frame):
+        self.kill_now = True
 
 
 def SendMail(address, subject, content):
@@ -126,7 +135,6 @@ def SendMail(address, subject, content):
         SSL = config.get('smtp', 'ssl')
     except ConfigParser.NoOptionError:
         SSL = False
-        return
 
     try:
         if SSL:
@@ -154,6 +162,7 @@ def SendMail(address, subject, content):
     except Exception:
         log.critical('Couldn''t send mail: %s' % subject)
 
+
 def ScanForNewSpamAddresses(server_, spam_):
     # Select the Spam folder to retrieve new spam addresses
     server_.select_folder('INBOX.Spam')
@@ -168,12 +177,13 @@ def ScanForNewSpamAddresses(server_, spam_):
             )
             addr, addrfrom = parseaddr(mail['from'])
 
-            if spam_.exist(addrfrom) == False:
-                    spam_.add(addrfrom)
-                    log.info('New spam address added {0}'.format(addrfrom))
-                    server_.add_flags(msg, ['\SEEN'])
+            if not spam_.exist(addrfrom):
+                spam_.add(addrfrom)
+                log.info('New spam address added {0}'.format(addrfrom))
+                server_.add_flags(msg, ['\SEEN'])
         except:
             pass
+
 
 def ScanToRemoveAddresses(server_, spam_):
     # Select the Spam folder to retrieve new spam addresses
@@ -189,20 +199,19 @@ def ScanToRemoveAddresses(server_, spam_):
             )
             addr, addrfrom = parseaddr(mail['from'])
             if spam_.exist(addrfrom):
-                    spam_.remove(addrfrom)
-                    log.info('Address removed from Spam List {0}'.format(addrfrom))
-                    server_.remove_flags(msg, ['\SEEN'])
-                    server_.copy(msg, 'INBOX')
-                    # and delete it from the current folder
-                    server_.delete_messages(msg)
+                spam_.remove(addrfrom)
+                log.info('Address removed from Spam List {0}'.format(addrfrom))
+                server_.remove_flags(msg, ['\SEEN'])
+                server_.copy(msg, 'INBOX')
+                # and delete it from the current folder
+                server_.delete_messages(msg)
     except Exception:
         log.critical('Folder INBOX.NotSpam does not exist!')
 
+
 def mail_monitor(mail_profile):
     killer = GracefulKiller()
-    log=open_log('SpamMon_'+mail_profile)
-    config = open_config(INI_file)
-    log.info('... script started for profile %s' % (mail_profile))
+    log.info('... script started')
     while True:
         # <--- Start configuration script
 
@@ -345,7 +354,7 @@ def mail_monitor(mail_profile):
                         addr, addrfrom = parseaddr(mail['from'])
 
                         # if the mail address exists in the spam list, then move the spam to the Spam folder
-                        if spamDB.exist(addrfrom) :
+                        if spamDB.exist(addrfrom):
                             log.info("%s is a spam " % addrfrom)
                             server.copy(msg, 'INBOX.Spam')
                             # and delete it from the INBOX
@@ -381,16 +390,18 @@ def mail_monitor(mail_profile):
         # end of configuration section --->
         break
 
-    log.info('script stopped for profile %s ...' % (mail_profile))
+    log.info('script stopped for profile %s ...' % mail_profile)
     return
 
-def main():
 
-    if len(sys.argv) > 1:
-        p = multiprocessing.Process(target = mail_monitor, args = (sys.argv[1],))
+def main():
+    for arg in sys.argv[1:]:
+        p = multiprocessing.Process(target=mail_monitor, args=(arg,))
         p.start()
 
-    mail_monitor('xavier')
+    if len(sys.argv) == 1:
+        mail_monitor('xavier')
+
 
 if __name__ == "__main__":
     main()

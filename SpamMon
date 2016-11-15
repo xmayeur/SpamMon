@@ -41,7 +41,7 @@ case "$1" in
     rm $0
     ;;
   *)
-    echo "Usage: /etc/init.d/SpamMon.sh {start|stop|restart}"
+    echo "Usage: /etc/init.d/SpamMon {start|stop|restart}"
     exit 1
     ;;
 esac
