@@ -18,22 +18,23 @@ case "$1" in
   start)
     echo "Starting script Spam monitoring "
     cd /home/pi/SpamMon
-    /usr/bin/python /home/pi/SpamMon/SpamMon.py xavier joelle &
+    /usr/bin/python /home/pi/SpamMon/SpamMon.py &
     ;;
   stop)
     echo "Stopping script Spam monitoring"
-    pkill -f SpamMon
+    pkill -9 -f SpamMon.py
     ;;
   restart)
     $0 stop
+    sleep 10
     $0 start
     ;;
-  install)sudo shit
+  install)
     update-rc.d SpamMon defaults
-    $0 start
+    service SpamMon start
     ;;
   remove)
-    $0 stop
+    service SpamMon stop
     update-rc.d -f SpamMon remove
     ;;
   *)
