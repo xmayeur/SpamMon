@@ -22,7 +22,7 @@ case "$1" in
     ;;
   stop)
     echo "Stopping script Spam monitoring"
-    pkill -f SpamMon.py
+    pkill -f SpamMon
     ;;
   restart)
     $0 stop
@@ -30,10 +30,10 @@ case "$1" in
     ;;
   install)sudo shit
     update-rc.d SpamMon defaults
-    service SpamMon start
+    $0 start
     ;;
   remove)
-    service SpamMon stop
+    $0 stop
     update-rc.d -f SpamMon remove
     ;;
   *)
