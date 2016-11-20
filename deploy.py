@@ -1,5 +1,7 @@
+from py_compile import compile
+from time import sleep
+
 from fabric.api import *
-# from py_compile import compile
 
 env.host_string = 'rpiMON'
 env.user = 'pi'
@@ -9,9 +11,12 @@ env.use_ssh_config = True
 deploy_list = ['spam.py', 'SpamMon.py']
 script = 'SpamMon'
 
-with cd('~/SpamMon'):
-    for f in deploy_list:
-        put(f)
+for f in deploy_list:
+    if f.find('.py') > 0:
+        compile(f)
+        put(local_path=f + 'c', remote_path='~/SpamMon/' + f + 'c')
+    else:
+        put(local_path=f, remote_path='~/SpamMon/' + f)
 
 # Stop service, update it and re-start
 with settings(warn_only=True):
@@ -22,3 +27,5 @@ with cd('/etc/init.d'):
     run('sudo update-rc.d ' + script + ' defaults')
 
 run('sudo service ' + script + ' start')
+sleep(5)
+run('sudo service ' + script + ' status')

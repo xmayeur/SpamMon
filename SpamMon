@@ -18,11 +18,11 @@ case "$1" in
   start)
     echo "Starting script Spam monitoring "
     cd /home/pi/SpamMon
-    /usr/bin/python /home/pi/SpamMon/SpamMon.py &
+    /usr/bin/python /home/pi/SpamMon/SpamMon.pyc joelle &
     ;;
   stop)
     echo "Stopping script Spam monitoring"
-    pkill -9 -f SpamMon.py
+    pkill -9 -f SpamMon
     ;;
   restart)
     $0 stop

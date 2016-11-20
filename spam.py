@@ -122,7 +122,7 @@ class Spam:
             else:
                 return False
 
-    def close_db(self):
+    def close(self):
         self.connection.close()
 
     def configure(self):
@@ -148,6 +148,7 @@ class Spam:
 
 def main():
     s = Spam()
+
     s.configure()
     if s.status == '':
         if not s.add("www@ads.com"):
@@ -156,6 +157,7 @@ def main():
             print 'found'
             if s.remove("www@ads.com"):
                 print 'removed'
+    s.close()
 
 
 if __name__ == "__main__":

@@ -399,7 +399,7 @@ def main():
         p.start()
 
     mail_monitor('xavier')
-    spamDB.close_db()
+    spamDB.close()
 
 if __name__ == "__main__":
     main()
