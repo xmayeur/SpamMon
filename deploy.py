@@ -1,5 +1,4 @@
 from fabric.api import *
-
 # from py_compile import compile
 
 env.host_string = 'rpiMON'
@@ -20,6 +19,6 @@ with settings(warn_only=True):
 
 with cd('/etc/init.d'):
     put(local_path=script + '.', remote_path='/etc/init.d/' + script, use_sudo=True, mode=0755)
-    sudo('sudo update-rc.d ' + script + ' defaults')
+    run('sudo update-rc.d ' + script + ' defaults')
 
-sudo('sudo service ' + script + ' start')
+run('sudo service ' + script + ' start')
