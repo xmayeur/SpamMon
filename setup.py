@@ -10,5 +10,5 @@ setup(
     author='X. Mayeur',
     author_email='xavier@mayeur.be',
     description='eMail Spam monitoring using IMAP',
-    requires=['eventlet', 'cryptography', 'ConfigParser', 'Key', 'pymysql', 'configobj', 'imapclient']
+    requires=['eventlet', 'cryptography', 'ConfigParser', 'Key', 'pymysql', 'configobj', 'imapclient', 'fabric']
 )

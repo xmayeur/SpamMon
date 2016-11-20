@@ -49,6 +49,12 @@ class Spam:
             except sqlite3.Error, e:
                 self.status = "Error: Can't connect to the database - %s" % e
 
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.connection.close()
+
+    def __enter__(self):
+        return self.connection
+
     def add(self, address):
         # Add a new record
         try:

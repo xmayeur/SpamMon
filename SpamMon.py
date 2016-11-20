@@ -392,14 +392,14 @@ def mail_monitor(mail_profile):
 
 
 def main():
+
     # check the connection with the
     for arg in sys.argv[1:]:
         p = multiprocessing.Process(target=mail_monitor, args=(arg,))
         p.start()
 
-    if len(sys.argv) == 1:
-        mail_monitor('xavier')
-
+    mail_monitor('xavier')
+    spamDB.close_db()
 
 if __name__ == "__main__":
     main()
