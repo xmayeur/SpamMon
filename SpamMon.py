@@ -55,11 +55,12 @@ def open_log(name):
     return log_
 log = open_log('SpamMon')
 
+
 def open_config(f):
     log = open_log('SpamMon.open_config')
     # Read config file - halt script on failure
     config_ = None
-    for loc in os.curdir, os.path.expanduser("~"), "/etc/SpamMon":
+    for loc in os.curdir, os.path.expanduser("~"), "/etc/SpamMon", os.environ.get('SPAMMON_CONF'):
         try:
             with open(os.path.join(loc, f), 'r+') as config_file:
                 config_ = ConfigParser.SafeConfigParser()
