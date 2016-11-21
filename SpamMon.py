@@ -8,6 +8,7 @@ import ConfigParser
 import email
 import logging
 import multiprocessing
+import os
 import signal
 import sys
 import traceback
@@ -58,11 +59,14 @@ def open_config(f):
     log = open_log('SpamMon.open_config')
     # Read config file - halt script on failure
     config_ = None
-    try:
-        config_file = open(f, 'r+')
-        config_ = ConfigParser.SafeConfigParser()
-        config_.readfp(config_file)
-    except IOError:
+    for loc in os.curdir, os.path.expanduser("~"), "/etc/SpamMon":
+        try:
+            with open(os.path.join(loc, f), 'r+') as config_file:
+                config_ = ConfigParser.SafeConfigParser()
+                config_.readfp(config_file)
+        except IOError:
+            pass
+    if config_ is None:
         log.critical('configuration file is missing')
     return config_
 
