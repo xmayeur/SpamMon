@@ -15,10 +15,13 @@ else:
 
     MYSQL = False
 
-class Spam:
+
+class Spam(object):
+
 
     def __init__(self):
-        self.status = ''
+        self.__status = ''
+
         # Connect to the database
 
         if MYSQL:
@@ -38,22 +41,22 @@ class Spam:
                                                       charset='utf8mb4',
                                                       cursorclass=pymysql.cursors.DictCursor)
                 except pymysql.Error, e:
-                    self.status = "Error: Can't connect to the database - %s" % e
+                    self.__status = "Error: Can't connect to the database - %s" % e
 
             except:
-                self.status = 'Error: Invalid or missing options in section [mysql] of config file'
+                self.__status = 'Error: Invalid or missing options in section [mysql] of config file'
         else:
             try:
                 db = 'spam.db'
                 self.connection = sqlite3.connect(db)
             except sqlite3.Error, e:
-                self.status = "Error: Can't connect to the database - %s" % e
+                self.__status = "Error: Can't connect to the database - %s" % e
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.connection.close()
 
     def __enter__(self):
-        return self.connection
+        return self
 
     def add(self, address):
         # Add a new record
@@ -145,19 +148,25 @@ class Spam:
 
         self.connection.commit()
 
+    @property
+    def status(self):
+        return self.__status
+
+    @status.setter
+    def status(self, value):
+        raise Exception('Status is a read only property')
 
 def main():
-    s = Spam()
+    with Spam() as s:
+        s.configure()
+        if s.status == '':
+            if not s.add("www@ads.com"):
+                print 'duplicate'
+            if s.exist("www@ads.com"):
+                print 'found'
+                if s.remove("www@ads.com"):
+                    print 'removed'
 
-    s.configure()
-    if s.status == '':
-        if not s.add("www@ads.com"):
-            print 'duplicate'
-        if s.exist("www@ads.com"):
-            print 'found'
-            if s.remove("www@ads.com"):
-                print 'removed'
-    s.close()
 
 
 if __name__ == "__main__":

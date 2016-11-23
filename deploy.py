@@ -4,6 +4,8 @@ from time import sleep
 
 from fabric.api import *
 
+# from fabric.contrib.project import rsync_project as rsync
+
 env.host_string = 'rpiMON'
 env.user = 'pi'
 env.use_ssh_config = True
