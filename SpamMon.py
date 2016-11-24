@@ -23,8 +23,9 @@ from cryptography.fernet import Fernet
 
 from spam import Spam
 
-INI_file = 'SpamMon.conf'
-LOG_file = 'SpamMon.log'
+project = 'SpamMon'
+INI_file = project + '.conf'
+LOG_file = project + '.log'
 spamDB = Spam()
 imapclient = eventlet.import_patched('imapclient')
 # import imapclient
@@ -53,18 +54,22 @@ def open_log(name):
     handler_file.setFormatter(formatter)
     log_.addHandler(handler_file)
     return log_
-log = open_log('SpamMon')
+
+
+log = open_log(project)
 
 
 def open_config(f):
-    log = open_log('SpamMon.open_config')
+    log = open_log(project + '.open_config')
     # Read config file - halt script on failure
     config_ = None
-    for loc in os.curdir, os.path.expanduser("~"), "/etc/SpamMon", os.environ.get('SPAMMON_CONF'):
+    for loc in os.curdir, os.path.expanduser('~').join('.' + project), os.path.expanduser('~'), \
+               '/etc/' + project, os.environ.get(project + '_CONF'):
         try:
             with open(os.path.join(loc, f), 'r+') as config_file:
                 config_ = ConfigParser.SafeConfigParser()
                 config_.readfp(config_file)
+                break
         except IOError:
             pass
     if config_ is None:

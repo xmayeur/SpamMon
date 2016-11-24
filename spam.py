@@ -1,18 +1,16 @@
 from configobj import ConfigObj
-from cryptography.fernet import Fernet
 
 INI_file = 'SpamMon.conf'
 config = ConfigObj(INI_file)
 
 if 'mysql' in config:
+    from cryptography.fernet import Fernet
     import Key
     import pymysql
     import pymysql.cursors
-
     MYSQL = True
 else:
     import sqlite3
-
     MYSQL = False
 
 
