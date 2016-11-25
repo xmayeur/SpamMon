@@ -22,7 +22,7 @@ case "$1" in
     ;;
   stop)
     echo "Stopping script Spam monitoring"
-    pkill -9 -f SpamMon
+    pkill -f SpamMon
     ;;
   restart)
     $0 stop

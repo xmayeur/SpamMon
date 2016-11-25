@@ -5,7 +5,7 @@ setup(
     version='0.3',
     packages=[''],
     data_files=[('',['SpamMon.conf', 'cacert.pem'])],
-    url='',
+    url='https://github.com/xmayeur/SpamMon.git',
     license='',
     author='X. Mayeur',
     author_email='xavier@mayeur.be',

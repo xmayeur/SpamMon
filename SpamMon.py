@@ -75,8 +75,6 @@ def open_config(f):
     if config_ is None:
         log.critical('configuration file is missing')
     return config_
-
-
 # Open config file
 config = open_config(INI_file)
 # Generate encryption object to decrypt passwords from the .conf file
