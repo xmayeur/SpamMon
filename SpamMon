@@ -16,13 +16,14 @@ touch /var/lock/SpamMon
 # Carry out specific functions when asked to by the system
 case "$1" in
   start)
-    echo "Starting script Spam monitoring "
+    echo "Starting script Spam monitoring"
     cd /home/pi/SpamMon
-    /usr/bin/python /home/pi/SpamMon/SpamMon.pyc joelle &
+    /usr/bin/python /home/pi/SpamMon/SpamMon.pyc &
     ;;
   stop)
     echo "Stopping script Spam monitoring"
-    pkill -f SpamMon
+    pkill -9 -f SpamMon
+    exit 0
     ;;
   restart)
     $0 stop

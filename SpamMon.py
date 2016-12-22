@@ -272,7 +272,7 @@ def mail_monitor(mail_profile):
                 for each in estr:
                     logstr += '{0}; '.format(each.strip('\n'))
                 log.error(logstr)
-                sleep(10)
+                sleep(30)
                 continue
             log.info('%s - server connection established' % mail_profile)
 
@@ -310,18 +310,19 @@ def mail_monitor(mail_profile):
                 except Exception:
                     continue
 
-                server.remove_flags(msg, ['\SEEN'])
+
                 addr, addrfrom = parseaddr(mail['from'])
                 if spamDB.exist(addrfrom):
                     # if the mail address exists in the spam list, then move the spam to the Spam folder
-                    log.info("%s is a spam" % addrfrom)
+                    log.info("%s - %s is a spam" % (mail_profile, addrfrom))
                     server.copy(msg, 'INBOX.Spam')
                     # and delete it from the INBOX
                     server.delete_messages(msg)
                 else:
-                    # do nothing for non blocked mails
+                    server.remove_flags(msg, ['\SEEN'])
+                    # do nothing else for non blocked mails
                     # log.info("%s is a mail with subject %s" % (addrfrom, mail['subject']))
-                    pass
+
 
             log.info('%s - Start monitoring INBOX' % mail_profile)
 
@@ -329,8 +330,8 @@ def mail_monitor(mail_profile):
                 # <--- Start of the monitoring loop
 
                 # Check the Spam address list and save it back to file
-                ScanForNewSpamAddresses(server, spamDB)
                 ScanToRemoveAddresses(server, spamDB)
+                ScanForNewSpamAddresses(server, spamDB)
 
                 # select the folder to monitor
                 server.select_folder('INBOX')
@@ -344,6 +345,7 @@ def mail_monitor(mail_profile):
 
                 server.idle()
                 result = server.idle_check(int(timeout))
+
                 if result:
                     server.idle_done()
                     messages = server.search(['UNSEEN'])
@@ -355,16 +357,17 @@ def mail_monitor(mail_profile):
                             )
                         except Exception:
                             continue
-                        server.remove_flags(msg, ['\SEEN'])
+
                         addr, addrfrom = parseaddr(mail['from'])
 
                         # if the mail address exists in the spam list, then move the spam to the Spam folder
                         if spamDB.exist(addrfrom):
-                            log.info("%s is a spam " % addrfrom)
+                            log.info("%s - %s is a spam " % (mail_profile, addrfrom))
                             server.copy(msg, 'INBOX.Spam')
                             # and delete it from the INBOX
                             server.delete_messages(msg)
                         else:
+                            server.remove_flags(msg, ['\SEEN'])
                             # Handle special request as command string in the message subject
                             # log.info("%s is a mail with subject %s" % (addrfrom, mail['subject']))
                             txt = mail['subject']
@@ -400,14 +403,21 @@ def mail_monitor(mail_profile):
 
 
 def main():
+    killer = GracefulKiller()
+    p1 = multiprocessing.Process(target=mail_monitor, args=('xavier',))
+    p1.start()
 
-    # check the connection with the
-    for arg in sys.argv[1:]:
-        p = multiprocessing.Process(target=mail_monitor, args=(arg,))
-        p.start()
+    p2 = multiprocessing.Process(target=mail_monitor, args=('joelle',))
+    p2.start()
 
-    mail_monitor('xavier')
-    spamDB.close()
+    while True:
+
+        if killer.kill_now:
+            p1.terminate()
+            p2.terminate()
+            spamDB.close()
+            log.info('%s - script stopped...' % 'Main')
+            sys.exit(0)
 
 if __name__ == "__main__":
     main()
