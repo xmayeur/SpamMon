@@ -292,7 +292,7 @@ def mail_monitor(mail_profile):
                 break
 
             try:
-                ScanForNewSpamAddresses(server, spamDB)
+                ScanToRemoveAddresses(server, spamDB)
                 # Select the INBOX folder for monitoring
                 server.select_folder('INBOX')
                 # Reads now all INBOX's unseen messages. Should errors occur due to loss of connection,
@@ -330,7 +330,7 @@ def mail_monitor(mail_profile):
                 # <--- Start of the monitoring loop
 
                 # Check the Spam address list and save it back to file
-                ScanToRemoveAddresses(server, spamDB)
+
                 ScanForNewSpamAddresses(server, spamDB)
 
                 # select the folder to monitor
@@ -371,13 +371,16 @@ def mail_monitor(mail_profile):
                             # Handle special request as command string in the message subject
                             # log.info("%s is a mail with subject %s" % (addrfrom, mail['subject']))
                             txt = mail['subject']
-                            if txt.split(' ')[0] == "$SENDLOG":
-                                with open(LOG_file, 'r') as logfile:
-                                    log.info('Sending log file to %s' % addrfrom)
-                                    server.add_flags(msg, ['\SEEN'])
-                                    txt = logfile.read()
-                                    SendMail(addrfrom, 'Log file', txt)
-                                    server.delete_messages(msg)
+                            try:
+                                if txt.split(' ')[0] == "$SENDLOG":
+                                    with open(LOG_file, 'r') as logfile:
+                                        log.info('Sending log file to %s' % addrfrom)
+                                        server.add_flags(msg, ['\SEEN'])
+                                        txt = logfile.read()
+                                        SendMail(addrfrom, 'Log file', txt)
+                                        server.delete_messages(msg)
+                            except:
+                                pass
 
                 else:
                     server.idle_done()
