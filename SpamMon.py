@@ -347,7 +347,10 @@ def mail_monitor(mail_profile):
                 result = server.idle_check(int(timeout))
 
                 if result:
-                    server.idle_done()
+                    try:
+                        server.idle_done()
+                    except Exception:
+                        continue
                     messages = server.search(['UNSEEN'])
                     for msg in messages:
                         try:
