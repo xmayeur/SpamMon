@@ -120,6 +120,7 @@ from
           <database-logging value="false" />
           <connect-automatically value="true" />
           <restore-workspace value="true" />
+          <restore-workspace-deep value="true" />
           <environment-type value="default" />
           <idle-time-to-disconnect value="30" />
           <password-expiry-time value="10" />

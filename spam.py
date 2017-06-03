@@ -94,34 +94,37 @@ class Spam(object):
         except IndexError:
             domain = ''
             # print 'cannot get domain for %s' % address
-        if MYSQL:
-            with self.connection.cursor() as cursor:
+        try:
+            if MYSQL:
+                with self.connection.cursor() as cursor:
+                    # check for blocked domain
+                    sql = "SELECT `address` FROM `spam` WHERE `address`=%s"
+                    cursor.execute(sql, (domain,))
+                    if cursor.fetchone() is not None:
+                        return True
+                    # check else for blocked address
+                    sql = "SELECT `address` FROM `spam` WHERE `address`=%s"
+                    cursor.execute(sql, (address,))
+                    if cursor.fetchone() is not None:
+                        return True
+                    else:
+                        return False
+            else:
+                cursor = self.connection.cursor()
                 # check for blocked domain
-                sql = "SELECT `address` FROM `spam` WHERE `address`=%s"
+                sql = "SELECT `address` FROM `spam` WHERE `address`= ?"
                 cursor.execute(sql, (domain,))
                 if cursor.fetchone() is not None:
                     return True
                 # check else for blocked address
-                sql = "SELECT `address` FROM `spam` WHERE `address`=%s"
+                sql = "SELECT `address` FROM `spam` WHERE `address`= ?"
                 cursor.execute(sql, (address,))
                 if cursor.fetchone() is not None:
                     return True
                 else:
                     return False
-        else:
-            cursor = self.connection.cursor()
-            # check for blocked domain
-            sql = "SELECT `address` FROM `spam` WHERE `address`= ?"
-            cursor.execute(sql, (domain,))
-            if cursor.fetchone() is not None:
-                return True
-            # check else for blocked address
-            sql = "SELECT `address` FROM `spam` WHERE `address`= ?"
-            cursor.execute(sql, (address,))
-            if cursor.fetchone() is not None:
-                return True
-            else:
-                return False
+        except Exception:
+            return False
 
     def close(self):
         self.connection.close()

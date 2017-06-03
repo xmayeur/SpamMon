@@ -170,8 +170,11 @@ def SendMail(address, subject, content):
 
 def ScanForNewSpamAddresses(server_, spam_):
     # Select the Spam folder to retrieve new spam addresses
-    server_.select_folder('INBOX.Spam')
-    messages = server_.search(['UNSEEN'])
+    try:
+        server_.select_folder('INBOX.Spam')
+        messages = server_.search(['UNSEEN'])
+    except:
+        return
 
     # fetch new blocked addresses and store them into the dictionary
     for msg in messages:
@@ -323,7 +326,6 @@ def mail_monitor(mail_profile):
                     # do nothing else for non blocked mails
                     # log.info("%s is a mail with subject %s" % (addrfrom, mail['subject']))
 
-
             log.info('%s - Start monitoring INBOX' % mail_profile)
 
             while True:
@@ -332,20 +334,22 @@ def mail_monitor(mail_profile):
                 # Check the Spam address list and save it back to file
 
                 ScanForNewSpamAddresses(server, spamDB)
-
-                # select the folder to monitor
-                server.select_folder('INBOX')
-
-                # After all unread emails are cleared on initial login, start
-                # monitoring the folder for new email arrivals and process
-                # accordingly. Use the IDLE check combined with occassional NOOP
-                # to refresh. Should errors occur in this loop (due to loss of
-                # connection), return control to IMAP server connection loop to
-                # attempt restablishing connection instead of halting script.
-
-                server.idle()
-                result = server.idle_check(int(timeout))
-
+                try:
+                    # select the folder to monitor
+                    server.select_folder('INBOX')
+    
+                    # After all unread emails are cleared on initial login, start
+                    # monitoring the folder for new email arrivals and process
+                    # accordingly. Use the IDLE check combined with occassional NOOP
+                    # to refresh. Should errors occur in this loop (due to loss of
+                    # connection), return control to IMAP server connection loop to
+                    # attempt restablishing connection instead of halting script.
+    
+                    server.idle()
+                    result = server.idle_check(int(timeout))
+                except Exception:
+                    continue
+                    
                 if result:
                     try:
                         server.idle_done()
@@ -382,12 +386,15 @@ def mail_monitor(mail_profile):
                                         txt = logfile.read()
                                         SendMail(addrfrom, 'Log file', txt)
                                         server.delete_messages(msg)
-                            except:
+                            except Exception:
                                 pass
 
                 else:
-                    server.idle_done()
-                    server.noop()
+                    try:
+                        server.idle_done()
+                        server.noop()
+                    except Exception:
+                        pass
 
                 if killer.kill_now:
                     log.info('%s - Service killed' % mail_profile)
