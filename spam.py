@@ -16,7 +16,6 @@ else:
 
 class Spam(object):
 
-
     def __init__(self):
         self.__status = ''
 

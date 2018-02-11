@@ -10,6 +10,7 @@ import logging
 import multiprocessing
 import os
 import signal
+import ssl
 import sys
 import traceback
 from email.utils import parseaddr
@@ -17,18 +18,22 @@ from logging.handlers import RotatingFileHandler
 from smtplib import SMTP, SMTP_SSL
 from time import sleep
 
-import Key
-import eventlet
-from cryptography.fernet import Fernet
+import imapclient
 
+import crypto_helpers
 from spam import Spam
+
+# import Key
+# import eventlet
+# from cryptography.fernet import Fernet
 
 project = 'SpamMon'
 INI_file = project + '.conf'
 LOG_file = project + '.log'
 spamDB = Spam()
-imapclient = eventlet.import_patched('imapclient')
-# import imapclient
+
+
+# imapclient = eventlet.import_patched('imapclient')
 
 
 def open_log(name):
@@ -75,10 +80,13 @@ def open_config(f):
     if config_ is None:
         log.critical('configuration file is missing')
     return config_
+
+
 # Open config file
 config = open_config(INI_file)
 # Generate encryption object to decrypt passwords from the .conf file
-f = Fernet(Key.key)
+# f = Fernet(Key.key)
+f = crypto_helpers.AEScipher()
 
 
 class GracefulKiller:
@@ -242,7 +250,7 @@ def mail_monitor(mail_profile):
 
         # retrieve the PASSWORD
         try:
-            PASSWORD = config.get(mail_profile, 'password')
+            PASSWORD = f.read_pwd(INI_file, mail_profile)
         except ConfigParser.NoOptionError:
             log.critical('%s - no "password" option in configuration' % mail_profile)
             return
@@ -264,7 +272,8 @@ def mail_monitor(mail_profile):
 
             # attempt connection to the IMAP server
             try:
-                context = imapclient.create_default_context(cafile=cafile)
+    
+                context = ssl.create_default_context(cafile=cafile)
                 # create the connection with the email server
                 server = imapclient.IMAPClient(HOST, use_uid=True, ssl=True, ssl_context=context)
             except Exception:
@@ -282,7 +291,7 @@ def mail_monitor(mail_profile):
             # attempt to login to IMAP server
             try:
                 # server = IMAPClient(HOST, use_uid=True, ssl=False)
-                result = server.login(USERNAME, f.decrypt(PASSWORD))
+                result = server.login(USERNAME, PASSWORD)
                 log.info('%s - login successful - %s' % (mail_profile, result))
             except Exception:
                 # Halt script when login fails
@@ -431,6 +440,7 @@ def main():
             spamDB.close()
             log.info('%s - script stopped...' % 'Main')
             sys.exit(0)
+
 
 if __name__ == "__main__":
     main()
