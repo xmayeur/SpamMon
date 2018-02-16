@@ -44,7 +44,7 @@ class Spam(object):
                 self.__status = 'Error: Invalid or missing options in section [mysql] of config file'
         else:
             try:
-                db = 'spam.db'
+                db = config['db']['db']
                 self.connection = sqlite3.connect(db)
             except sqlite3.Error, e:
                 self.__status = "Error: Can't connect to the database - %s" % e
