@@ -1,3 +1,4 @@
+#!/bin/sh
 cd ~
-docker run -ti --name spammon -v ~:/conf/ dtdns
+docker run -ti --name spammon -v $(pwd):/conf/  spammon
 
