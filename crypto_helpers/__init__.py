@@ -78,7 +78,7 @@ class RSAcipher:
 
 
 def main():
-    text = 'Bretzel58'
+    text = 'gjlmkslgkfds'
     aes = AEScipher()
     msg = aes.encrypt(text)
     if aes.decrypt(msg) == text:

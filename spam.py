@@ -44,11 +44,9 @@ class Spam(object):
                 self.__status = 'Error: Invalid or missing options in section [mysql] of config file'
         else:
             try:
-<<<<<<< HEAD
-                db = 'spam.db'
-=======
+    
                 db = config['db']['db']
->>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
+    
                 self.connection = sqlite3.connect(db)
             except sqlite3.Error, e:
                 self.__status = "Error: Can't connect to the database - %s" % e
@@ -160,6 +158,7 @@ class Spam(object):
     def status(self, value):
         raise Exception('Status is a read only property')
 
+
 def main():
     with Spam() as s:
         s.configure()
@@ -173,8 +172,4 @@ def main():
 
 
 if __name__ == "__main__":
-<<<<<<< HEAD
     main()
-=======
-    main()
->>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
