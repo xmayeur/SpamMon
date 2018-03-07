@@ -28,7 +28,7 @@ project = 'SpamMon'
 loopforever = True
 
 if os.name == 'nt':
-    upath = os.path.join(os.environ('HOMEDRIVE'), os.environ('HOMEPATH'))
+    upath = os.path.join(os.environ['HOMEDRIVE'], os.environ['HOMEPATH'])
     INI_file = os.path.os.path.join(upath, project + '.conf')
     LOG_file = os.path.os.path.join(upath, project + '.log')
 else:
@@ -277,7 +277,7 @@ def mail_monitor(mail_profile):
 
         try:
             timeout = config.get(mail_profile, 'timeout')
-            nrhours = int(timeout / 3600) + 1
+            nrhours = int(timeout) / 3600 + 1
         except ConfigParser.NoOptionError:
             timeout = 300
             nrhours = 1
