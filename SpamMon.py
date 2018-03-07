@@ -91,7 +91,7 @@ config = open_config(INI_file)
 f = crypto_helpers.AEScipher()
 
 
-def exit_gracefully(self, signum, frame):
+def exit_gracefully(signum, frame):
     p1.terminate()
     p2.terminate()
     spamDB.close()
