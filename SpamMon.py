@@ -5,7 +5,10 @@
 #
 
 import ConfigParser
+<<<<<<< HEAD
 import datetime
+=======
+>>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
 import email
 import logging
 import multiprocessing
@@ -29,12 +32,21 @@ from spam import Spam
 # from cryptography.fernet import Fernet
 
 project = 'SpamMon'
+<<<<<<< HEAD
 INI_file = project + '.conf'
 LOG_file = project + '.log'
 spamDB = Spam()
 # imapclient = eventlet.import_patched('imapclient')
 
 loopforever = True
+=======
+INI_file = '/conf/' + project + '.conf'
+LOG_file = '/var/log/' + project + '.log'
+spamDB = Spam()
+
+
+# imapclient = eventlet.import_patched('imapclient')
+>>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
 
 
 def open_log(name):
@@ -91,13 +103,20 @@ f = crypto_helpers.AEScipher()
 
 
 class GracefulKiller:
+<<<<<<< HEAD
 
     def __init__(self):
         self.kill_now = False
+=======
+    kill_now = False
+
+    def __init__(self):
+>>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
         signal.signal(signal.SIGINT, self.exit_gracefully)
         signal.signal(signal.SIGTERM, self.exit_gracefully)
 
     def exit_gracefully(self, signum, frame):
+<<<<<<< HEAD
         print('SIG signal received')
         self.kill_now = True
 
@@ -105,6 +124,11 @@ class GracefulKiller:
 killer = GracefulKiller()
 
 
+=======
+        self.kill_now = True
+
+
+>>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
 def SendMail(address, subject, content):
     """
 
@@ -231,6 +255,7 @@ def ScanToRemoveAddresses(server_, spam_):
 
 
 def mail_monitor(mail_profile):
+<<<<<<< HEAD
     global loopforever
     global killer
 
@@ -250,6 +275,13 @@ def mail_monitor(mail_profile):
             log.critical('no [global] section in configuration')
             return
         
+=======
+    killer = GracefulKiller()
+    log.info('%s - ... script started' % mail_profile)
+    while True:
+        # <--- Start configuration script
+
+>>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
         # retrieve the HOST name
         try:
             HOST = config.get(mail_profile, 'host')
@@ -286,7 +318,11 @@ def mail_monitor(mail_profile):
         except ConfigParser.NoOptionError:
             timeout = 300
 
+<<<<<<< HEAD
         while loopforever:
+=======
+        while True:
+>>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
             # <--- start of the IMAP server connection loop
 
             # attempt connection to the IMAP server
@@ -295,7 +331,11 @@ def mail_monitor(mail_profile):
                 context = ssl.create_default_context(cafile=cafile)
                 # create the connection with the email server
                 server = imapclient.IMAPClient(HOST, use_uid=True, ssl=True, ssl_context=context)
+<<<<<<< HEAD
             except imapclient.IMAPClient.Error:
+=======
+            except Exception:
+>>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
                 # If connection attempt to IMAP server fails, retry
                 etype, evalue = sys.exc_info()[:2]
                 estr = traceback.format_exception_only(etype, evalue)
@@ -312,8 +352,12 @@ def mail_monitor(mail_profile):
                 # server = IMAPClient(HOST, use_uid=True, ssl=False)
                 result = server.login(USERNAME, PASSWORD)
                 log.info('%s - login successful - %s' % (mail_profile, result))
+<<<<<<< HEAD
 
             except imapclient.IMAPClient.Error:
+=======
+            except Exception:
+>>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
                 # Halt script when login fails
                 etype, evalue = sys.exc_info()[:2]
                 estr = traceback.format_exception_only(etype, evalue)
@@ -329,9 +373,13 @@ def mail_monitor(mail_profile):
                 server.select_folder('INBOX')
                 # Reads now all INBOX's unseen messages. Should errors occur due to loss of connection,
                 # attempt restablishing connection
+<<<<<<< HEAD
                 mydate = datetime.datetime.now() - datetime.timedelta(hours=1)
 
                 messages = server.search([u'UNSEEN', u'SINCE', mydate])
+=======
+                messages = server.search(['UNSEEN'])
+>>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
             except Exception:
                 continue
 
@@ -344,6 +392,10 @@ def mail_monitor(mail_profile):
                 except Exception:
                     continue
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
                 addr, addrfrom = parseaddr(mail['from'])
                 if spamDB.exist(addrfrom):
                     # if the mail address exists in the spam list, then move the spam to the Spam folder
@@ -358,10 +410,16 @@ def mail_monitor(mail_profile):
 
             log.info('%s - Start monitoring INBOX' % mail_profile)
 
+<<<<<<< HEAD
             while loopforever:
                 # <--- Start of the monitoring loop
                 if loopvalue != 'True':
                     loopforever = False
+=======
+            while True:
+                # <--- Start of the monitoring loop
+
+>>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
                 # Check the Spam address list and save it back to file
 
                 ScanForNewSpamAddresses(server, spamDB)
@@ -386,9 +444,13 @@ def mail_monitor(mail_profile):
                         server.idle_done()
                     except Exception:
                         continue
+<<<<<<< HEAD
                     mydate = datetime.datetime.now() - datetime.timedelta(hours=1)
                     messages = server.search([u'UNSEEN', u'SINCE', mydate])
 
+=======
+                    messages = server.search(['UNSEEN'])
+>>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
                     for msg in messages:
                         try:
                             fetch = server.fetch(msg, ['RFC822'])
@@ -445,12 +507,19 @@ def mail_monitor(mail_profile):
         break
 
     log.info('%s - script stopped...' % mail_profile)
+<<<<<<< HEAD
     # killer.kill_now = True
+=======
+>>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
     return
 
 
 def main():
+<<<<<<< HEAD
     global killer
+=======
+    killer = GracefulKiller()
+>>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
     p1 = multiprocessing.Process(target=mail_monitor, args=('xavier',))
     p1.start()
 
@@ -458,13 +527,22 @@ def main():
     p2.start()
 
     while True:
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
         if killer.kill_now:
             p1.terminate()
             p2.terminate()
             spamDB.close()
             log.info('%s - script stopped...' % 'Main')
+<<<<<<< HEAD
         sys.exit(0)
         
+=======
+            sys.exit(0)
+
+>>>>>>> 2d0ea538042c264051fd142c7e2e7d483edea4f6
 
 if __name__ == "__main__":
     main()
