@@ -1,0 +1,1369 @@
+2017-01-28 01:02:02,963 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-01-28 05:06:41,890 | SpamMon | INFO | xavier - newsletter@fast-day.fr is a spam 
+2017-01-28 05:18:08,754 | SpamMon | INFO | New spam address added xavier@mayeur.be
+2017-01-28 07:03:21,211 | SpamMon | INFO | xavier - noreply@artlead.eu is a spam 
+2017-01-28 08:28:21,355 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-01-28 09:06:03,341 | SpamMon | INFO | xavier - support@domadoo.com is a spam 
+2017-01-28 09:37:35,005 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-01-28 09:45:35,009 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-01-28 10:50:08,148 | SpamMon | INFO | xavier - newsletter@fast-day.fr is a spam 
+2017-01-28 12:53:33,772 | SpamMon | INFO | xavier - info@salondesvacances.be is a spam 
+2017-01-28 14:12:09,331 | SpamMon | INFO | New spam address added news@gaindeouf.com
+2017-01-28 15:14:33,550 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-01-28 16:00:08,468 | SpamMon | INFO | New spam address added crubicu@virtua.com.br
+2017-01-28 17:50:00,489 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-01-28 18:01:09,444 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-01-28 18:31:12,485 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-01-28 18:42:03,942 | SpamMon | INFO | xavier - info@lespritjardin.be is a spam 
+2017-01-28 22:27:33,024 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-01-29 01:01:43,825 | SpamMon | INFO | xavier - ... script started
+2017-01-29 01:01:43,846 | SpamMon | INFO | joelle - ... script started
+2017-01-29 01:01:44,391 | SpamMon | INFO | xavier - server connection established
+2017-01-29 01:01:44,406 | SpamMon | INFO | joelle - server connection established
+2017-01-29 01:01:44,484 | SpamMon | INFO | xavier - login successful - Logged in
+2017-01-29 01:01:44,492 | SpamMon | INFO | joelle - login successful - Logged in
+2017-01-29 01:01:54,841 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-01-29 01:02:02,858 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-01-29 01:03:47,012 | SpamMon | INFO | xavier - newsletter@fast-day.fr is a spam 
+2017-01-29 04:17:34,795 | SpamMon | INFO | xavier - newsletter@fast-day.fr is a spam 
+2017-01-29 07:52:23,466 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-01-29 07:55:04,316 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-01-29 08:20:22,306 | SpamMon | INFO | xavier - newsletter@fast-day.fr is a spam 
+2017-01-29 08:26:19,940 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-01-29 10:29:05,381 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-01-29 14:35:52,126 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-01-29 14:42:04,854 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-01-29 14:55:58,510 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-01-29 17:14:09,502 | SpamMon | INFO | xavier - newsletter@fast-day.fr is a spam 
+2017-01-29 18:51:04,094 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-01-29 20:41:21,239 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-01-29 23:03:51,425 | SpamMon | INFO | xavier - ... script started
+2017-01-29 23:03:51,433 | SpamMon | INFO | joelle - ... script started
+2017-01-29 23:03:51,896 | SpamMon | INFO | xavier - server connection established
+2017-01-29 23:03:51,896 | SpamMon | INFO | joelle - server connection established
+2017-01-29 23:03:51,987 | SpamMon | INFO | xavier - login successful - Logged in
+2017-01-29 23:03:51,993 | SpamMon | INFO | joelle - login successful - Logged in
+2017-01-29 23:03:54,243 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-01-29 23:04:05,085 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-01-30 00:48:39,396 | SpamMon | INFO | New spam address added newsletter@original-speed.fr
+2017-01-30 01:01:45,207 | SpamMon | INFO | xavier - ... script started
+2017-01-30 01:01:45,212 | SpamMon | INFO | joelle - ... script started
+2017-01-30 01:01:45,702 | SpamMon | INFO | joelle - server connection established
+2017-01-30 01:01:45,759 | SpamMon | INFO | xavier - server connection established
+2017-01-30 01:01:45,789 | SpamMon | INFO | joelle - login successful - Logged in
+2017-01-30 01:01:45,845 | SpamMon | INFO | xavier - login successful - Logged in
+2017-01-30 01:01:55,122 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-01-30 01:02:04,315 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-01-30 08:40:22,610 | SpamMon | INFO | xavier - mailer@limaneo.be is a spam 
+2017-01-30 08:45:53,307 | SpamMon | INFO | xavier - support@domadoo.com is a spam 
+2017-01-30 09:52:40,582 | SpamMon | INFO | New spam address added Time-Management@www1.topooffer.net
+2017-01-30 11:22:25,527 | SpamMon | INFO | xavier - discover@airbnb.com is a spam 
+2017-01-30 14:25:27,961 | SpamMon | INFO | xavier - reply@newsletter.eurodns.com is a spam 
+2017-01-30 15:03:07,929 | SpamMon | INFO | xavier - winzip@email-winzip.com is a spam 
+2017-01-30 18:07:57,228 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-01-30 21:20:32,244 | SpamMon | INFO | xavier - news@soifdedeals.fr is a spam 
+2017-01-30 23:37:35,592 | SpamMon | INFO | New spam address added mailer@milameo.be
+2017-01-31 01:01:44,857 | SpamMon | INFO | joelle - ... script started
+2017-01-31 01:01:44,852 | SpamMon | INFO | xavier - ... script started
+2017-01-31 01:01:45,406 | SpamMon | INFO | joelle - server connection established
+2017-01-31 01:01:45,427 | SpamMon | INFO | xavier - server connection established
+2017-01-31 01:01:45,495 | SpamMon | INFO | joelle - login successful - Logged in
+2017-01-31 01:01:45,513 | SpamMon | INFO | xavier - login successful - Logged in
+2017-01-31 01:01:54,536 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-01-31 01:02:04,587 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-01-31 01:52:01,209 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-01-31 08:26:31,722 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-01-31 14:03:02,389 | SpamMon | INFO | xavier - winzip@email-winzip.com is a spam 
+2017-01-31 18:12:41,707 | SpamMon | INFO | New spam address added news@clusdesmails.fr
+2017-01-31 23:17:52,828 | SpamMon | INFO | New spam address added noreply@woread.eu
+2017-02-01 01:01:43,559 | SpamMon | INFO | xavier - ... script started
+2017-02-01 01:01:43,577 | SpamMon | INFO | joelle - ... script started
+2017-02-01 01:01:43,996 | SpamMon | INFO | xavier - server connection established
+2017-02-01 01:01:44,040 | SpamMon | INFO | joelle - server connection established
+2017-02-01 01:01:44,082 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-01 01:01:44,126 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-01 01:01:54,858 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-01 01:02:03,469 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-01 07:26:58,395 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-02-01 07:48:10,342 | SpamMon | INFO | xavier - newsletter@mondocultures.com is a spam 
+2017-02-01 08:26:35,950 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-01 08:52:40,684 | SpamMon | INFO | New spam address added meds_express7@fast.net.id
+2017-02-01 09:40:39,623 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-01 10:17:01,296 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-01 11:37:24,637 | SpamMon | INFO | xavier - mailer@milamea.be is a spam 
+2017-02-01 14:26:41,337 | SpamMon | INFO | New spam address added sales@microcity.be
+2017-02-01 15:06:38,172 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-01 16:04:06,672 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam 
+2017-02-01 16:55:27,882 | SpamMon | INFO | xavier - info@melleprivilege.com is a spam 
+2017-02-01 18:24:05,521 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-01 18:39:56,946 | SpamMon | INFO | joelle - info@salondesvacances.be is a spam 
+2017-02-01 19:15:05,867 | SpamMon | INFO | xavier - info@salondesvacances.be is a spam 
+2017-02-01 19:16:24,620 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-01 19:42:24,788 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-01 20:29:23,830 | SpamMon | INFO | joelle - xavier@mayeur.be is a spam 
+2017-02-02 01:01:53,021 | SpamMon | INFO | xavier - ... script started
+2017-02-02 01:01:53,045 | SpamMon | INFO | joelle - ... script started
+2017-02-02 01:01:53,563 | SpamMon | INFO | xavier - server connection established
+2017-02-02 01:01:53,613 | SpamMon | INFO | joelle - server connection established
+2017-02-02 01:01:53,926 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-02 01:01:53,944 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-02 01:01:55,896 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-02 01:02:06,606 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-02 04:46:40,123 | SpamMon | INFO | New spam address added kbc-bank@nutpa.net
+2017-02-02 07:16:40,400 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-02 08:07:06,000 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-02-02 08:28:40,254 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-02 08:50:08,141 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-02 11:38:41,500 | SpamMon | INFO | New spam address added news@lexpertdesoffres.fr
+2017-02-02 16:54:41,743 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam 
+2017-02-02 19:02:07,929 | SpamMon | INFO | xavier - noreply@plex.tv is a spam 
+2017-02-02 22:36:40,905 | SpamMon | INFO | New spam address added u1902233@h1902233.stratoserver.net
+2017-02-03 01:01:44,471 | SpamMon | INFO | xavier - ... script started
+2017-02-03 01:01:44,481 | SpamMon | INFO | joelle - ... script started
+2017-02-03 01:01:44,907 | SpamMon | INFO | xavier - server connection established
+2017-02-03 01:01:44,924 | SpamMon | INFO | joelle - server connection established
+2017-02-03 01:01:45,001 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-03 01:01:45,019 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-03 01:01:53,988 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-03 01:02:03,335 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-03 12:36:42,094 | SpamMon | INFO | New spam address added news@zetopdesoffres.com
+2017-02-03 14:29:37,961 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-03 16:25:31,499 | SpamMon | INFO | xavier - ateliermarcelhastir3@gmail.com is a spam 
+2017-02-03 18:40:01,716 | SpamMon | INFO | xavier - webmaster@artofcooking.be is a spam 
+2017-02-03 20:44:58,447 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-04 01:01:44,873 | SpamMon | INFO | xavier - ... script started
+2017-02-04 01:01:44,882 | SpamMon | INFO | joelle - ... script started
+2017-02-04 01:01:45,319 | SpamMon | INFO | joelle - server connection established
+2017-02-04 01:01:45,324 | SpamMon | INFO | xavier - server connection established
+2017-02-04 01:01:45,412 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-04 01:01:45,412 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-04 01:01:56,067 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-04 01:02:07,276 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-04 07:24:47,208 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-02-04 08:27:28,982 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-04 08:55:07,423 | SpamMon | INFO | xavier - support@domadoo.com is a spam 
+2017-02-04 10:39:16,373 | SpamMon | INFO | New spam address added info@sportsfairbelgium.be
+2017-02-04 12:15:10,734 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-04 12:17:54,253 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-04 14:33:04,583 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-04 15:57:26,432 | SpamMon | INFO | xavier - newsletter@fast-day.fr is a spam 
+2017-02-04 17:13:57,926 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-04 21:30:42,261 | SpamMon | INFO | New spam address added bounce@camzoning.com
+2017-02-04 22:42:59,859 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-05 01:01:43,961 | SpamMon | INFO | joelle - ... script started
+2017-02-05 01:01:43,955 | SpamMon | INFO | xavier - ... script started
+2017-02-05 01:01:44,412 | SpamMon | INFO | xavier - server connection established
+2017-02-05 01:01:44,440 | SpamMon | INFO | joelle - server connection established
+2017-02-05 01:01:44,512 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-05 01:01:44,528 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-05 01:01:54,327 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-05 01:02:05,851 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-05 08:27:35,656 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-05 12:59:19,761 | SpamMon | INFO | xavier - news@cercle-offres.fr is a spam 
+2017-02-05 16:30:42,788 | SpamMon | INFO | New spam address added Jacinthe@kpdpm.com
+2017-02-05 19:43:03,840 | SpamMon | INFO | joelle - xavier@mayeur.be is a spam 
+2017-02-06 01:01:45,045 | SpamMon | INFO | xavier - ... script started
+2017-02-06 01:01:45,051 | SpamMon | INFO | joelle - ... script started
+2017-02-06 01:01:45,544 | SpamMon | INFO | xavier - server connection established
+2017-02-06 01:01:45,544 | SpamMon | INFO | joelle - server connection established
+2017-02-06 01:01:45,631 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-06 01:01:45,731 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-06 01:01:55,058 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-06 01:02:06,527 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-06 06:30:30,557 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-06 08:07:21,773 | SpamMon | INFO | xavier - newsletter@mailavantage2.be is a spam 
+2017-02-06 08:46:25,904 | SpamMon | INFO | xavier - mailer@urgenso.be is a spam 
+2017-02-06 08:54:40,717 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-06 08:55:09,737 | SpamMon | INFO | xavier - support@domadoo.com is a spam 
+2017-02-06 10:44:03,874 | SpamMon | INFO | xavier - newsletter@fast-day.fr is a spam 
+2017-02-06 10:59:24,220 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-02-06 18:45:54,633 | SpamMon | INFO | xavier - ... script started
+2017-02-06 18:45:54,640 | SpamMon | INFO | joelle - ... script started
+2017-02-06 18:45:55,059 | SpamMon | INFO | xavier - server connection established
+2017-02-06 18:45:55,063 | SpamMon | INFO | joelle - server connection established
+2017-02-06 18:45:55,167 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-06 18:45:55,171 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-06 18:46:05,098 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-06 18:46:17,775 | SpamMon | INFO | xavier - info@lespritjardin.be is a spam
+2017-02-06 18:46:18,166 | SpamMon | INFO | xavier - xavier@mayeur.be is a spam
+2017-02-06 18:46:18,683 | SpamMon | INFO | xavier - winzip@email-winzip.com is a spam
+2017-02-06 18:46:18,918 | SpamMon | INFO | xavier - reply@newsletter.eurodns.com is a spam
+2017-02-06 18:46:19,263 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam
+2017-02-06 18:46:19,424 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam
+2017-02-06 18:46:32,577 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-06 20:43:32,341 | SpamMon | INFO | New spam address added Securitas-direct-par-Afinex@www14.k-ofertas.net
+2017-02-06 20:43:32,527 | SpamMon | INFO | New spam address added noreply@campsend.eu
+2017-02-07 01:01:44,567 | SpamMon | INFO | xavier - ... script started
+2017-02-07 01:01:44,597 | SpamMon | INFO | joelle - ... script started
+2017-02-07 01:01:45,082 | SpamMon | INFO | joelle - server connection established
+2017-02-07 01:01:45,082 | SpamMon | INFO | xavier - server connection established
+2017-02-07 01:01:45,170 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-07 01:01:45,170 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-07 01:01:54,446 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-07 01:02:16,077 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-07 07:40:45,166 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-07 08:00:09,603 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-07 08:17:31,754 | SpamMon | INFO | xavier - newsletter@mailavantage2.be is a spam 
+2017-02-07 08:36:47,047 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-07 08:46:52,221 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-07 09:29:26,682 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-07 10:08:26,966 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam 
+2017-02-07 13:53:54,510 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-07 14:20:01,852 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-02-07 15:12:27,321 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-07 17:30:59,171 | SpamMon | INFO | xavier - news@espacedeals.fr is a spam 
+2017-02-07 20:18:29,570 | SpamMon | INFO | xavier - dvanneste@trio-carlo-van-neste.com is a spam 
+2017-02-08 01:01:43,784 | SpamMon | INFO | xavier - ... script started
+2017-02-08 01:01:43,793 | SpamMon | INFO | joelle - ... script started
+2017-02-08 01:01:44,773 | SpamMon | INFO | xavier - server connection established
+2017-02-08 01:01:44,816 | SpamMon | INFO | joelle - server connection established
+2017-02-08 01:01:52,387 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-08 01:01:52,431 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-08 01:02:00,146 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-08 01:02:47,451 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-08 01:38:25,084 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-08 03:38:55,117 | SpamMon | INFO | xavier - noreply@arolead.eu is a spam 
+2017-02-08 07:13:28,566 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-02-08 07:22:13,350 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-02-08 07:48:55,954 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-08 08:30:55,990 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-08 08:36:52,924 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-08 09:20:06,151 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-08 09:25:34,483 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-08 09:38:53,000 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-08 09:52:04,505 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-02-08 11:14:57,687 | SpamMon | INFO | xavier - newsletter@mailavantage2.be is a spam 
+2017-02-08 14:34:55,555 | SpamMon | INFO | xavier - Time-Management@www16.k-ofertas.net is a spam 
+2017-02-08 16:24:56,906 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-08 16:26:14,732 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-02-08 16:50:20,604 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-02-08 20:06:51,370 | SpamMon | INFO | xavier - news@zedealmagic.com is a spam 
+2017-02-08 20:52:56,082 | SpamMon | INFO | New spam address added bnklantendienst@car101.pro
+2017-02-08 22:04:37,760 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-08 23:14:56,338 | SpamMon | INFO | New spam address added canadian-drugstore12@gmail.com
+2017-02-08 23:40:55,554 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-09 00:51:36,940 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-02-09 01:01:53,605 | SpamMon | INFO | xavier - ... script started
+2017-02-09 01:01:53,615 | SpamMon | INFO | joelle - ... script started
+2017-02-09 01:01:54,091 | SpamMon | INFO | xavier - server connection established
+2017-02-09 01:01:54,107 | SpamMon | INFO | joelle - server connection established
+2017-02-09 01:01:54,176 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-09 01:01:54,188 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-09 01:01:56,792 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-09 01:02:21,209 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-09 03:56:57,094 | SpamMon | INFO | New spam address added semimanagerial@mannercam.com
+2017-02-09 07:24:34,420 | SpamMon | INFO | New spam address added kindredness@drmillets.com
+2017-02-09 07:48:26,264 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-09 07:51:39,595 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-09 08:18:07,539 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-09 08:29:34,581 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-09 09:05:36,683 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-09 09:10:10,514 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-09 12:39:46,456 | SpamMon | INFO | xavier - pourchienetchat@newsletter.pourchienetchat.com is a spam 
+2017-02-09 14:21:56,853 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-02-09 15:52:56,133 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-02-09 17:19:53,614 | SpamMon | INFO | New spam address added mailing-4@information-du-jour.com
+2017-02-09 18:10:58,116 | SpamMon | INFO | xavier - mailer@nealima.be is a spam 
+2017-02-09 18:29:47,170 | SpamMon | INFO | xavier - news@comptoir-offres.fr is a spam 
+2017-02-09 18:57:34,650 | SpamMon | INFO | xavier - taco@trello.com is a spam 
+2017-02-09 19:44:00,427 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-09 20:28:40,874 | SpamMon | INFO | xavier - j.vlerberghe@gmail.com is a spam 
+2017-02-10 01:01:45,730 | SpamMon | INFO | joelle - ... script started
+2017-02-10 01:01:45,744 | SpamMon | INFO | xavier - ... script started
+2017-02-10 01:01:53,482 | SpamMon | INFO | xavier - server connection established
+2017-02-10 01:01:53,487 | SpamMon | INFO | joelle - server connection established
+2017-02-10 01:01:53,567 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-10 01:01:53,571 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-10 01:01:56,537 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-10 01:02:22,768 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-10 07:06:48,119 | SpamMon | INFO | xavier - noreply@arolead.eu is a spam 
+2017-02-10 08:08:45,766 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-10 08:30:59,733 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-10 08:46:00,497 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-10 09:16:58,727 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-02-10 09:31:53,569 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-02-10 10:25:54,129 | SpamMon | INFO | xavier - reply@newsletter.eurodns.com is a spam 
+2017-02-10 10:48:03,138 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-10 13:02:59,922 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-02-10 13:26:28,995 | SpamMon | INFO | xavier - newsletter@fast-day.fr is a spam 
+2017-02-10 13:30:08,085 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-10 13:41:32,892 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam 
+2017-02-10 14:13:47,158 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-10 15:05:01,133 | SpamMon | INFO | New spam address added Zerlinda@kpgfy.com
+2017-02-10 17:08:42,317 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-02-10 18:02:48,170 | SpamMon | INFO | New spam address added Cession@www1.k-ofertas.net
+2017-02-10 19:33:33,691 | SpamMon | INFO | xavier - dvanneste@trio-carlo-van-neste.com is a spam 
+2017-02-10 19:34:22,333 | SpamMon | INFO | xavier - dvanneste@trio-carlo-van-neste.com is a spam 
+2017-02-11 01:01:55,623 | SpamMon | INFO | joelle - ... script started
+2017-02-11 01:01:55,637 | SpamMon | INFO | xavier - ... script started
+2017-02-11 01:01:56,077 | SpamMon | INFO | joelle - server connection established
+2017-02-11 01:01:56,075 | SpamMon | INFO | xavier - server connection established
+2017-02-11 01:01:56,159 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-11 01:01:56,260 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-11 01:01:58,957 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-11 01:02:24,383 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-11 04:26:04,348 | SpamMon | INFO | xavier - no-reply@classicalarchives.com is a spam 
+2017-02-11 05:03:37,641 | SpamMon | INFO | xavier - noreply@artlead.eu is a spam 
+2017-02-11 07:34:43,087 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-02-11 08:37:38,942 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-11 08:56:58,323 | SpamMon | INFO | xavier - support@domadoo.com is a spam 
+2017-02-11 09:27:00,156 | SpamMon | INFO | New spam address added contact@vousavezdelachance.fr
+2017-02-11 12:02:59,252 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-02-11 13:58:13,427 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-02-11 14:37:41,795 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-11 16:48:42,624 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-11 16:50:58,843 | SpamMon | INFO | New spam address added Oralie@kpght.com
+2017-02-11 17:14:40,022 | SpamMon | INFO | xavier - newsletter@original-speed.fr is a spam 
+2017-02-11 19:38:16,639 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-11 20:04:19,102 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-02-12 01:01:45,419 | SpamMon | INFO | xavier - ... script started
+2017-02-12 01:01:45,451 | SpamMon | INFO | joelle - ... script started
+2017-02-12 01:01:45,904 | SpamMon | INFO | xavier - server connection established
+2017-02-12 01:01:45,927 | SpamMon | INFO | joelle - server connection established
+2017-02-12 01:01:45,986 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-12 01:01:46,010 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-12 01:01:55,339 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-12 01:02:22,933 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-12 01:02:23,314 | SpamMon | INFO | New spam address added mailing-4@mailing-information.com
+2017-02-12 03:46:14,635 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-12 07:28:30,431 | SpamMon | INFO | xavier - newsletter@news.unepromodefolie.com is a spam 
+2017-02-12 07:30:15,808 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-02-12 07:44:52,407 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-12 08:38:57,145 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-12 08:52:56,962 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-12 14:27:45,984 | SpamMon | INFO | xavier - xavier@mayeur.be is a spam 
+2017-02-12 14:49:36,809 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-12 18:24:45,529 | SpamMon | INFO | xavier - mailing-4@information-du-jour.com is a spam 
+2017-02-12 20:02:45,182 | SpamMon | INFO | xavier - newsletter@fast-day.fr is a spam 
+2017-02-12 20:47:47,084 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-13 01:01:52,485 | SpamMon | INFO | xavier - ... script started
+2017-02-13 01:01:52,493 | SpamMon | INFO | joelle - ... script started
+2017-02-13 01:01:52,913 | SpamMon | INFO | xavier - server connection established
+2017-02-13 01:01:52,917 | SpamMon | INFO | joelle - server connection established
+2017-02-13 01:01:53,005 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-13 01:01:53,069 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-13 01:01:54,828 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-13 01:02:21,298 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-13 05:11:28,812 | SpamMon | INFO | xavier - noreply@campsend.eu is a spam 
+2017-02-13 07:17:33,472 | SpamMon | INFO | xavier - newsletter@fast-day.fr is a spam 
+2017-02-13 07:34:12,675 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-13 07:55:49,780 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-13 08:31:59,845 | SpamMon | INFO | xavier - support@domadoo.com is a spam 
+2017-02-13 11:44:39,549 | SpamMon | INFO | xavier - discover@airbnb.com is a spam 
+2017-02-13 11:56:56,891 | SpamMon | INFO | xavier - noreply@ezine.rabobank.be is a spam 
+2017-02-13 11:58:22,768 | SpamMon | INFO | joelle - noreply@ezine.rabobank.be is a spam 
+2017-02-13 14:02:58,488 | SpamMon | INFO | xavier - winzip@email-winzip.com is a spam 
+2017-02-13 17:08:57,842 | SpamMon | INFO | New spam address added Creditsafe@www1.k-ofertas.net
+2017-02-13 17:08:58,015 | SpamMon | INFO | New spam address added manon@rhelga.fr
+2017-02-13 17:22:57,061 | SpamMon | INFO | New spam address added Gaia@kphby.com
+2017-02-13 20:46:38,638 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-13 22:12:57,512 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-02-14 01:01:52,266 | SpamMon | INFO | xavier - ... script started
+2017-02-14 01:01:52,280 | SpamMon | INFO | joelle - ... script started
+2017-02-14 01:01:52,689 | SpamMon | INFO | xavier - server connection established
+2017-02-14 01:01:52,723 | SpamMon | INFO | joelle - server connection established
+2017-02-14 01:01:52,772 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-14 01:01:52,813 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-14 01:01:54,870 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-14 01:02:21,525 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-14 02:17:01,682 | SpamMon | INFO | New spam address added Ilona@3333330.net
+2017-02-14 07:28:02,972 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-02-14 08:38:17,787 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-14 11:46:19,300 | SpamMon | INFO | xavier - mailer@emalias.be is a spam 
+2017-02-14 13:16:59,338 | SpamMon | INFO | New spam address added news@lanewsendelire.fr
+2017-02-14 14:28:43,168 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam 
+2017-02-15 01:01:44,651 | SpamMon | INFO | xavier - ... script started
+2017-02-15 01:01:44,656 | SpamMon | INFO | joelle - ... script started
+2017-02-15 01:01:45,187 | SpamMon | INFO | joelle - server connection established
+2017-02-15 01:01:45,217 | SpamMon | INFO | xavier - server connection established
+2017-02-15 01:01:45,271 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-15 01:01:45,299 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-15 01:01:55,030 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-15 01:02:25,106 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-15 08:29:40,214 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-15 08:38:50,100 | SpamMon | INFO | New spam address added ProfactsTeam@profacts.eu
+2017-02-15 08:40:31,757 | SpamMon | INFO | xavier - ProfactsTeam@profacts.eu is a spam 
+2017-02-15 08:40:35,843 | SpamMon | INFO | xavier - ProfactsTeam@profacts.eu is a spam 
+2017-02-15 08:40:54,757 | SpamMon | INFO | xavier - ProfactsTeam@profacts.eu is a spam 
+2017-02-15 08:40:58,756 | SpamMon | INFO | xavier - ProfactsTeam@profacts.eu is a spam 
+2017-02-15 08:40:59,641 | SpamMon | INFO | xavier - ProfactsTeam@profacts.eu is a spam 
+2017-02-15 11:11:02,397 | SpamMon | INFO | New spam address added Fruit-At-Work@www1.topooffer.net
+2017-02-15 14:38:44,016 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-15 16:04:39,025 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam 
+2017-02-15 16:23:01,242 | SpamMon | INFO | New spam address added news@deals-promos.fr
+2017-02-15 16:35:00,701 | SpamMon | INFO | New spam address added Julia@kpcmf.com
+2017-02-15 16:51:01,497 | SpamMon | INFO | New spam address added news@lemaildelire.fr
+2017-02-15 18:59:02,551 | SpamMon | INFO | New spam address added Flavie@xwnsx.com
+2017-02-15 22:40:31,674 | SpamMon | INFO | xavier - ancestry@ancestry.com is a spam 
+2017-02-16 01:01:44,570 | SpamMon | INFO | xavier - ... script started
+2017-02-16 01:01:44,579 | SpamMon | INFO | joelle - ... script started
+2017-02-16 01:01:44,994 | SpamMon | INFO | xavier - server connection established
+2017-02-16 01:01:45,070 | SpamMon | INFO | joelle - server connection established
+2017-02-16 01:01:45,083 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-16 01:01:45,170 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-16 01:01:45,444 | SpamMon | INFO | Address removed from Spam List ProfactsTeam@profacts.eu
+2017-02-16 01:01:55,243 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-16 01:02:24,184 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-16 04:18:33,417 | SpamMon | INFO | xavier - noreply@tachasend.eu is a spam 
+2017-02-16 07:13:43,232 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-02-16 08:29:45,959 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-16 10:11:00,698 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam 
+2017-02-16 10:21:00,088 | SpamMon | INFO | xavier - reply@newsletter.eurodns.com is a spam 
+2017-02-16 11:08:47,613 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-02-16 11:37:02,560 | SpamMon | INFO | New spam address added mailing@mailing-information.com
+2017-02-16 12:11:04,408 | SpamMon | INFO | New spam address added Geolocalisation@www10.k-ofertas.net
+2017-02-16 13:24:24,584 | SpamMon | INFO | xavier - news@lanewsendelire.fr is a spam 
+2017-02-16 17:06:31,548 | SpamMon | INFO | xavier - BRITA-BENE-Info@services.brita.net is a spam 
+2017-02-16 20:23:03,105 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-16 22:39:02,509 | SpamMon | INFO | New spam address added mailing-4@offres-mailing.com
+2017-02-17 00:48:23,643 | SpamMon | INFO | xavier - mailing-4@offres-mailing.com is a spam 
+2017-02-17 01:01:44,169 | SpamMon | INFO | xavier - ... script started
+2017-02-17 01:01:44,176 | SpamMon | INFO | joelle - ... script started
+2017-02-17 01:01:44,667 | SpamMon | INFO | joelle - server connection established
+2017-02-17 01:01:44,734 | SpamMon | INFO | xavier - server connection established
+2017-02-17 01:01:44,753 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-17 01:01:44,818 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-17 01:01:55,049 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-17 01:02:25,354 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-17 08:14:05,580 | SpamMon | INFO | xavier - newsletter@mailavantage2.be is a spam 
+2017-02-17 08:30:22,228 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-17 16:20:44,208 | SpamMon | INFO | New spam address added Comparez-les-solutions@www10.k-ofertas.net
+2017-02-17 20:28:48,879 | SpamMon | INFO | xavier - ancestry@ancestry.com is a spam 
+2017-02-17 21:55:16,646 | SpamMon | INFO | New spam address added mailing-5@offres-mailing.com
+2017-02-17 22:04:20,996 | SpamMon | INFO | New spam address added mailing@information-mail.com
+2017-02-18 01:01:53,141 | SpamMon | INFO | joelle - ... script started
+2017-02-18 01:01:53,137 | SpamMon | INFO | xavier - ... script started
+2017-02-18 01:01:53,600 | SpamMon | INFO | joelle - server connection established
+2017-02-18 01:01:53,611 | SpamMon | INFO | xavier - server connection established
+2017-02-18 01:01:53,693 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-18 01:01:53,693 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-18 01:01:56,525 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-18 01:02:42,225 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-18 02:41:15,682 | SpamMon | INFO | xavier - ateliermarcelhastir3@gmail.com is a spam 
+2017-02-18 07:01:35,053 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-02-18 08:30:53,390 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-18 08:43:15,016 | SpamMon | INFO | xavier - support@domadoo.com is a spam 
+2017-02-18 08:46:05,410 | SpamMon | INFO | New spam address added mailing-4@offres-du-jour.com
+2017-02-18 10:57:13,659 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-02-18 14:18:19,026 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-18 16:01:19,136 | SpamMon | INFO | xavier - mailer@urgenso.be is a spam 
+2017-02-18 16:02:19,717 | SpamMon | INFO | xavier - winzip@email-winzip.com is a spam 
+2017-02-18 19:16:59,390 | SpamMon | INFO | xavier - mailing-4@offres-du-jour.com is a spam 
+2017-02-18 20:23:05,970 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-18 23:34:45,357 | SpamMon | INFO | New spam address added info@valap.emsecure.net
+2017-02-18 23:34:45,525 | SpamMon | INFO | New spam address added mailing-5@mail-information.com
+2017-02-18 23:34:46,369 | SpamMon | INFO | New spam address added contact@modelisme.com
+2017-02-18 23:36:37,778 | SpamMon | INFO | xavier - contact@modelisme.com is a spam 
+2017-02-18 23:37:00,668 | SpamMon | INFO | xavier - contact@modelisme.com is a spam 
+2017-02-19 01:01:45,925 | SpamMon | INFO | xavier - ... script started
+2017-02-19 01:01:45,939 | SpamMon | INFO | joelle - ... script started
+2017-02-19 01:01:46,408 | SpamMon | INFO | joelle - server connection established
+2017-02-19 01:01:46,432 | SpamMon | INFO | xavier - server connection established
+2017-02-19 01:01:46,493 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-19 01:01:46,517 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-19 01:01:56,708 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-19 01:02:42,908 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-19 04:13:13,656 | SpamMon | INFO | New spam address added 34@webcontroleur.online
+2017-02-19 07:59:17,414 | SpamMon | INFO | New spam address added news@lexpertdunet.com
+2017-02-19 08:14:24,035 | SpamMon | INFO | xavier - newsletter@mailavantage2.be is a spam 
+2017-02-19 08:30:01,885 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-19 15:29:14,781 | SpamMon | INFO | xavier - mailer@emalia.be is a spam 
+2017-02-19 17:33:12,592 | SpamMon | INFO | xavier - mailing-4@offres-mailing.com is a spam 
+2017-02-19 20:32:57,858 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-20 01:01:44,884 | SpamMon | INFO | xavier - ... script started
+2017-02-20 01:01:44,878 | SpamMon | INFO | joelle - ... script started
+2017-02-20 01:01:45,390 | SpamMon | INFO | xavier - server connection established
+2017-02-20 01:01:45,414 | SpamMon | INFO | joelle - server connection established
+2017-02-20 01:01:45,480 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-20 01:01:45,515 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-20 01:01:56,072 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-20 01:02:37,253 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-20 09:37:14,051 | SpamMon | INFO | New spam address added Cession@www8.dprofesional.net
+2017-02-20 12:07:14,562 | SpamMon | INFO | xavier - discover@airbnb.com is a spam 
+2017-02-20 12:20:27,892 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-20 12:44:36,484 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-02-20 14:26:58,032 | SpamMon | INFO | xavier - xavier@mayeur.be is a spam 
+2017-02-20 14:35:16,363 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam 
+2017-02-20 15:23:15,696 | SpamMon | INFO | xavier - mailing-5@mail-information.com is a spam 
+2017-02-20 17:26:57,872 | SpamMon | INFO | xavier - ancestry@ancestry.com is a spam 
+2017-02-20 17:44:29,774 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-20 17:47:17,717 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-20 20:22:28,841 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-21 01:01:44,707 | SpamMon | INFO | joelle - ... script started
+2017-02-21 01:01:44,708 | SpamMon | INFO | xavier - ... script started
+2017-02-21 01:01:45,193 | SpamMon | INFO | xavier - server connection established
+2017-02-21 01:01:45,295 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-21 01:01:45,298 | SpamMon | INFO | joelle - server connection established
+2017-02-21 01:01:45,409 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-21 01:01:55,293 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-21 01:02:38,468 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-21 01:27:14,815 | SpamMon | INFO | xavier - mailing@information-mail.com is a spam 
+2017-02-21 07:39:00,015 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-21 08:00:46,360 | SpamMon | INFO | xavier - info@valap.emsecure.net is a spam 
+2017-02-21 08:31:14,672 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-21 08:48:21,395 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-21 09:47:15,144 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-21 10:05:16,956 | SpamMon | INFO | New spam address added DinClock-Mobile@www8.dprofesional.net
+2017-02-21 10:38:33,258 | SpamMon | INFO | New spam address added haroldn@cherry.actual-america.com
+2017-02-21 11:26:24,910 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-21 15:07:15,824 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-21 17:12:31,078 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-21 17:50:19,929 | SpamMon | INFO | xavier - mailing@information-mail.com is a spam 
+2017-02-21 19:26:32,845 | SpamMon | INFO | New spam address added info@villamanzi.biz
+2017-02-21 20:22:25,739 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-21 20:27:01,592 | SpamMon | INFO | New spam address added mailing-5@information-mail.com
+2017-02-21 21:47:15,316 | SpamMon | INFO | New spam address added Halona@kpfpz.com
+2017-02-22 01:01:52,459 | SpamMon | INFO | xavier - ... script started
+2017-02-22 01:01:52,475 | SpamMon | INFO | joelle - ... script started
+2017-02-22 01:01:52,891 | SpamMon | INFO | xavier - server connection established
+2017-02-22 01:01:52,909 | SpamMon | INFO | joelle - server connection established
+2017-02-22 01:01:52,973 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-22 01:01:52,990 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-22 01:01:56,068 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-22 01:02:38,939 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-22 07:17:38,458 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-02-22 07:27:15,738 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-22 07:57:17,973 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-22 08:31:02,643 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-22 09:08:35,718 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-22 10:02:28,607 | SpamMon | INFO | xavier - noreply@ezine.rabobank.be is a spam 
+2017-02-22 11:15:18,400 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-22 11:20:29,874 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-22 13:14:14,976 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-22 14:09:17,422 | SpamMon | INFO | New spam address added mailing@offres-mailing.com
+2017-02-22 15:07:14,789 | SpamMon | INFO | xavier - winzip@email-winzip.com is a spam 
+2017-02-22 17:41:22,468 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-02-22 20:29:17,569 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-23 01:01:45,116 | SpamMon | INFO | xavier - ... script started
+2017-02-23 01:01:45,120 | SpamMon | INFO | joelle - ... script started
+2017-02-23 01:01:45,560 | SpamMon | INFO | joelle - server connection established
+2017-02-23 01:01:45,584 | SpamMon | INFO | xavier - server connection established
+2017-02-23 01:01:45,644 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-23 01:01:45,672 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-23 01:01:54,048 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-23 01:02:31,549 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-23 08:33:05,192 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-23 09:06:14,464 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-23 11:24:44,222 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-23 13:50:34,285 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-23 14:07:56,559 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam 
+2017-02-23 14:22:43,358 | SpamMon | INFO | xavier - mailing-5@information-mail.com is a spam 
+2017-02-23 14:24:51,066 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-23 15:59:00,521 | SpamMon | INFO | xavier - news@larmoireapromos.fr is a spam 
+2017-02-23 17:01:14,346 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam 
+2017-02-23 17:23:05,994 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-23 18:44:42,732 | SpamMon | INFO | xavier - taco@trello.com is a spam 
+2017-02-23 23:33:11,738 | SpamMon | INFO | xavier - noreply@plex.tv is a spam 
+2017-02-24 00:09:20,984 | SpamMon | INFO | New spam address added secure@support.secure.com
+2017-02-24 01:01:52,981 | SpamMon | INFO | xavier - ... script started
+2017-02-24 01:01:52,981 | SpamMon | INFO | joelle - ... script started
+2017-02-24 01:01:53,416 | SpamMon | INFO | joelle - server connection established
+2017-02-24 01:01:53,435 | SpamMon | INFO | xavier - server connection established
+2017-02-24 01:01:53,505 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-24 01:01:53,520 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-24 01:01:54,875 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-24 01:02:45,037 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-24 08:30:26,592 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-24 08:49:21,415 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-24 10:49:22,939 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-24 11:19:21,838 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-02-24 12:19:24,638 | SpamMon | INFO | xavier - ateliermarcelhastir3@gmail.com is a spam 
+2017-02-24 13:49:23,085 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-24 14:42:36,180 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-24 15:22:59,257 | SpamMon | INFO | xavier - mailing-5@mail-information.com is a spam 
+2017-02-24 15:36:51,067 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-24 16:33:22,960 | SpamMon | INFO | New spam address added news@lanewsdeparis.fr
+2017-02-24 17:23:01,671 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-24 17:36:33,478 | SpamMon | INFO | xavier - support@domadoo.com is a spam 
+2017-02-24 19:24:31,541 | SpamMon | INFO | New spam address added diego@07gmail.com
+2017-02-24 22:07:22,343 | SpamMon | INFO | New spam address added Keelia@kbnsx.com
+2017-02-25 00:10:31,160 | SpamMon | INFO | New spam address added hams@lakescom.net
+2017-02-25 01:01:44,184 | SpamMon | INFO | xavier - ... script started
+2017-02-25 01:01:44,195 | SpamMon | INFO | joelle - ... script started
+2017-02-25 01:01:44,725 | SpamMon | INFO | joelle - server connection established
+2017-02-25 01:01:44,744 | SpamMon | INFO | xavier - server connection established
+2017-02-25 01:01:44,817 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-25 01:01:44,830 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-25 01:01:54,148 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-25 01:02:47,696 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-25 01:39:24,492 | SpamMon | INFO | xavier - newsletter@mondocultures.com is a spam 
+2017-02-25 07:35:40,557 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-02-25 08:30:31,484 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-25 11:25:22,297 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-02-25 11:37:27,921 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-25 11:48:35,301 | SpamMon | INFO | xavier - news@deals-promos.fr is a spam 
+2017-02-25 12:27:15,679 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-25 14:25:23,793 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-25 18:55:27,499 | SpamMon | INFO | xavier - info@melleprivilege.com is a spam 
+2017-02-25 20:25:26,793 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-26 01:01:44,823 | SpamMon | INFO | xavier - ... script started
+2017-02-26 01:01:44,850 | SpamMon | INFO | joelle - ... script started
+2017-02-26 01:01:45,282 | SpamMon | INFO | xavier - server connection established
+2017-02-26 01:01:45,347 | SpamMon | INFO | joelle - server connection established
+2017-02-26 01:01:45,375 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-26 01:01:45,454 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-26 01:01:53,963 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-26 01:02:47,933 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-26 05:02:40,115 | SpamMon | INFO | xavier - mailing-5@information-mail.com is a spam 
+2017-02-26 08:30:30,715 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-26 12:15:24,513 | SpamMon | INFO | New spam address added noreply@bringmoi.eu
+2017-02-26 14:08:41,606 | SpamMon | INFO | xavier - mailer@emalia.be is a spam 
+2017-02-26 20:33:28,898 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-27 01:01:44,229 | SpamMon | INFO | xavier - ... script started
+2017-02-27 01:01:44,234 | SpamMon | INFO | joelle - ... script started
+2017-02-27 01:01:44,691 | SpamMon | INFO | joelle - server connection established
+2017-02-27 01:01:44,763 | SpamMon | INFO | xavier - server connection established
+2017-02-27 01:01:44,780 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-27 01:01:44,845 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-27 01:01:53,955 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-27 01:02:48,421 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-27 18:22:59,924 | SpamMon | INFO | xavier - ... script started
+2017-02-27 18:22:59,932 | SpamMon | INFO | joelle - ... script started
+2017-02-27 18:23:00,347 | SpamMon | INFO | xavier - server connection established
+2017-02-27 18:23:00,361 | SpamMon | INFO | joelle - server connection established
+2017-02-27 18:23:00,433 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-27 18:23:00,461 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-27 18:23:02,338 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam
+2017-02-27 18:23:02,708 | SpamMon | INFO | joelle - paypal@intl.service.com is a spam
+2017-02-27 18:23:02,809 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-27 18:23:03,488 | SpamMon | INFO | New spam address added jillp@seanet.com
+2017-02-27 18:24:03,142 | SpamMon | INFO | xavier - newsletter@mailavantage2.be is a spam
+2017-02-27 18:24:03,440 | SpamMon | INFO | xavier - us@sumofus.org is a spam
+2017-02-27 18:24:05,410 | SpamMon | INFO | xavier - winzip@email-winzip.com is a spam
+2017-02-27 18:24:05,695 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-27 18:43:28,705 | SpamMon | INFO | New spam address added Querida@kcnsx.com
+2017-02-27 19:49:28,610 | SpamMon | INFO | New spam address added mailing-5@information-du-jour.com
+2017-02-27 20:25:24,840 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-28 01:01:45,840 | SpamMon | INFO | xavier - ... script started
+2017-02-28 01:01:45,847 | SpamMon | INFO | joelle - ... script started
+2017-02-28 01:01:46,294 | SpamMon | INFO | xavier - server connection established
+2017-02-28 01:01:46,366 | SpamMon | INFO | joelle - server connection established
+2017-02-28 01:01:46,390 | SpamMon | INFO | xavier - login successful - Logged in
+2017-02-28 01:01:46,451 | SpamMon | INFO | joelle - login successful - Logged in
+2017-02-28 01:01:54,657 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-02-28 01:02:48,791 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-02-28 02:47:27,499 | SpamMon | INFO | xavier - discover@airbnb.com is a spam 
+2017-02-28 08:31:25,277 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-02-28 08:43:25,602 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-28 08:53:05,112 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-02-28 10:09:06,902 | SpamMon | INFO | xavier - reply@newsletter.eurodns.com is a spam 
+2017-02-28 10:30:57,287 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-28 12:01:11,677 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-02-28 13:35:09,930 | SpamMon | INFO | New spam address added jwcviqs@patriziapepe.it
+2017-02-28 14:09:59,624 | SpamMon | INFO | xavier - winzip@email-winzip.com is a spam 
+2017-02-28 14:57:14,288 | SpamMon | INFO | New spam address added Terminal-de-paiement@www11.dprofesional.net
+2017-02-28 16:45:21,946 | SpamMon | INFO | New spam address added luz@andy.yjur.cn
+2017-02-28 18:01:09,161 | SpamMon | INFO | xavier - noreply@bringmoi.eu is a spam 
+2017-02-28 18:45:14,699 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-02-28 20:31:18,339 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-02-28 20:43:41,496 | SpamMon | INFO | New spam address added ProfactsTeam@profacts.eu
+2017-02-28 20:47:02,006 | SpamMon | INFO | xavier - ProfactsTeam@profacts.eu is a spam 
+2017-03-01 01:01:45,509 | SpamMon | INFO | xavier - ... script started
+2017-03-01 01:01:45,536 | SpamMon | INFO | joelle - ... script started
+2017-03-01 01:01:46,012 | SpamMon | INFO | xavier - server connection established
+2017-03-01 01:01:46,106 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-01 01:01:46,117 | SpamMon | INFO | joelle - server connection established
+2017-03-01 01:01:46,203 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-01 01:01:46,485 | SpamMon | INFO | Address removed from Spam List ProfactsTeam@profacts.eu
+2017-03-01 01:01:55,728 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-01 01:04:34,835 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-01 08:09:33,048 | SpamMon | INFO | New spam address added news@lesdealsstars.fr
+2017-03-01 08:30:41,117 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-01 15:38:48,143 | SpamMon | INFO | xavier - discover@airbnb.com is a spam 
+2017-03-01 19:08:31,413 | SpamMon | INFO | New spam address added noreply@takelui.eu
+2017-03-01 20:04:42,820 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-03-01 21:17:29,367 | SpamMon | INFO | New spam address added info@kwoteamail.com
+2017-03-02 01:01:44,629 | SpamMon | INFO | joelle - ... script started
+2017-03-02 01:01:44,625 | SpamMon | INFO | xavier - ... script started
+2017-03-02 01:01:45,162 | SpamMon | INFO | xavier - server connection established
+2017-03-02 01:01:45,175 | SpamMon | INFO | joelle - server connection established
+2017-03-02 01:01:45,268 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-02 01:01:45,276 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-02 01:01:55,054 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-02 01:03:04,058 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-02 05:32:56,448 | SpamMon | INFO | New spam address added news@ledeliredesdeals.fr
+2017-03-02 08:32:56,648 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-02 09:28:56,873 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-03-02 10:02:24,255 | SpamMon | INFO | xavier - info@valap.emsecure.net is a spam 
+2017-03-02 15:57:02,547 | SpamMon | INFO | New spam address added contact@www11.dprofesional.net
+2017-03-02 17:17:04,316 | SpamMon | INFO | New spam address added Paula@729611.com
+2017-03-02 20:26:59,088 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-02 22:19:03,107 | SpamMon | INFO | New spam address added news@lesoffresdeouf.fr
+2017-03-02 23:21:27,539 | SpamMon | INFO | New spam address added mailing-5@mailing-information.com
+2017-03-02 23:21:51,504 | SpamMon | INFO | xavier - mailing-5@mailing-information.com is a spam 
+2017-03-02 23:22:03,600 | SpamMon | INFO | xavier - mailing-5@mailing-information.com is a spam 
+2017-03-02 23:22:23,958 | SpamMon | INFO | xavier - mailing-5@mailing-information.com is a spam 
+2017-03-03 01:01:44,718 | SpamMon | INFO | xavier - ... script started
+2017-03-03 01:01:44,745 | SpamMon | INFO | joelle - ... script started
+2017-03-03 01:01:45,254 | SpamMon | INFO | joelle - server connection established
+2017-03-03 01:01:45,254 | SpamMon | INFO | xavier - server connection established
+2017-03-03 01:01:45,356 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-03 01:01:45,460 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-03 01:01:54,460 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-03 01:02:45,233 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-03 03:36:45,882 | SpamMon | INFO | xavier - discover@airbnb.com is a spam 
+2017-03-03 18:59:17,014 | SpamMon | INFO | xavier - ... script started
+2017-03-03 18:59:17,027 | SpamMon | INFO | joelle - ... script started
+2017-03-03 18:59:17,454 | SpamMon | INFO | xavier - server connection established
+2017-03-03 18:59:17,496 | SpamMon | INFO | joelle - server connection established
+2017-03-03 18:59:17,538 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-03 18:59:17,582 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-03 18:59:19,934 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-03 19:00:11,337 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam
+2017-03-03 19:00:14,415 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-03 19:16:26,050 | SpamMon | INFO | xavier - support@domadoo.com is a spam 
+2017-03-03 21:54:43,965 | SpamMon | INFO | New spam address added ProfactsTeam@profacts.eu
+2017-03-04 01:01:43,667 | SpamMon | INFO | xavier - ... script started
+2017-03-04 01:01:43,672 | SpamMon | INFO | joelle - ... script started
+2017-03-04 01:01:44,112 | SpamMon | INFO | xavier - server connection established
+2017-03-04 01:01:44,114 | SpamMon | INFO | joelle - server connection established
+2017-03-04 01:01:44,199 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-04 01:01:44,203 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-04 01:01:44,555 | SpamMon | INFO | Address removed from Spam List ProfactsTeam@profacts.eu
+2017-03-04 01:01:53,523 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-04 01:02:43,952 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-04 05:04:55,378 | SpamMon | INFO | xavier - noreply@bringmoi.eu is a spam 
+2017-03-04 07:36:26,863 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-03-04 08:16:02,131 | SpamMon | INFO | xavier - newsletter@mailavantage2.be is a spam 
+2017-03-04 08:31:44,104 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-04 10:02:14,609 | SpamMon | INFO | xavier - info@valap.emsecure.net is a spam 
+2017-03-04 13:02:24,519 | SpamMon | INFO | xavier - mailing-5@offres-mailing.com is a spam 
+2017-03-04 16:16:11,937 | SpamMon | INFO | New spam address added ProfactsTeam@profacts.eu
+2017-03-04 17:24:48,119 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-04 20:26:10,850 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-05 00:08:49,433 | SpamMon | INFO | New spam address added news@laperledesnews.fr
+2017-03-05 01:01:44,568 | SpamMon | INFO | xavier - ... script started
+2017-03-05 01:01:44,599 | SpamMon | INFO | joelle - ... script started
+2017-03-05 01:01:45,022 | SpamMon | INFO | xavier - server connection established
+2017-03-05 01:01:45,078 | SpamMon | INFO | joelle - server connection established
+2017-03-05 01:01:45,107 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-05 01:01:45,161 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-05 01:01:45,455 | SpamMon | INFO | Address removed from Spam List ProfactsTeam@profacts.eu
+2017-03-05 01:01:54,729 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-05 01:02:45,024 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-05 06:02:32,217 | SpamMon | INFO | xavier - noreply@artlead.eu is a spam 
+2017-03-05 08:31:46,625 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-05 20:23:33,346 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-06 01:01:44,758 | SpamMon | INFO | xavier - ... script started
+2017-03-06 01:01:44,772 | SpamMon | INFO | joelle - ... script started
+2017-03-06 01:01:45,239 | SpamMon | INFO | xavier - server connection established
+2017-03-06 01:01:45,239 | SpamMon | INFO | joelle - server connection established
+2017-03-06 01:01:45,322 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-06 01:01:45,339 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-06 01:01:53,802 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-06 01:01:55,077 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-06 02:45:41,276 | SpamMon | INFO | xavier - mailing-5@information-du-jour.com is a spam 
+2017-03-06 07:22:38,534 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-03-06 08:07:53,776 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-03-06 10:25:26,048 | SpamMon | INFO | xavier - reply@newsletter.eurodns.com is a spam 
+2017-03-06 10:45:56,186 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-06 13:34:21,142 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-06 13:44:49,460 | SpamMon | INFO | xavier - mailer@limaneo.be is a spam 
+2017-03-06 14:04:18,364 | SpamMon | INFO | xavier - winzip@email-winzip.com is a spam 
+2017-03-06 14:48:02,320 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-06 18:09:14,380 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-06 20:34:01,179 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-06 22:07:20,916 | SpamMon | INFO | xavier - mailing-5@information-du-jour.com is a spam 
+2017-03-07 01:01:44,948 | SpamMon | INFO | xavier - ... script started
+2017-03-07 01:01:44,953 | SpamMon | INFO | joelle - ... script started
+2017-03-07 01:01:45,484 | SpamMon | INFO | joelle - server connection established
+2017-03-07 01:01:45,518 | SpamMon | INFO | xavier - server connection established
+2017-03-07 01:01:45,572 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-07 01:01:45,600 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-07 01:01:53,518 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-07 01:01:55,081 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-07 17:03:44,891 | SpamMon | INFO | xavier - ... script started
+2017-03-07 17:03:44,895 | SpamMon | INFO | joelle - ... script started
+2017-03-07 17:03:45,352 | SpamMon | INFO | xavier - server connection established
+2017-03-07 17:03:45,358 | SpamMon | INFO | joelle - server connection established
+2017-03-07 17:03:45,449 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-07 17:03:45,450 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-07 17:03:47,152 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam
+2017-03-07 17:03:48,495 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
+2017-03-07 17:03:48,509 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-07 17:03:49,042 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam
+2017-03-07 17:03:49,203 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam
+2017-03-07 17:03:49,518 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-07 17:03:50,332 | SpamMon | INFO | New spam address added Edda@fnwsx.com
+2017-03-07 17:03:50,530 | SpamMon | INFO | New spam address added news@leclubenor.fr
+2017-03-07 17:11:01,150 | SpamMon | INFO | xavier - mailing-5@mailing-information.com is a spam 
+2017-03-07 19:22:04,560 | SpamMon | INFO | xavier - ateliermarcelhastir3@gmail.com is a spam 
+2017-03-07 20:24:41,229 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-08 01:01:43,666 | SpamMon | INFO | xavier - ... script started
+2017-03-08 01:01:43,679 | SpamMon | INFO | joelle - ... script started
+2017-03-08 01:01:44,124 | SpamMon | INFO | xavier - server connection established
+2017-03-08 01:01:44,146 | SpamMon | INFO | joelle - server connection established
+2017-03-08 01:01:44,213 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-08 01:01:44,229 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-08 01:01:54,846 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-08 01:01:55,234 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-08 07:30:46,385 | SpamMon | INFO | New spam address added yitodaza@12hosting.net
+2017-03-08 07:44:00,010 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-03-08 08:01:54,230 | SpamMon | INFO | xavier - noreply@bringmoi.eu is a spam 
+2017-03-08 08:16:55,671 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-08 08:24:56,043 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-08 08:31:49,925 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-08 10:49:16,249 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-08 11:37:23,174 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-03-08 12:50:15,371 | SpamMon | INFO | xavier - mailing-5@offres-mailing.com is a spam 
+2017-03-08 13:29:59,642 | SpamMon | INFO | New spam address added news@lanewstop.fr
+2017-03-08 14:03:06,081 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam 
+2017-03-08 17:02:16,815 | SpamMon | INFO | xavier - info@lessecretsduchef.be is a spam 
+2017-03-08 20:25:46,735 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-09 01:01:43,573 | SpamMon | INFO | joelle - ... script started
+2017-03-09 01:01:43,573 | SpamMon | INFO | xavier - ... script started
+2017-03-09 01:01:44,077 | SpamMon | INFO | joelle - server connection established
+2017-03-09 01:01:44,128 | SpamMon | INFO | xavier - server connection established
+2017-03-09 01:01:44,194 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-09 01:01:44,231 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-09 01:01:55,246 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-09 01:01:55,785 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-09 07:25:10,966 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-03-09 08:31:02,594 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-09 08:33:41,139 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-09 12:08:35,937 | SpamMon | INFO | xavier - discover@airbnb.com is a spam 
+2017-03-09 12:29:32,688 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-09 14:19:12,888 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam 
+2017-03-09 15:40:27,939 | SpamMon | INFO | xavier - mailing-5@mailing-information.com is a spam 
+2017-03-09 16:10:51,887 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-09 17:15:18,239 | SpamMon | INFO | xavier - taco@trello.com is a spam 
+2017-03-09 20:21:41,685 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-09 20:38:14,582 | SpamMon | INFO | xavier - noreply@plex.tv is a spam 
+2017-03-10 01:01:44,039 | SpamMon | INFO | xavier - ... script started
+2017-03-10 01:01:44,037 | SpamMon | INFO | joelle - ... script started
+2017-03-10 01:01:44,552 | SpamMon | INFO | xavier - server connection established
+2017-03-10 01:01:44,590 | SpamMon | INFO | joelle - server connection established
+2017-03-10 01:01:44,639 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-10 01:01:44,671 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-10 01:01:55,753 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-10 01:01:57,781 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-10 05:04:02,488 | SpamMon | INFO | New spam address added news@lafetedesdeals.fr
+2017-03-10 08:15:44,585 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-10 08:31:22,798 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-10 08:42:02,822 | SpamMon | INFO | New spam address added uezyyy@bsnl.in
+2017-03-10 09:16:02,751 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-10 11:37:25,747 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-10 19:08:47,620 | SpamMon | INFO | xavier - ... script started
+2017-03-10 19:08:47,625 | SpamMon | INFO | joelle - ... script started
+2017-03-10 19:08:48,062 | SpamMon | INFO | joelle - server connection established
+2017-03-10 19:08:48,090 | SpamMon | INFO | xavier - server connection established
+2017-03-10 19:08:48,149 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-10 19:08:48,177 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-10 19:08:51,764 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-10 19:08:56,625 | SpamMon | INFO | xavier - support@domadoo.com is a spam
+2017-03-10 19:08:56,777 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-10 21:12:03,810 | SpamMon | INFO | New spam address added news@lesoffresinmanquables.com
+2017-03-10 21:59:58,504 | SpamMon | INFO | xavier - mailing-5@mail-information.com is a spam 
+2017-03-11 01:03:13,798 | SpamMon | INFO | xavier - ... script started
+2017-03-11 01:03:13,809 | SpamMon | INFO | joelle - ... script started
+2017-03-11 01:03:14,290 | SpamMon | INFO | joelle - server connection established
+2017-03-11 01:03:14,298 | SpamMon | INFO | xavier - server connection established
+2017-03-11 01:03:14,378 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-11 01:03:14,390 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-11 01:03:42,126 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-11 01:03:45,253 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-11 08:05:01,853 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-11 08:16:40,292 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-03-11 08:32:15,248 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-11 10:24:04,586 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-11 10:31:22,126 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-03-11 14:58:53,079 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-11 15:00:01,397 | SpamMon | INFO | xavier - mailing-5@mailing-information.com is a spam 
+2017-03-11 17:58:15,288 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-11 18:52:24,266 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-11 21:54:52,401 | SpamMon | INFO | xavier - xavier@mayeur.be is a spam 
+2017-03-11 21:58:12,868 | SpamMon | INFO | xavier - xavier@mayeur.be is a spam 
+2017-03-11 21:58:12,971 | SpamMon | INFO | xavier - xavier@mayeur.be is a spam 
+2017-03-11 21:58:23,587 | SpamMon | INFO | xavier - xavier@mayeur.be is a spam 
+2017-03-11 21:58:23,697 | SpamMon | INFO | xavier - xavier@mayeur.be is a spam 
+2017-03-11 21:58:34,176 | SpamMon | INFO | xavier - xavier@mayeur.be is a spam 
+2017-03-11 21:58:34,313 | SpamMon | INFO | xavier - xavier@mayeur.be is a spam 
+2017-03-11 22:00:04,673 | SpamMon | INFO | xavier - xavier@mayeur.be is a spam 
+2017-03-11 22:01:39,371 | SpamMon | INFO | xavier - xavier@mayeur.be is a spam 
+2017-03-11 22:02:04,272 | SpamMon | INFO | xavier - xavier@mayeur.be is a spam 
+2017-03-11 22:03:00,026 | SpamMon | INFO | xavier - xavier@mayeur.be is a spam 
+2017-03-11 22:05:13,390 | SpamMon | INFO | xavier - xavier@mayeur.be is a spam 
+2017-03-11 22:05:58,634 | SpamMon | INFO | joelle - ... script started
+2017-03-11 22:05:58,645 | SpamMon | INFO | xavier - ... script started
+2017-03-11 22:05:59,062 | SpamMon | INFO | joelle - server connection established
+2017-03-11 22:05:59,073 | SpamMon | INFO | xavier - server connection established
+2017-03-11 22:05:59,146 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-11 22:05:59,157 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-11 22:05:59,759 | SpamMon | INFO | Address removed from Spam List xavier@mayeur.be
+2017-03-11 22:06:02,869 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-11 22:06:07,299 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-12 01:03:52,899 | SpamMon | INFO | xavier - ... script started
+2017-03-12 01:03:52,905 | SpamMon | INFO | joelle - ... script started
+2017-03-12 01:04:01,405 | SpamMon | INFO | xavier - server connection established
+2017-03-12 01:04:01,440 | SpamMon | INFO | joelle - server connection established
+2017-03-12 01:04:01,490 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-12 01:04:01,532 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-12 01:04:05,128 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-12 01:04:08,841 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-12 03:28:04,208 | SpamMon | INFO | New spam address added Tallulah@jxfdb.com
+2017-03-12 07:10:32,726 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-03-12 07:10:58,111 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-12 07:53:45,218 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-03-12 07:59:11,093 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-12 08:31:12,552 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-12 09:50:41,232 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-12 23:28:53,695 | SpamMon | INFO | xavier - mailing-5@offres-mailing.com is a spam 
+2017-03-13 01:01:43,670 | SpamMon | INFO | xavier - ... script started
+2017-03-13 01:01:43,684 | SpamMon | INFO | joelle - ... script started
+2017-03-13 01:01:44,149 | SpamMon | INFO | joelle - server connection established
+2017-03-13 01:01:44,167 | SpamMon | INFO | xavier - server connection established
+2017-03-13 01:01:44,237 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-13 01:01:44,255 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-13 01:01:55,092 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-13 01:01:59,603 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-13 08:03:05,029 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-13 08:46:46,911 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-03-13 10:25:24,604 | SpamMon | INFO | xavier - reply@newsletter.eurodns.com is a spam 
+2017-03-13 12:04:42,825 | SpamMon | INFO | xavier - winzip@email-winzip.com is a spam 
+2017-03-13 16:29:53,859 | SpamMon | INFO | xavier - ancestry@ancestry.com is a spam 
+2017-03-13 17:43:46,175 | SpamMon | INFO | xavier - mailer@emalias.be is a spam 
+2017-03-13 23:40:34,281 | SpamMon | INFO | New spam address added mailing-5@offres-du-jour.com
+2017-03-13 23:40:48,388 | SpamMon | INFO | New spam address added ProfactsTeam@profacts.eu
+2017-03-14 01:01:43,762 | SpamMon | INFO | joelle - ... script started
+2017-03-14 01:01:43,759 | SpamMon | INFO | xavier - ... script started
+2017-03-14 01:01:44,208 | SpamMon | INFO | joelle - server connection established
+2017-03-14 01:01:44,225 | SpamMon | INFO | xavier - server connection established
+2017-03-14 01:01:44,300 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-14 01:01:44,311 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-14 01:01:44,671 | SpamMon | INFO | Address removed from Spam List ProfactsTeam@profacts.eu
+2017-03-14 01:01:56,018 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-14 01:02:01,821 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-14 05:40:06,944 | SpamMon | INFO | New spam address added news@lapecheauxoffres.fr
+2017-03-14 07:30:59,153 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-14 08:46:25,104 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-03-14 11:05:53,711 | SpamMon | INFO | joelle - info@welcome.keytradebank.com is a spam 
+2017-03-14 11:07:19,288 | SpamMon | INFO | xavier - info@welcome.keytradebank.com is a spam 
+2017-03-14 12:02:19,689 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-14 14:45:07,417 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-14 15:22:08,611 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-14 16:08:35,151 | SpamMon | INFO | xavier - mailing-5@mail-information.com is a spam 
+2017-03-14 17:21:17,006 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-03-14 20:59:50,994 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-14 22:23:13,556 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-15 01:01:44,942 | SpamMon | INFO | xavier - ... script started
+2017-03-15 01:01:44,949 | SpamMon | INFO | joelle - ... script started
+2017-03-15 01:01:45,405 | SpamMon | INFO | joelle - server connection established
+2017-03-15 01:01:45,452 | SpamMon | INFO | xavier - server connection established
+2017-03-15 01:01:45,489 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-15 01:01:45,538 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-15 01:01:57,142 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-15 01:02:12,296 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-15 05:05:27,970 | SpamMon | INFO | xavier - noreply@arolead.eu is a spam 
+2017-03-15 07:31:43,947 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-15 07:48:50,302 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-15 08:00:30,283 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-15 09:41:16,807 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-15 10:06:41,237 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-15 10:35:20,397 | SpamMon | INFO | xavier - mailing-5@offres-du-jour.com is a spam 
+2017-03-15 16:14:15,668 | SpamMon | INFO | New spam address added Ruth@600quan.com
+2017-03-15 16:35:49,650 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-15 23:09:45,861 | SpamMon | INFO | xavier - contact@modelisme.com is a spam 
+2017-03-16 01:01:43,934 | SpamMon | INFO | joelle - ... script started
+2017-03-16 01:01:43,938 | SpamMon | INFO | xavier - ... script started
+2017-03-16 01:01:44,389 | SpamMon | INFO | joelle - server connection established
+2017-03-16 01:01:44,403 | SpamMon | INFO | xavier - server connection established
+2017-03-16 01:01:44,482 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-16 01:01:44,494 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-16 01:01:54,905 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-16 01:01:56,627 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-16 04:30:00,370 | SpamMon | INFO | New spam address added news@lecadeaudujour.fr
+2017-03-16 07:06:42,273 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam 
+2017-03-16 07:10:39,739 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-03-16 07:31:43,048 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-16 11:11:14,002 | SpamMon | INFO | xavier - discover@airbnb.com is a spam 
+2017-03-16 16:25:17,776 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam 
+2017-03-16 22:07:29,857 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-17 01:01:44,015 | SpamMon | INFO | xavier - ... script started
+2017-03-17 01:01:44,021 | SpamMon | INFO | joelle - ... script started
+2017-03-17 01:01:44,471 | SpamMon | INFO | joelle - server connection established
+2017-03-17 01:01:44,513 | SpamMon | INFO | xavier - server connection established
+2017-03-17 01:01:44,560 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-17 01:01:44,598 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-17 01:01:56,732 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-17 01:01:57,567 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-17 05:40:14,165 | SpamMon | INFO | xavier - noreply@artlead.eu is a spam 
+2017-03-17 07:19:32,706 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-03-17 07:33:59,611 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-17 08:00:20,557 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-17 11:00:34,732 | SpamMon | INFO | joelle - stressless@urfk04n.espmp-aufr.net is a spam 
+2017-03-17 11:00:37,240 | SpamMon | INFO | xavier - stressless@urfk04n.espmp-aufr.net is a spam 
+2017-03-17 12:51:06,200 | SpamMon | INFO | xavier - j.vlerberghe@gmail.com is a spam 
+2017-03-17 16:28:26,335 | SpamMon | INFO | xavier - mailing-5@information-du-jour.com is a spam 
+2017-03-17 16:52:25,429 | SpamMon | INFO | xavier - noreply@takelui.eu is a spam 
+2017-03-17 17:03:19,858 | SpamMon | INFO | xavier - support@domadoo.com is a spam 
+2017-03-17 18:58:51,494 | SpamMon | INFO | xavier - ancestry@ancestry.com is a spam 
+2017-03-18 01:01:43,925 | SpamMon | INFO | joelle - ... script started
+2017-03-18 01:01:43,927 | SpamMon | INFO | xavier - ... script started
+2017-03-18 01:01:44,368 | SpamMon | INFO | joelle - server connection established
+2017-03-18 01:01:44,390 | SpamMon | INFO | xavier - server connection established
+2017-03-18 01:01:44,457 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-18 01:01:44,476 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-18 01:01:56,193 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-18 01:02:00,650 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-18 07:31:57,212 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-18 08:01:30,753 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-18 11:14:06,305 | SpamMon | INFO | New spam address added news@lasuperoffre.fr
+2017-03-18 13:00:54,669 | SpamMon | INFO | xavier - winzip@email-winzip.com is a spam 
+2017-03-18 20:40:06,278 | SpamMon | INFO | New spam address added pierre.baudry1@free.fr
+2017-03-19 01:01:44,336 | SpamMon | INFO | xavier - ... script started
+2017-03-19 01:01:44,341 | SpamMon | INFO | joelle - ... script started
+2017-03-19 01:01:44,801 | SpamMon | INFO | xavier - server connection established
+2017-03-19 01:01:44,819 | SpamMon | INFO | joelle - server connection established
+2017-03-19 01:01:44,885 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-19 01:01:44,911 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-19 01:01:56,875 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-19 01:02:02,318 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-19 07:28:27,180 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-19 07:31:47,882 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-19 07:45:43,961 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-03-19 08:08:05,772 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-19 09:43:03,686 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-19 16:47:15,246 | SpamMon | INFO | xavier - ancestry@ancestry.com is a spam 
+2017-03-19 18:04:07,979 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-19 19:54:50,604 | SpamMon | INFO | xavier - mailing-5@mail-information.com is a spam 
+2017-03-20 01:01:53,868 | SpamMon | INFO | xavier - ... script started
+2017-03-20 01:01:53,879 | SpamMon | INFO | joelle - ... script started
+2017-03-20 01:01:54,291 | SpamMon | INFO | xavier - server connection established
+2017-03-20 01:01:54,304 | SpamMon | INFO | joelle - server connection established
+2017-03-20 01:01:54,376 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-20 01:01:54,401 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-20 01:01:58,131 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-20 01:01:59,558 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-20 06:30:20,465 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-03-20 07:20:00,742 | SpamMon | INFO | New spam address added alexe@mail2rock.com
+2017-03-20 08:01:41,616 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-20 08:06:05,641 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-20 08:06:56,762 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-20 08:34:51,374 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-20 09:42:08,747 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-03-20 10:21:17,920 | SpamMon | INFO | xavier - mailing-5@information-du-jour.com is a spam 
+2017-03-20 10:51:22,234 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-20 11:28:57,492 | SpamMon | INFO | New spam address added Bradford337@homeandhouseremovals.co.uk
+2017-03-20 15:15:23,804 | SpamMon | INFO | xavier - noreply@ezine.rabobank.be is a spam 
+2017-03-20 15:40:23,902 | SpamMon | INFO | joelle - noreply@ezine.rabobank.be is a spam 
+2017-03-20 16:44:48,557 | SpamMon | INFO | xavier - sales@microcity.be is a spam 
+2017-03-20 18:36:01,552 | SpamMon | INFO | New spam address added news@ruedesoffres.be
+2017-03-20 19:28:01,253 | SpamMon | INFO | New spam address added hello@lefoliedesaffaires.fr
+2017-03-21 01:01:45,804 | SpamMon | INFO | joelle - ... script started
+2017-03-21 01:01:45,817 | SpamMon | INFO | xavier - ... script started
+2017-03-21 01:01:54,039 | SpamMon | INFO | joelle - server connection established
+2017-03-21 01:01:54,068 | SpamMon | INFO | xavier - server connection established
+2017-03-21 01:01:54,129 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-21 01:01:54,151 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-21 01:01:58,800 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-21 01:02:01,050 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-21 07:21:12,674 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-03-21 07:43:25,765 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-21 07:54:04,378 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-21 07:58:25,198 | SpamMon | INFO | xavier - newsletter@news.lafoliedujour.com is a spam 
+2017-03-21 08:58:28,102 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-21 10:35:37,319 | SpamMon | INFO | xavier - reply@newsletter.eurodns.com is a spam 
+2017-03-21 10:51:20,608 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-21 11:32:04,998 | SpamMon | INFO | New spam address added Pearl@tnmsx.com
+2017-03-21 11:57:44,339 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-21 16:56:50,095 | SpamMon | INFO | joelle - info@welcome.keytradebank.com is a spam 
+2017-03-21 16:57:41,274 | SpamMon | INFO | xavier - info@welcome.keytradebank.com is a spam 
+2017-03-21 17:03:14,700 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-21 23:55:47,511 | SpamMon | INFO | xavier - mailing-5@information-du-jour.com is a spam 
+2017-03-22 01:01:44,650 | SpamMon | INFO | xavier - ... script started
+2017-03-22 01:01:44,663 | SpamMon | INFO | joelle - ... script started
+2017-03-22 01:01:45,209 | SpamMon | INFO | xavier - server connection established
+2017-03-22 01:01:45,233 | SpamMon | INFO | joelle - server connection established
+2017-03-22 01:01:45,303 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-22 01:01:45,320 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-22 01:01:57,390 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-22 01:01:58,199 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-22 08:05:08,869 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-22 09:28:03,407 | SpamMon | INFO | New spam address added gmalauri@jgwgroup.com
+2017-03-22 13:25:23,927 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-22 14:48:03,823 | SpamMon | INFO | New spam address added Cynthia@jiangbeiair.com
+2017-03-22 14:54:04,342 | SpamMon | INFO | New spam address added news@lesalondesoffres.com
+2017-03-22 16:16:49,110 | SpamMon | INFO | xavier - mailing-5@mail-information.com is a spam 
+2017-03-23 01:01:54,192 | SpamMon | INFO | xavier - ... script started
+2017-03-23 01:01:54,219 | SpamMon | INFO | joelle - ... script started
+2017-03-23 01:01:54,616 | SpamMon | INFO | xavier - server connection established
+2017-03-23 01:01:54,635 | SpamMon | INFO | joelle - server connection established
+2017-03-23 01:01:54,701 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-23 01:01:54,716 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-23 01:01:59,548 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-23 01:01:59,986 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-23 07:00:26,460 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-03-23 07:31:56,616 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-23 14:11:32,371 | SpamMon | INFO | joelle - ... script started
+2017-03-23 14:11:32,367 | SpamMon | INFO | xavier - ... script started
+2017-03-23 14:11:32,823 | SpamMon | INFO | joelle - server connection established
+2017-03-23 14:11:32,838 | SpamMon | INFO | xavier - server connection established
+2017-03-23 14:11:32,925 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-23 14:11:32,977 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-23 14:11:39,376 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-23 14:11:40,133 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam
+2017-03-23 14:11:40,711 | SpamMon | INFO | xavier - discover@airbnb.com is a spam
+2017-03-23 14:11:40,777 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-23 18:21:57,516 | SpamMon | INFO | xavier - taco@trello.com is a spam 
+2017-03-23 20:19:00,009 | SpamMon | INFO | xavier - mailing-5@information-du-jour.com is a spam 
+2017-03-23 22:59:23,969 | SpamMon | INFO | New spam address added noreply@ipemusic.com
+2017-03-23 23:00:22,276 | SpamMon | INFO | xavier - us@sumofus.org is a spam 
+2017-03-24 01:01:44,453 | SpamMon | INFO | xavier - ... script started
+2017-03-24 01:01:44,456 | SpamMon | INFO | joelle - ... script started
+2017-03-24 01:01:44,902 | SpamMon | INFO | joelle - server connection established
+2017-03-24 01:01:44,913 | SpamMon | INFO | xavier - server connection established
+2017-03-24 01:01:44,990 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-24 01:01:45,007 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-24 01:01:57,316 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-24 01:01:59,470 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-24 07:33:57,345 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-24 13:01:11,283 | SpamMon | INFO | xavier - ateliermarcelhastir3@gmail.com is a spam 
+2017-03-24 14:09:37,175 | SpamMon | INFO | New spam address added Curry1306@maryjoleisure.com
+2017-03-24 17:38:24,403 | SpamMon | INFO | xavier - mailing-5@offres-mailing.com is a spam 
+2017-03-24 18:26:13,448 | SpamMon | INFO | xavier - support@domadoo.com is a spam 
+2017-03-24 21:04:52,805 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-25 01:01:45,709 | SpamMon | INFO | joelle - ... script started
+2017-03-25 01:01:45,723 | SpamMon | INFO | xavier - ... script started
+2017-03-25 01:01:46,170 | SpamMon | INFO | joelle - server connection established
+2017-03-25 01:01:46,248 | SpamMon | INFO | xavier - server connection established
+2017-03-25 01:01:46,257 | SpamMon | INFO | joelle - login successful - Logged in
+2017-03-25 01:01:46,337 | SpamMon | INFO | xavier - login successful - Logged in
+2017-03-25 01:01:58,360 | SpamMon | INFO | joelle - Start monitoring INBOX
+2017-03-25 01:01:59,611 | SpamMon | INFO | xavier - Start monitoring INBOX
+2017-03-25 02:39:53,778 | SpamMon | INFO | xavier - contact@modelisme.com is a spam 
+2017-03-25 07:01:41,970 | SpamMon | INFO | joelle - contact@contact.loccitane.com is a spam 
+2017-03-25 07:33:57,903 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam 
+2017-03-25 07:53:26,838 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-25 08:06:21,820 | SpamMon | INFO | xavier - newsletter@news.bienchezmoi.top is a spam 
+2017-03-25 10:28:44,548 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2017-03-25 11:00:40,234 | SpamMon | INFO | joelle - stressless@urfk04n.espmp-aufr.net is a spam 
+2017-03-25 11:00:41,713 | SpamMon | INFO | xavier - stressless@urfk04n.espmp-aufr.net is a spam 
+2017-03-25 14:25:23,186 | SpamMon | INFO | xavier - mailing-5@mail-information.com is a spam 
+2017-03-25 15:04:50,344 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam 
+2017-03-25 16:16:39,074 | SpamMon | INFO | xavier - newsletter@news.voyage-soleil.fr is a spam 
+2018-01-27 22:36:06,598 | SpamMon | INFO | joelle - ... script started
+2018-01-27 22:36:06,615 | SpamMon | INFO | xavier - ... script started
+2018-01-27 22:36:07,032 | SpamMon | INFO | xavier - server connection established
+2018-01-27 22:36:07,066 | SpamMon | INFO | joelle - server connection established
+2018-01-27 22:36:07,298 | SpamMon | INFO | xavier - login successful - Logged in
+2018-01-27 22:36:07,309 | SpamMon | INFO | joelle - login successful - Logged in
+2018-01-27 22:36:14,895 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-01-27 23:27:29,739 | SpamMon | INFO | joelle - ... script started
+2018-01-27 23:27:29,739 | SpamMon | ERROR | joelle - failed to connect to IMAP server - AttributeError: 'module' object has no attribute 'create_default_context'; 
+2018-01-27 23:27:29,740 | SpamMon | INFO | xavier - ... script started
+2018-01-27 23:27:29,744 | SpamMon | ERROR | xavier - failed to connect to IMAP server - AttributeError: 'module' object has no attribute 'create_default_context'; 
+2018-01-27 23:32:02,180 | SpamMon | INFO | xavier - ... script started
+2018-01-27 23:32:02,197 | SpamMon | INFO | joelle - ... script started
+2018-01-27 23:32:02,743 | SpamMon | ERROR | joelle - failed to connect to IMAP server - TypeError: _wrap_socket() argument 1 must be _socket.socket, not GreenSocket; 
+2018-01-27 23:32:02,743 | SpamMon | ERROR | xavier - failed to connect to IMAP server - TypeError: _wrap_socket() argument 1 must be _socket.socket, not GreenSocket; 
+2018-01-27 23:32:46,148 | SpamMon | INFO | xavier - ... script started
+2018-01-27 23:32:46,959 | SpamMon | INFO | joelle - server connection established
+2018-01-27 23:32:46,987 | SpamMon | INFO | xavier - server connection established
+2018-01-27 23:32:47,095 | SpamMon | INFO | joelle - login successful - Logged in
+2018-01-27 23:32:47,121 | SpamMon | INFO | xavier - login successful - Logged in
+2018-01-27 23:32:55,052 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-02-11 21:46:23,890 | SpamMon | INFO | joelle - ... script started
+2018-02-11 21:46:23,891 | SpamMon | INFO | xavier - ... script started
+2018-02-11 21:46:24,552 | SpamMon | INFO | joelle - server connection established
+2018-02-11 21:46:24,559 | SpamMon | INFO | xavier - server connection established
+2018-02-11 21:46:26,069 | SpamMon | CRITICAL | joelle - failed to login to IMAP server - LoginError: [AUTHENTICATIONFAILED] Authentication failed.; 
+2018-02-11 21:46:26,069 | SpamMon | INFO | joelle - script stopped...
+2018-02-11 21:46:26,134 | SpamMon | CRITICAL | xavier - failed to login to IMAP server - LoginError: [AUTHENTICATIONFAILED] Authentication failed.; 
+2018-02-11 21:46:26,135 | SpamMon | INFO | xavier - script stopped...
+2018-02-11 21:48:06,594 | SpamMon | INFO | xavier - ... script started
+2018-02-11 21:48:06,602 | SpamMon | INFO | joelle - ... script started
+2018-02-11 21:48:07,283 | SpamMon | INFO | xavier - server connection established
+2018-02-11 21:48:07,440 | SpamMon | INFO | joelle - server connection established
+2018-02-11 21:48:09,009 | SpamMon | CRITICAL | xavier - failed to login to IMAP server - LoginError: [AUTHENTICATIONFAILED] Authentication failed.; 
+2018-02-11 21:48:09,009 | SpamMon | INFO | xavier - script stopped...
+2018-02-11 21:48:09,009 | SpamMon | CRITICAL | joelle - failed to login to IMAP server - LoginError: [AUTHENTICATIONFAILED] Authentication failed.; 
+2018-02-11 21:48:09,009 | SpamMon | INFO | joelle - script stopped...
+2018-02-11 21:51:07,924 | SpamMon | INFO | xavier - ... script started
+2018-02-11 21:51:07,924 | SpamMon | INFO | joelle - ... script started
+2018-02-11 21:51:08,563 | SpamMon | INFO | joelle - server connection established
+2018-02-11 21:51:08,565 | SpamMon | INFO | xavier - server connection established
+2018-02-11 21:51:10,038 | SpamMon | CRITICAL | xavier - failed to login to IMAP server - LoginError: [AUTHENTICATIONFAILED] Authentication failed.; 
+2018-02-11 21:51:10,038 | SpamMon | INFO | xavier - script stopped...
+2018-02-11 21:51:10,038 | SpamMon | CRITICAL | joelle - failed to login to IMAP server - LoginError: [AUTHENTICATIONFAILED] Authentication failed.; 
+2018-02-11 21:51:10,039 | SpamMon | INFO | joelle - script stopped...
+2018-02-11 21:53:44,572 | SpamMon | INFO | xavier - ... script started
+2018-02-11 21:53:44,572 | SpamMon | INFO | joelle - ... script started
+2018-02-11 21:53:45,178 | SpamMon | INFO | joelle - server connection established
+2018-02-11 21:53:45,180 | SpamMon | INFO | xavier - server connection established
+2018-02-11 21:53:47,051 | SpamMon | INFO | joelle - script stopped...
+2018-02-11 21:53:47,051 | SpamMon | INFO | xavier - script stopped...
+2018-02-11 22:00:21,622 | SpamMon | INFO | joelle - ... script started
+2018-02-11 22:00:22,249 | SpamMon | INFO | xavier - server connection established
+2018-02-11 22:00:22,249 | SpamMon | INFO | joelle - server connection established
+2018-02-11 22:00:24,190 | SpamMon | CRITICAL | xavier - failed to login to IMAP server - LoginError: [AUTHENTICATIONFAILED] Authentication failed.; 
+2018-02-11 22:00:24,190 | SpamMon | INFO | xavier - script stopped...
+2018-02-11 22:00:24,190 | SpamMon | CRITICAL | joelle - failed to login to IMAP server - LoginError: [AUTHENTICATIONFAILED] Authentication failed.; 
+2018-02-11 22:00:24,190 | SpamMon | INFO | joelle - script stopped...
+2018-02-11 22:02:31,727 | SpamMon | INFO | xavier - ... script started
+2018-02-11 22:02:31,730 | SpamMon | INFO | joelle - ... script started
+2018-02-11 22:02:32,329 | SpamMon | INFO | xavier - server connection established
+2018-02-11 22:02:32,348 | SpamMon | INFO | joelle - server connection established
+2018-02-11 22:02:34,434 | SpamMon | INFO | joelle - script stopped...
+2018-02-11 22:02:34,434 | SpamMon | INFO | xavier - script stopped...
+2018-02-11 22:04:15,540 | SpamMon | INFO | xavier - ... script started
+2018-02-11 22:04:15,540 | SpamMon | INFO | joelle - ... script started
+2018-02-11 22:04:16,158 | SpamMon | INFO | joelle - server connection established
+2018-02-11 22:04:16,167 | SpamMon | INFO | xavier - server connection established
+2018-02-11 22:04:18,128 | SpamMon | INFO | xavier - script stopped...
+2018-02-11 22:04:18,128 | SpamMon | INFO | joelle - script stopped...
+2018-02-11 22:07:32,611 | SpamMon | INFO | joelle - ... script started
+2018-02-11 22:07:32,621 | SpamMon | INFO | xavier - ... script started
+2018-02-11 22:07:33,306 | SpamMon | INFO | joelle - server connection established
+2018-02-11 22:07:33,316 | SpamMon | INFO | xavier - server connection established
+2018-02-11 22:07:33,453 | SpamMon | INFO | xavier - login successful - Logged in
+2018-02-11 22:07:35,295 | SpamMon | INFO | joelle - script stopped...
+2018-02-11 22:08:59,186 | SpamMon | INFO | joelle - ... script started
+2018-02-11 22:08:59,848 | SpamMon | INFO | joelle - server connection established
+2018-02-11 22:08:59,858 | SpamMon | INFO | xavier - server connection established
+2018-02-11 22:09:00,119 | SpamMon | INFO | joelle - login successful - Logged in
+2018-02-11 22:09:05,779 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-07 15:13:46,026 | SpamMon | INFO | joelle - ... script started
+2018-03-07 15:13:47,020 | SpamMon | INFO | xavier - server connection established
+2018-03-07 15:13:47,020 | SpamMon | INFO | joelle - server connection established
+2018-03-07 15:13:47,151 | SpamMon | INFO | xavier - login successful - Logged in
+2018-03-07 15:13:47,158 | SpamMon | INFO | joelle - login successful - Logged in
+2018-03-07 15:13:47,638 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-07 15:13:49,065 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-07 15:15:15,028 | SpamMon | INFO | xavier - ... script started
+2018-03-07 15:15:15,029 | SpamMon | INFO | joelle - ... script started
+2018-03-07 15:15:15,703 | SpamMon | INFO | joelle - server connection established
+2018-03-07 15:15:15,834 | SpamMon | INFO | joelle - login successful - Logged in
+2018-03-07 15:15:15,838 | SpamMon | INFO | xavier - login successful - Logged in
+2018-03-07 15:15:16,302 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-07 15:15:16,750 | SpamMon | INFO | Address removed from Spam List newsletter@achatdesoffres.be
+2018-03-07 15:15:18,470 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-07 15:15:38,051 | SpamMon | INFO | xavier - ... script started
+2018-03-07 15:15:38,055 | SpamMon | INFO | joelle - ... script started
+2018-03-07 15:15:38,750 | SpamMon | INFO | xavier - server connection established
+2018-03-07 15:15:38,750 | SpamMon | INFO | joelle - server connection established
+2018-03-07 15:15:38,884 | SpamMon | INFO | xavier - login successful - Logged in
+2018-03-07 15:15:38,948 | SpamMon | INFO | joelle - login successful - Logged in
+2018-03-07 15:15:39,351 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-07 15:15:41,108 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-07 15:15:41,612 | SpamMon | INFO | New spam address added newsletter@achatdesoffres.be
+2018-03-07 15:16:18,364 | SpamMon | INFO | xavier - ... script started
+2018-03-07 15:16:18,961 | SpamMon | INFO | joelle - server connection established
+2018-03-07 15:16:18,966 | SpamMon | INFO | xavier - server connection established
+2018-03-07 15:16:19,151 | SpamMon | INFO | xavier - login successful - Logged in
+2018-03-07 15:16:19,207 | SpamMon | INFO | joelle - login successful - Logged in
+2018-03-07 15:16:19,673 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-07 15:16:20,046 | SpamMon | INFO | Address removed from Spam List newsletter@achatdesoffres.be
+2018-03-07 15:16:22,510 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-07 15:19:24,828 | SpamMon | INFO | New spam address added newsletter@achatdesoffres.be
+2018-03-07 15:19:40,480 | SpamMon | INFO | xavier - ... script started
+2018-03-07 15:19:40,490 | SpamMon | INFO | joelle - ... script started
+2018-03-07 15:19:41,165 | SpamMon | INFO | joelle - server connection established
+2018-03-07 15:19:41,167 | SpamMon | INFO | xavier - server connection established
+2018-03-07 15:19:41,355 | SpamMon | INFO | joelle - login successful - Logged in
+2018-03-07 15:19:41,355 | SpamMon | INFO | xavier - login successful - Logged in
+2018-03-07 15:19:41,834 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-07 15:19:42,311 | SpamMon | INFO | Address removed from Spam List newsletter@achatdesoffres.be
+2018-03-07 15:19:44,357 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-07 15:28:30,086 | SpamMon | INFO | xavier - ... script started
+2018-03-07 15:28:30,086 | SpamMon | INFO | joelle - ... script started
+2018-03-07 15:28:30,088 | SpamMon | INFO | xavier - script stopped...
+2018-03-07 15:28:30,088 | SpamMon | INFO | joelle - script stopped...
+2018-03-07 15:33:28,869 | SpamMon | INFO | joelle - ... script started
+2018-03-07 15:33:28,878 | SpamMon | INFO | xavier - ... script started
+2018-03-07 15:34:23,309 | SpamMon | INFO | joelle - ... script started
+2018-03-07 15:34:23,907 | SpamMon | INFO | xavier - server connection established
+2018-03-07 15:34:23,913 | SpamMon | INFO | joelle - server connection established
+2018-03-07 15:34:24,095 | SpamMon | INFO | xavier - login successful - Logged in
+2018-03-07 15:34:24,096 | SpamMon | INFO | joelle - login successful - Logged in
+2018-03-07 15:34:24,496 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-07 15:34:26,625 | SpamMon | INFO | xavier - makro@news.makro.be is a spam
+2018-03-07 15:34:26,776 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-07 15:34:36,259 | SpamMon | INFO | xavier - team@datacamp.com is a spam 
+2018-03-07 15:34:36,454 | SpamMon | INFO | xavier - script stopped...
+2018-03-07 17:51:29,108 | SpamMon | INFO | joelle - ... script started
+2018-03-07 17:51:29,124 | SpamMon | INFO | xavier - ... script started
+2018-03-07 17:51:29,766 | SpamMon | INFO | joelle - server connection established
+2018-03-07 17:51:29,831 | SpamMon | INFO | xavier - server connection established
+2018-03-07 17:51:29,940 | SpamMon | INFO | joelle - login successful - Logged in
+2018-03-07 17:51:29,956 | SpamMon | INFO | xavier - login successful - Logged in
+2018-03-07 17:51:30,565 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-07 17:51:32,823 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
+2018-03-07 17:51:33,546 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-07 17:51:34,141 | SpamMon | INFO | New spam address added fruitatwork@registreextra.top
+2018-03-07 17:52:21,312 | SpamMon | INFO | joelle - script stopped...
+2018-03-07 17:52:22,798 | SpamMon | INFO | xavier - script stopped...
+2018-03-07 17:54:54,282 | SpamMon | INFO | joelle - ... script started
+2018-03-07 17:54:54,296 | SpamMon | INFO | xavier - ... script started
+2018-03-07 17:54:54,953 | SpamMon | INFO | joelle - server connection established
+2018-03-07 17:54:55,078 | SpamMon | INFO | xavier - login successful - Logged in
+2018-03-07 17:54:55,188 | SpamMon | INFO | joelle - login successful - Logged in
+2018-03-07 17:54:55,660 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-07 17:54:58,391 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-07 17:56:21,565 | SpamMon | INFO | joelle - script stopped...
+2018-03-07 17:56:23,283 | SpamMon | INFO | xavier - script stopped...
+2018-03-07 17:56:59,540 | SpamMon | INFO | xavier - ... script started
+2018-03-07 17:57:00,240 | SpamMon | INFO | joelle - server connection established
+2018-03-07 17:57:00,375 | SpamMon | INFO | joelle - login successful - Logged in
+2018-03-07 17:57:00,378 | SpamMon | INFO | xavier - login successful - Logged in
+2018-03-07 17:57:00,839 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-07 17:57:03,681 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-07 17:58:01,404 | SpamMon | INFO | joelle - script stopped...
+2018-03-07 17:58:04,200 | SpamMon | INFO | xavier - script stopped...
+2018-03-07 18:01:39,226 | SpamMon | INFO | joelle - ... script started
+2018-03-07 18:01:39,227 | SpamMon | INFO | xavier - ... script started
+2018-03-07 18:01:39,852 | SpamMon | INFO | xavier - server connection established
+2018-03-07 18:01:39,855 | SpamMon | INFO | joelle - server connection established
+2018-03-07 18:01:40,049 | SpamMon | INFO | joelle - login successful - Logged in
+2018-03-07 18:01:40,448 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-07 18:01:43,648 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-07 18:01:50,005 | SpamMon | INFO | joelle - ... script started
+2018-03-07 18:01:50,019 | SpamMon | INFO | xavier - ... script started
+2018-03-07 18:01:50,648 | SpamMon | INFO | joelle - server connection established
+2018-03-07 18:01:50,654 | SpamMon | INFO | xavier - server connection established
+2018-03-07 18:01:50,782 | SpamMon | INFO | joelle - login successful - Logged in
+2018-03-07 18:01:50,786 | SpamMon | INFO | xavier - login successful - Logged in
+2018-03-07 18:01:51,253 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-07 18:01:54,569 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-07 18:02:20,969 | SpamMon | INFO | joelle - script stopped...
+2018-03-07 18:02:24,088 | SpamMon | INFO | xavier - script stopped...
+2018-03-07 18:03:40,170 | SpamMon | INFO | Main - script stopped...
+2018-03-07 18:05:13,418 | SpamMon | INFO | Main - script stopped...
+2018-03-07 18:05:21,367 | SpamMon | INFO | Main - script stopped...
+2018-03-07 18:05:37,585 | SpamMon | INFO | Main - script stopped...
+2018-03-07 18:06:02,068 | SpamMon | INFO | xavier - ... script started
+2018-03-07 18:06:02,760 | SpamMon | INFO | xavier - server connection established
+2018-03-07 18:06:02,901 | SpamMon | INFO | xavier - login successful - Logged in
+2018-03-07 18:06:03,135 | SpamMon | INFO | joelle - ... script started
+2018-03-07 18:06:03,732 | SpamMon | INFO | joelle - server connection established
+2018-03-07 18:06:03,874 | SpamMon | INFO | joelle - login successful - Logged in
+2018-03-07 18:06:04,437 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-07 18:06:06,937 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-07 18:06:21,089 | SpamMon | INFO | joelle - script stopped...
+2018-03-07 18:06:24,493 | SpamMon | INFO | xavier - script stopped...
+2018-03-07 18:06:55,130 | SpamMon | INFO | Main - script stopped...
+2018-03-07 18:07:14,823 | SpamMon | INFO | Main - script stopped...
+2018-03-07 18:08:36,234 | SpamMon | INFO | Main - script stopped...
+2018-03-07 18:08:53,367 | SpamMon | INFO | Main - script stopped...
+2018-03-07 18:09:22,006 | SpamMon | INFO | Main - script stopped...
+2018-03-07 18:10:34,993 | SpamMon | INFO | xavier - ... script started
+2018-03-07 18:10:48,822 | SpamMon | INFO | xavier - server connection established
+2018-03-07 18:10:48,950 | SpamMon | INFO | xavier - login successful - Logged in
+2018-03-07 18:10:52,115 | SpamMon | INFO | Main - script stopped...
+2018-03-07 18:11:19,640 | SpamMon | INFO | Main - script stopped...
+2018-03-07 18:11:33,714 | SpamMon | INFO | xavier - ... script started
+2018-03-07 18:11:34,043 | SpamMon | INFO | joelle - ... script started
+2018-03-07 18:11:34,328 | SpamMon | INFO | xavier - server connection established
+2018-03-07 18:11:34,473 | SpamMon | INFO | xavier - login successful - Logged in
+2018-03-07 18:11:34,594 | SpamMon | INFO | joelle - server connection established
+2018-03-07 18:11:34,780 | SpamMon | INFO | joelle - login successful - Logged in
+2018-03-07 18:11:35,174 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-07 18:11:38,072 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-07 18:12:43,460 | SpamMon | INFO | xavier - ... script started
+2018-03-07 18:12:43,476 | SpamMon | INFO | joelle - ... script started
+2018-03-07 18:12:44,134 | SpamMon | INFO | joelle - server connection established
+2018-03-07 18:12:44,282 | SpamMon | INFO | xavier - login successful - Logged in
+2018-03-07 18:12:44,375 | SpamMon | INFO | joelle - login successful - Logged in
+2018-03-07 18:12:44,776 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-07 18:12:48,211 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-07 18:13:45,387 | SpamMon | INFO | joelle - script stopped...
+2018-03-07 18:13:48,706 | SpamMon | INFO | xavier - script stopped...
