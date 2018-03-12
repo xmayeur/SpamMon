@@ -1,4 +1,4 @@
-import ConfigParser
+import configparser
 from base64 import b64encode, b64decode
 
 from Crypto import Random
@@ -10,7 +10,7 @@ from Crypto.PublicKey import RSA
 def open_config(f):
     try:
         with open(f, 'r+') as config_file:
-            config_ = ConfigParser.SafeConfigParser()
+            config_ = configparser.SafeConfigParser()
             config_.readfp(config_file)
         return config_
     except IOError:
@@ -20,7 +20,7 @@ def open_config(f):
 def write_config(f, section, option, value):
     config_ = open_config(f)
     if config_ is None:
-        config_ = ConfigParser.SafeConfigParser()
+        config_ = configparser.SafeConfigParser()
     try:
         if not section in config_.sections():
             config_.add_section(section)
@@ -28,7 +28,7 @@ def write_config(f, section, option, value):
         with open(f, 'w') as f_:
             config_.write(f_)
         return True
-    except Exception, e:
+    except Exception as e:
         return False
 
 
@@ -73,7 +73,7 @@ class RSAcipher:
     def decrypt(self, msg):
         try:
             return self.rsa.decrypt(b64decode(msg))
-        except Exception, e:
+        except Exception as e:
             return ''
 
 
@@ -82,11 +82,11 @@ def main():
     aes = AEScipher()
     msg = aes.encrypt(text)
     if aes.decrypt(msg) == text:
-        print 'Successful AES encrypt-decrypt'
+        print('Successful AES encrypt-decrypt')
     
     aes.write_pwd('pwd.conf', 'PWD', text)
     if aes.read_pwd('pwd.conf', 'PWD') == text:
-        print 'Successful password store and decode'
+        print('Successful password store and decode')
     
     # rsa = RSAcipher('xavier_pub.pem')
     # msg = rsa.encrypt(text)

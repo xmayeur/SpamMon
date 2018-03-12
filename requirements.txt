@@ -1,5 +1,7 @@
 pycrypto
-ConfigParser
+configparser
 pymysql
 imapclient
 configobj
+requests
+sqlalchemy

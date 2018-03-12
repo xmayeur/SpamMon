@@ -3,8 +3,10 @@
 # https://imapclient.readthedocs.io/en/stable/
 # Also see https://gist.github.com/shimofuri/4348943 for use of idle
 #
+# http://nas.local:81/phpMyAdmin
+#
 
-import ConfigParser
+import configparser
 import datetime
 import email
 import logging
@@ -20,24 +22,24 @@ from smtplib import SMTP, SMTP_SSL
 from time import sleep
 
 import imapclient
+import requests
+from sqlalchemy import Column, String
+from sqlalchemy import create_engine
+from sqlalchemy import exc as sqlError
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
 
 import crypto_helpers
-from spam import Spam
 
 project = 'SpamMon'
 loopforever = True
 
 if os.name == 'nt':
-    upath = os.path.join(os.environ['HOMEDRIVE'], os.environ['HOMEPATH'])
-    INI_file = os.path.os.path.join(upath, project + '.conf')
-    LOG_file = os.path.os.path.join(upath, project + '.log')
+    INI_file = project + '.conf'
+    LOG_file = project + '.log'
 else:
     INI_file = '/conf/' + project + '.conf'
     LOG_file = '/var/log/' + project + '.log'
-spamDB = Spam()
-
-
-# imapclient = eventlet.import_patched('imapclient')
 
 
 def open_log(name):
@@ -76,7 +78,7 @@ def open_config(f):
                '/etc/' + project, os.environ.get(project + '_CONF'):
         try:
             with open(os.path.join(loc, f), 'r+') as config_file:
-                config_ = ConfigParser.SafeConfigParser()
+                config_ = configparser.SafeConfigParser()
                 config_.readfp(config_file)
                 break
         except IOError:
@@ -89,6 +91,131 @@ def open_config(f):
 # Open config file
 config = open_config(INI_file)
 f = crypto_helpers.AEScipher()
+
+
+def get_vault(uid):
+    url = config.get('vault', 'vault_url')
+    r = requests.get(url=url + '?uid=%s' % uid)
+    id = r.json()
+    r.close()
+    if id['status'] == 200:
+        _username = id['username']
+        _password = id['password']
+    else:
+        _username = ''
+        _password = ''
+    return _username, _password
+
+
+Base = declarative_base()
+
+
+class SpamItem(Base):
+    __tablename__ = 'spam'
+    address = Column(String, primary_key=True)
+
+
+def init_engine(dbms='mysql'):
+    if dbms == 'mysql':
+        uid = config.get('mysql', 'uid')
+        host = config.get('mysql', 'host')
+        db = config.get('mysql', 'db')
+        u, p = get_vault(uid)
+        s = 'mysql+pymysql://' + u + ':' + p + '@' + host + '/' + db
+    else:
+        db = config.get('db', 'db')
+        s = 'sqlite:///' + db
+    
+    return create_engine(s)
+
+
+def create_table(e):
+    Base.metadata.create_all(e)
+
+
+def init_db_session(e):
+    Base.metadata.bind = e
+    DBsession = sessionmaker()
+    DBsession.bind = e
+    return DBsession()
+
+
+class Spam(object):
+    
+    def __init__(self):
+        # Connect to the database
+        try:
+            self.engine = init_engine()
+            self.sql = init_db_session(self.engine)
+            self.__status = ''
+        except sqlError.SQLAlchemyError:
+            log.error('Cannot initiate connection to database')
+    
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.sql.close()
+    
+    def __enter__(self):
+        return self
+    
+    def add(self, address):
+        # Add a new record
+        try:
+            self.sql.add(SpamItem(address=address))
+            self.sql.commit()
+            return True
+        except sqlError.SQLAlchemyError:
+            log.error('Cannot add an item into the database')
+            return False
+    
+    def remove(self, address):
+        # delete a record
+        try:
+            row = self.sql.query(SpamItem).filter(SpamItem.address == address).first()
+            if row is not None:
+                self.sql.delete(row)
+                self.sql.commit()
+                return True
+            else:
+                log.error('Item %s not found' % address)
+                return False
+        except sqlError.SQLAlchemyError:
+            log.error('Cannot delete an item from the database')
+            return False
+    
+    def exist(self, address):
+        try:
+            domain = '*@' + address.split('@')[1]
+            row = self.sql.query(SpamItem).filter(SpamItem.address == domain).first()
+            if row is not None:
+                return True
+        except IndexError:
+            pass
+        
+        try:
+            row = self.sql.query(SpamItem).filter(SpamItem.address == address).first()
+            if row is not None:
+                return True
+            else:
+                return False
+        except sqlError.SQLAlchemyError:
+            return False
+    
+    def close(self):
+        self.sql.close()
+    
+    def configure(self):
+        create_table(self.engine)
+    
+    @property
+    def status(self):
+        return self.__status
+    
+    @status.setter
+    def status(self, value):
+        raise Exception('Status is a read only property')
+
+
+spamDB = Spam()
 
 
 def exit_gracefully(signum, frame):
@@ -113,39 +240,33 @@ def SendMail(address, subject, content):
 
     try:
         HOST = config.get('smtp', 'host')
-    except ConfigParser.NoOptionError:
+    except configparser.NoOptionError:
         log.critical('no "host" option in configuration')
         return
     # retrieve the port
     try:
         PORT = config.get('smtp', 'port')
-    except ConfigParser.NoOptionError:
+    except configparser.NoOptionError:
         log.critical('no "port" option in configuration')
         return
     # retrieve the sender
     try:
         SENDER = config.get('smtp', 'sender')
-    except ConfigParser.NoOptionError:
+    except configparser.NoOptionError:
         log.critical('no "sender" option in configuration')
         return
-    # retrieve the USERNAME
-    try:
-        USERNAME = config.get('smtp', 'username')
-    except ConfigParser.NoOptionError:
-        log.critical('no "username" option in configuration')
-        return
 
-    # retrieve the PASSWORD
+    # retrieve the USERNAME & PASSWORD
     try:
-        PASSWORD = config.get('smtp', 'password')
-    except ConfigParser.NoOptionError:
-        log.critical('no "password" option in configuration')
+        USERNAME, PASSWORD = get_vault(config.get('smtp', 'uid'))
+    except:
+        log.critical('%s - no "uid" option in [smtp] section')
         return
 
     # retrieve the ssl flag
     try:
         SSL = config.get('smtp', 'ssl')
-    except ConfigParser.NoOptionError:
+    except configparser.NoOptionError:
         SSL = False
 
     try:
@@ -178,7 +299,7 @@ def SendMail(address, subject, content):
 def ScanForNewSpamAddresses(server_, spam_):
     # Select the Spam folder to retrieve new spam addresses
     try:
-        server_.select_folder('INBOX.Spam')
+        server_.select_folder(u'INBOX.Spam')
         messages = server_.search(['UNSEEN'])
     except:
         return
@@ -203,7 +324,7 @@ def ScanForNewSpamAddresses(server_, spam_):
 def ScanToRemoveAddresses(server_, spam_):
     # Select the Spam folder to retrieve new spam addresses
     try:
-        server_.select_folder('INBOX.NotSpam')
+        server_.select_folder(u'INBOX.NotSpam')
         messages = server_.search()
 
         # fetch blocked addresses to remove from the list
@@ -229,6 +350,8 @@ def mail_monitor(mail_profile):
     global loopforever
 
     log.info('%s - ... script started' % mail_profile)
+    signal.signal(signal.SIGINT, exit_gracefully)
+    signal.signal(signal.SIGTERM, exit_gracefully)
     
     while loopforever:
         # <--- Start configuration script
@@ -237,48 +360,41 @@ def mail_monitor(mail_profile):
         try:
             loopvalue = config.get('global', 'loopforever')
 
-        except ConfigParser.NoOptionError:
+        except configparser.NoOptionError:
             log.critical('[global] - no "loopforever" option in configuration')
             return
-        except ConfigParser.NoSectionError:
+        except configparser.NoSectionError:
             log.critical('no [global] section in configuration')
             return
 
         # retrieve the HOST name
         try:
             HOST = config.get(mail_profile, 'host')
-        except ConfigParser.NoOptionError:
+        except configparser.NoOptionError:
             log.critical('%s - no "host" option in configuration' % mail_profile)
             return
-        except ConfigParser.NoSectionError:
+        except configparser.NoSectionError:
             log.critical('%s - no %s section in configuration' % mail_profile)
             return
 
-        # retrieve the USERNAME
+        # retrieve the USERNAME & PASSWORD
         try:
-            USERNAME = config.get(mail_profile, 'username')
-        except ConfigParser.NoOptionError:
-            log.critical('%s - no "username" option in configuration' % mail_profile)
-            return
-
-        # retrieve the PASSWORD
-        try:
-            PASSWORD = f.read_pwd(INI_file, mail_profile)
-        except ConfigParser.NoOptionError:
-            log.critical('%s - no "password" option in configuration' % mail_profile)
+            USERNAME, PASSWORD = get_vault(config.get(mail_profile, 'uid'))
+        except:
+            log.critical('%s - no "uid" option in configuration' % mail_profile)
             return
 
         # retrieve the cacert.pem file - it is needed under Windows
         try:
             cafile = config.get(mail_profile, 'cafile')
-        except ConfigParser.NoOptionError:
+        except configparser.NoOptionError:
             log.warning('%s - no "cafile" option in configuration' % mail_profile)
             cafile = None
 
         try:
             timeout = config.get(mail_profile, 'timeout')
             nrhours = int(timeout) / 3600 + 1
-        except ConfigParser.NoOptionError:
+        except configparser.NoOptionError:
             timeout = 300
             nrhours = 1
 
@@ -329,7 +445,7 @@ def mail_monitor(mail_profile):
                 # attempt restablishing connection
 
                 mydate = datetime.datetime.now() - datetime.timedelta(hours=nrhours)
-                messages = server.search([u'UNSEEN', u'SINCE', mydate])
+                messages = server.search(['UNSEEN', 'SINCE', mydate])
 
             except Exception:
                 continue
@@ -390,7 +506,7 @@ def mail_monitor(mail_profile):
                         continue
 
                     mydate = datetime.datetime.now() - datetime.timedelta(hours=nrhours)
-                    messages = server.search([u'UNSEEN', u'SINCE', mydate])
+                    messages = server.search(['UNSEEN', 'SINCE', mydate])
 
                     for msg in messages:
                         try:
@@ -449,6 +565,18 @@ def mail_monitor(mail_profile):
     log.info('%s - script stopped...' % mail_profile)
     os.kill(os.getpid(), signal.SIGTERM)
     return
+
+
+def testspam():
+    with Spam() as s:
+        s.configure()
+        if s.status == '':
+            if not s.add("www@ads.com"):
+                print('duplicate')
+            if s.exist("www@ads.com"):
+                print('found')
+                if s.remove("www@ads.com"):
+                    print('removed')
 
 
 def main():
