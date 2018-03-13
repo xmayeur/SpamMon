@@ -1,58 +1,57 @@
-from configobj import ConfigObj
+from sqlalchemy import Column, String
+from sqlalchemy import create_engine
+from sqlalchemy import exc as sqlError
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
 
-INI_file = 'SpamMon.conf'
-config = ConfigObj(INI_file)
+from SpamMon import get_vault, config, log
 
-if 'mysql' in config:
-    from cryptography.fernet import Fernet
-    import Key
-    import pymysql
-    import pymysql.cursors
-    MYSQL = True
-else:
-    import sqlite3
-    MYSQL = False
+Base = declarative_base()
+
+
+class SpamItem(Base):
+    __tablename__ = 'spam'
+    address = Column(String, primary_key=True)
+
+
+def init_engine(dbms='mysql'):
+    if dbms == 'mysql':
+        uid = config.get('mysql', 'uid')
+        host = config.get('mysql', 'host')
+        db = config.get('mysql', 'db')
+        u, p = get_vault(uid)
+        s = 'mysql://' + u / ':' + p + '@' + host + '/' + db
+    else:
+        db = config.get('db', 'db')
+        s = 'sqlite:///' + db
+    
+    return create_engine(s)
+
+
+def create_table(e):
+    Base.metadata.create_all(e)
+
+
+def init_db_session(e):
+    Base.metadata.bind = e
+    DBsession = sessionmaker()
+    DBsession.bind = e
+    return DBsession()
 
 
 class Spam(object):
 
     def __init__(self):
-        self.__status = ''
-
         # Connect to the database
-
-        if MYSQL:
-            try:
-                key = Key.key
-                f = Fernet(key)
-                host = config['mysql']['host']
-                user = config['mysql']['user']
-                password = config['mysql']['password']
-                db = config['mysql']['db']
-
-                try:
-                    self.connection = pymysql.connect(host=host,
-                                                      user=user,
-                                                      password=f.decrypt(password),
-                                                      db=db,
-                                                      charset='utf8mb4',
-                                                      cursorclass=pymysql.cursors.DictCursor)
-                except pymysql.Error, e:
-                    self.__status = "Error: Can't connect to the database - %s" % e
-
-            except:
-                self.__status = 'Error: Invalid or missing options in section [mysql] of config file'
-        else:
-            try:
-    
-                db = config['db']['db']
-    
-                self.connection = sqlite3.connect(db)
-            except sqlite3.Error, e:
-                self.__status = "Error: Can't connect to the database - %s" % e
+        try:
+            self.engine = init_engine()
+            self.sql = init_db_session(self.engine)
+            self.__status = ''
+        except sqlError.SQLAlchemyError:
+            log.error('Cannot initiate connection to database')
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        self.connection.close()
+        self.sql.close()
 
     def __enter__(self):
         return self
@@ -60,95 +59,51 @@ class Spam(object):
     def add(self, address):
         # Add a new record
         try:
-            if MYSQL:
-                with self.connection.cursor() as cursor:
-                    sql = "INSERT INTO `spam` (`address`) VALUES (%s)"
-                    cursor.execute(sql, (address,))
-            else:
-                cursor = self.connection.cursor()
-                sql = "INSERT INTO `spam` (`address`) VALUES (?)"
-                cursor.execute(sql, (address,))
-            self.connection.commit()
+            self.sql.add(SpamItem(address=address))
+            self.sql.commit()
             return True
-        except:
+        except sqlError.SQLAlchemyError:
+            log.error('Cannot add an item into the database')
             return False
 
     def remove(self, address):
         # delete a record
         try:
-            if MYSQL:
-                with self.connection.cursor() as cursor:
-                    sql = "DELETE FROM `spam` WHERE `address` = %s"
-                    cursor.execute(sql, (address,))
+            row = self.sql.query(SpamItem).filter(SpamItem.address == address).first()
+            if row is not None:
+                self.sql.delete(row)
+                self.sql.commit()
+                return True
             else:
-                cursor = self.connection.cursor()
-                sql = "DELETE FROM `spam` WHERE `address` = ?"
-                cursor.execute(sql, (address,))
-            self.connection.commit()
-            return True
-        except:
+                log.error('Item %s not found' % address)
+                return False
+        except sqlError.SQLAlchemyError:
+            log.error('Cannot delete an item from the database')
             return False
 
     def exist(self, address):
         try:
             domain = '*@'+address.split('@')[1]
+            row = self.sql.query(SpamItem).filter(SpamItem.address == domain).first()
+            if row is not None:
+                return True
         except IndexError:
-            domain = ''
-            # print 'cannot get domain for %s' % address
+            pass
+
         try:
-            if MYSQL:
-                with self.connection.cursor() as cursor:
-                    # check for blocked domain
-                    sql = "SELECT `address` FROM `spam` WHERE `address`=%s"
-                    cursor.execute(sql, (domain,))
-                    if cursor.fetchone() is not None:
-                        return True
-                    # check else for blocked address
-                    sql = "SELECT `address` FROM `spam` WHERE `address`=%s"
-                    cursor.execute(sql, (address,))
-                    if cursor.fetchone() is not None:
-                        return True
-                    else:
-                        return False
+            row = self.sql.query(SpamItem).filter(SpamItem.address == address).first()
+            if row is not None:
+                return True
             else:
-                cursor = self.connection.cursor()
-                # check for blocked domain
-                sql = "SELECT `address` FROM `spam` WHERE `address`= ?"
-                cursor.execute(sql, (domain,))
-                if cursor.fetchone() is not None:
-                    return True
-                # check else for blocked address
-                sql = "SELECT `address` FROM `spam` WHERE `address`= ?"
-                cursor.execute(sql, (address,))
-                if cursor.fetchone() is not None:
-                    return True
-                else:
-                    return False
-        except Exception:
+                return False
+        except sqlError.SQLAlchemyError:
             return False
 
     def close(self):
-        self.connection.close()
+        self.sql.close()
 
     def configure(self):
-        if MYSQL:
-            with self.connection.cursor() as cursor:
-                sql = '''CREATE TABLE IF NOT EXISTS `spam` (
-                        `address` varchar(100) NOT NULL,
-                        PRIMARY KEY  (`address`)
-                        ) ENGINE=InnoDB DEFAULT CHARSET=utf8
-                '''
-                cursor.execute(sql)
-        else:
-            cursor = self.connection.cursor()
-            sql = '''CREATE TABLE IF NOT EXISTS `spam` (
-                    `address` varchar(100) NOT NULL,
-                    PRIMARY KEY  (`address`)
-                    )
-            '''
-            cursor.execute(sql)
-
-        self.connection.commit()
+        create_table(self.engine)
 
     @property
     def status(self):
@@ -160,15 +115,7 @@ class Spam(object):
 
 
 def main():
-    with Spam() as s:
-        s.configure()
-        if s.status == '':
-            if not s.add("www@ads.com"):
-                print 'duplicate'
-            if s.exist("www@ads.com"):
-                print 'found'
-                if s.remove("www@ads.com"):
-                    print 'removed'
+    pass
 
 
 if __name__ == "__main__":

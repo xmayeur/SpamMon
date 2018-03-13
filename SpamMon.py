@@ -78,8 +78,8 @@ def open_config(f):
                '/etc/' + project, os.environ.get(project + '_CONF'):
         try:
             with open(os.path.join(loc, f), 'r+') as config_file:
-                config_ = configparser.SafeConfigParser()
-                config_.readfp(config_file)
+                config_ = configparser.ConfigParser()
+                config_.read_file(config_file)
                 break
         except IOError:
             pass
@@ -496,6 +496,7 @@ def mail_monitor(mail_profile):
     
                     server.idle()
                     result = server.idle_check(int(timeout))
+                    log.info('Idle timeout expired')
                 except Exception:
                     continue
                     
