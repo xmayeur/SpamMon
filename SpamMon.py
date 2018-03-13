@@ -29,8 +29,6 @@ from sqlalchemy import exc as sqlError
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-import crypto_helpers
-
 project = 'SpamMon'
 loopforever = True
 
@@ -90,8 +88,6 @@ def open_config(f):
 
 # Open config file
 config = open_config(INI_file)
-f = crypto_helpers.AEScipher()
-
 
 def get_vault(uid):
     url = config.get('vault', 'vault_url')
@@ -281,7 +277,7 @@ def SendMail(address, subject, content):
             conn.ehlo()
 
         conn.set_debuglevel(False)
-        conn.login(USERNAME, f.decrypt(PASSWORD))
+        conn.login(USERNAME, PASSWORD)
 
         msg = "\r\n".join([
             "From: %s" % SENDER,
