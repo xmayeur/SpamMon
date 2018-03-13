@@ -492,7 +492,7 @@ def mail_monitor(mail_profile):
     
                     server.idle()
                     result = server.idle_check(int(timeout))
-                    log.info('Idle timeout expired')
+
                 except Exception:
                     continue
                     
