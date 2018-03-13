@@ -1,7 +1,5 @@
-pycrypto
 configparser
 pymysql
 imapclient
-configobj
 requests
 sqlalchemy
