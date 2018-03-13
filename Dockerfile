@@ -10,9 +10,6 @@ ADD . /SpamMon
 # Install any needed packages specified in requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
-RUN apt-get remove -y build-essential && apt-get autoremove -y \
-    && apt-get -y clean
-
 # Make port 80 available to the world outside this container
 EXPOSE 80
 
