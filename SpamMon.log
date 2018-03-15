@@ -1618,3 +1618,394 @@
 2018-03-13 20:10:42,429 | SpamMon | INFO | joelle - Start monitoring INBOX
 2018-03-13 20:11:24,495 | SpamMon | INFO | Idle timeout expired
 2018-03-13 20:11:24,527 | SpamMon | INFO | Idle timeout expired
+2018-03-15 22:19:16,872 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:19:16,903 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:19:17,544 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:19:17,544 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:19:17,684 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:19:17,684 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:19:18,299 | SpamMon | INFO | joelle - script stopped...
+2018-03-15 22:19:22,689 | SpamMon | INFO | xavier - script stopped...
+2018-03-15 22:19:53,702 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:19:53,718 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:19:54,225 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:19:54,318 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:19:54,365 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:19:54,463 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:19:54,941 | SpamMon | INFO | xavier - script stopped...
+2018-03-15 22:19:55,057 | SpamMon | INFO | joelle - script stopped...
+2018-03-15 22:20:00,916 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:20:01,840 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:20:25,547 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:20:31,603 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:23:36,240 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:23:37,142 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:23:41,703 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:23:41,781 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:23:41,854 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:23:41,924 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:34,638 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:31:35,244 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:35,387 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:35,590 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:31:35,879 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:36,019 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:36,408 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:31:36,547 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:31:36,572 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:36,714 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:37,117 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:31:37,253 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:31:37,271 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:37,409 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:37,768 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:31:37,906 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:31:37,960 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:38,098 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:38,421 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:31:38,557 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:31:38,661 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:38,797 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:39,124 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:31:39,261 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:31:39,316 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:39,452 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:39,742 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:31:39,878 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:31:39,942 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:40,072 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:40,340 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:31:40,472 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:31:40,527 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:40,659 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:40,975 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:31:41,106 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:31:41,164 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:41,291 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:41,608 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:31:41,736 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:31:41,793 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:41,924 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:42,232 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:31:42,371 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:31:42,423 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:42,557 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:42,887 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:31:43,025 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:31:43,073 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:43,209 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:43,546 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:31:43,686 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:31:43,793 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:43,928 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:44,324 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:31:44,462 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:31:44,511 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:44,653 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:45,050 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:31:45,172 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:45,180 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:31:45,300 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:45,701 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:31:45,848 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:31:45,853 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:46,001 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:31:46,349 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:31:46,491 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:31:46,542 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:31:46,681 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:32:34,990 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:32:35,560 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:32:35,953 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:32:36,547 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:32:37,936 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:33:11,066 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:33:11,656 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:33:11,796 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:33:12,003 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:33:12,560 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:33:12,690 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:34:53,721 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:34:54,339 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:34:54,472 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:34:54,683 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:34:55,257 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:34:55,385 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:35:15,344 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:35:16,034 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:35:16,171 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:35:16,299 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:35:16,948 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:35:17,084 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:36:55,025 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:36:55,640 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:36:55,775 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:36:55,976 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:36:56,588 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:36:56,730 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:37:31,299 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:37:31,978 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:37:32,123 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:37:32,275 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:37:32,849 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:37:32,980 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:39:44,413 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:39:45,294 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:39:45,433 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:39:45,459 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:39:46,160 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:39:46,290 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:40:44,706 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:40:45,380 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:40:45,525 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:40:45,713 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:40:46,260 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:40:46,394 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:42:36,366 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:42:36,953 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:42:37,085 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:42:37,337 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:42:37,900 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:42:38,032 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:43:04,077 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:43:04,797 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:43:04,951 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:43:05,065 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:43:05,731 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:43:05,871 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:43:42,754 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:43:43,430 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:43:43,571 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:43:43,737 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:43:44,306 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:43:44,442 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:44:03,175 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:44:03,819 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:44:03,950 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:44:04,174 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:44:04,806 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:44:04,936 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:44:25,375 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:44:25,988 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:44:26,126 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:44:26,336 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:44:26,950 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:44:27,086 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:45:27,596 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:45:28,218 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:45:28,358 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:45:28,567 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:45:29,194 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:45:29,322 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:46:12,497 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:46:13,146 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:46:13,284 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:46:13,462 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:46:14,134 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:46:14,274 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:47:29,700 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:47:30,394 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:47:30,534 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:47:30,691 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:47:31,249 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:47:31,377 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:48:12,929 | SpamMon | INFO | joelle - script stopped...
+2018-03-15 22:48:15,951 | SpamMon | INFO | xavier - script stopped...
+2018-03-15 22:48:25,669 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:48:26,264 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:48:26,398 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:48:26,625 | SpamMon | INFO | joelle - ... script started
+2018-03-15 22:48:27,185 | SpamMon | INFO | joelle - server connection established
+2018-03-15 22:48:27,318 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-15 22:48:49,972 | SpamMon | INFO | joelle - script stopped...
+2018-03-15 22:48:52,902 | SpamMon | INFO | xavier - script stopped...
+2018-03-15 22:49:13,749 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:49:14,298 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:49:14,434 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:50:25,076 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:50:25,639 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:50:25,782 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:50:29,009 | SpamMon | INFO | xavier - script stopped...
+2018-03-15 22:51:49,432 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:51:50,029 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:51:50,168 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:57:31,359 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:57:31,947 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:57:32,082 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 22:58:28,684 | SpamMon | INFO | xavier - ... script started
+2018-03-15 22:58:29,240 | SpamMon | INFO | xavier - server connection established
+2018-03-15 22:58:29,373 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 23:01:54,904 | SpamMon | INFO | xavier - ... script started
+2018-03-15 23:01:55,592 | SpamMon | INFO | xavier - server connection established
+2018-03-15 23:01:55,743 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 23:03:03,849 | SpamMon | INFO | xavier - ... script started
+2018-03-15 23:03:04,475 | SpamMon | INFO | xavier - server connection established
+2018-03-15 23:03:04,619 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 23:05:11,546 | SpamMon | INFO | xavier - ... script started
+2018-03-15 23:05:12,156 | SpamMon | INFO | xavier - server connection established
+2018-03-15 23:05:12,294 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 23:05:35,608 | SpamMon | INFO | xavier - ... script started
+2018-03-15 23:05:36,240 | SpamMon | INFO | xavier - server connection established
+2018-03-15 23:05:36,378 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 23:08:09,398 | SpamMon | INFO | xavier - ... script started
+2018-03-15 23:08:09,875 | SpamMon | INFO | xavier - server connection established
+2018-03-15 23:08:10,009 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 23:08:12,083 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
+2018-03-15 23:08:12,819 | SpamMon | INFO | xavier - support@thepihut.com is a spam
+2018-03-15 23:08:12,969 | SpamMon | INFO | xavier - bernardcaymaubuisson@gmail.com is a spam
+2018-03-15 23:08:13,447 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam
+2018-03-15 23:08:13,637 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam
+2018-03-15 23:08:14,081 | SpamMon | INFO | xavier - ProfactsTeam@profacts.eu is a spam
+2018-03-15 23:08:15,528 | SpamMon | INFO | xavier - info@news.lesconseilsdujour.be is a spam
+2018-03-15 23:08:15,890 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
+2018-03-15 23:08:16,116 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
+2018-03-15 23:08:16,329 | SpamMon | INFO | xavier - pourchienetchat@newsletter.pourchienetchat.com is a spam
+2018-03-15 23:08:16,940 | SpamMon | INFO | xavier - info@fnac.be is a spam
+2018-03-15 23:08:17,099 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-15 23:08:17,355 | SpamMon | INFO | xavier - script stopped...
+2018-03-15 23:09:10,313 | SpamMon | INFO | xavier - ... script started
+2018-03-15 23:09:10,814 | SpamMon | INFO | xavier - server connection established
+2018-03-15 23:09:10,946 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 23:09:12,448 | SpamMon | INFO | Address removed from Spam List makro@news.makro.be
+2018-03-15 23:09:12,653 | SpamMon | ERROR | Item bernardcaymaubuisson@gmail.com not found
+2018-03-15 23:09:12,653 | SpamMon | INFO | Address removed from Spam List bernardcaymaubuisson@gmail.com
+2018-03-15 23:09:13,150 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
+2018-03-15 23:09:13,517 | SpamMon | INFO | xavier - support@thepihut.com is a spam
+2018-03-15 23:09:13,687 | SpamMon | INFO | xavier - bernardcaymaubuisson@gmail.com is a spam
+2018-03-15 23:09:14,153 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam
+2018-03-15 23:09:14,337 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam
+2018-03-15 23:09:14,813 | SpamMon | INFO | xavier - ProfactsTeam@profacts.eu is a spam
+2018-03-15 23:09:15,947 | SpamMon | INFO | xavier - info@news.lesconseilsdujour.be is a spam
+2018-03-15 23:09:16,301 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
+2018-03-15 23:09:16,489 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
+2018-03-15 23:09:16,640 | SpamMon | INFO | xavier - pourchienetchat@newsletter.pourchienetchat.com is a spam
+2018-03-15 23:09:17,120 | SpamMon | INFO | xavier - info@fnac.be is a spam
+2018-03-15 23:09:17,292 | SpamMon | INFO | xavier - makro@news.makro.be is a spam
+2018-03-15 23:09:17,458 | SpamMon | INFO | xavier - bernardcaymaubuisson@gmail.com is a spam
+2018-03-15 23:09:17,617 | SpamMon | INFO | xavier - makro@news.makro.be is a spam
+2018-03-15 23:09:17,775 | SpamMon | INFO | xavier - bernardcaymaubuisson@gmail.com is a spam
+2018-03-15 23:09:18,114 | SpamMon | INFO | xavier - script stopped...
+2018-03-15 23:13:48,924 | SpamMon | INFO | xavier - ... script started
+2018-03-15 23:13:49,442 | SpamMon | INFO | xavier - server connection established
+2018-03-15 23:13:49,577 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 23:13:51,050 | SpamMon | ERROR | Item makro@news.makro.be not found
+2018-03-15 23:13:51,050 | SpamMon | INFO | Address removed from Spam List makro@news.makro.be
+2018-03-15 23:13:51,256 | SpamMon | ERROR | Item bernardcaymaubuisson@gmail.com not found
+2018-03-15 23:13:51,256 | SpamMon | INFO | Address removed from Spam List bernardcaymaubuisson@gmail.com
+2018-03-15 23:13:51,641 | SpamMon | INFO | Address removed from Spam List info@fnac.be
+2018-03-15 23:13:51,891 | SpamMon | ERROR | Item bernardcaymaubuisson@gmail.com not found
+2018-03-15 23:13:51,891 | SpamMon | INFO | Address removed from Spam List bernardcaymaubuisson@gmail.com
+2018-03-15 23:13:52,186 | SpamMon | INFO | Address removed from Spam List info@roulartaselect.be
+2018-03-15 23:13:52,441 | SpamMon | INFO | Address removed from Spam List info@hifiberry.com
+2018-03-15 23:13:52,793 | SpamMon | INFO | Address removed from Spam List support@basic4ppc.com
+2018-03-15 23:14:00,593 | SpamMon | ERROR | Item annedeltour2@gmail.com not found
+2018-03-15 23:14:00,593 | SpamMon | INFO | Address removed from Spam List annedeltour2@gmail.com
+2018-03-15 23:14:01,148 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
+2018-03-15 23:14:01,466 | SpamMon | INFO | xavier - support@thepihut.com is a spam
+2018-03-15 23:14:01,629 | SpamMon | INFO | xavier - bernardcaymaubuisson@gmail.com is a spam
+2018-03-15 23:14:02,105 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam
+2018-03-15 23:14:02,294 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam
+2018-03-15 23:14:02,733 | SpamMon | INFO | xavier - ProfactsTeam@profacts.eu is a spam
+2018-03-15 23:14:03,885 | SpamMon | INFO | xavier - info@news.lesconseilsdujour.be is a spam
+2018-03-15 23:14:04,168 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
+2018-03-15 23:14:04,324 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
+2018-03-15 23:14:04,489 | SpamMon | INFO | xavier - pourchienetchat@newsletter.pourchienetchat.com is a spam
+2018-03-15 23:14:05,248 | SpamMon | INFO | xavier - info@fnac.be is a spam
+2018-03-15 23:14:05,437 | SpamMon | INFO | xavier - makro@news.makro.be is a spam
+2018-03-15 23:14:05,590 | SpamMon | INFO | xavier - bernardcaymaubuisson@gmail.com is a spam
+2018-03-15 23:14:05,778 | SpamMon | INFO | xavier - makro@news.makro.be is a spam
+2018-03-15 23:14:05,943 | SpamMon | INFO | xavier - bernardcaymaubuisson@gmail.com is a spam
+2018-03-15 23:14:06,112 | SpamMon | INFO | xavier - bernardcaymaubuisson@gmail.com is a spam
+2018-03-15 23:14:06,306 | SpamMon | INFO | xavier - bernardcaymaubuisson@gmail.com is a spam
+2018-03-15 23:14:06,498 | SpamMon | INFO | xavier - makro@news.makro.be is a spam
+2018-03-15 23:14:06,656 | SpamMon | INFO | xavier - bernardcaymaubuisson@gmail.com is a spam
+2018-03-15 23:14:06,814 | SpamMon | INFO | xavier - info@fnac.be is a spam
+2018-03-15 23:14:06,969 | SpamMon | INFO | xavier - bernardcaymaubuisson@gmail.com is a spam
+2018-03-15 23:14:07,139 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
+2018-03-15 23:14:07,397 | SpamMon | INFO | xavier - script stopped...
+2018-03-15 23:15:12,094 | SpamMon | INFO | xavier - ... script started
+2018-03-15 23:15:12,632 | SpamMon | INFO | xavier - server connection established
+2018-03-15 23:15:12,769 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 23:15:14,090 | SpamMon | ERROR | Item makro@news.makro.be not found
+2018-03-15 23:15:14,091 | SpamMon | INFO | Address removed from Spam List makro@news.makro.be
+2018-03-15 23:15:14,362 | SpamMon | ERROR | Item bernardcaymaubuisson@gmail.com not found
+2018-03-15 23:15:14,362 | SpamMon | INFO | Address removed from Spam List bernardcaymaubuisson@gmail.com
+2018-03-15 23:15:14,672 | SpamMon | ERROR | Item info@fnac.be not found
+2018-03-15 23:15:14,672 | SpamMon | INFO | Address removed from Spam List info@fnac.be
+2018-03-15 23:15:14,873 | SpamMon | ERROR | Item bernardcaymaubuisson@gmail.com not found
+2018-03-15 23:15:14,873 | SpamMon | INFO | Address removed from Spam List bernardcaymaubuisson@gmail.com
+2018-03-15 23:15:15,107 | SpamMon | ERROR | Item info@roulartaselect.be not found
+2018-03-15 23:15:15,107 | SpamMon | INFO | Address removed from Spam List info@roulartaselect.be
+2018-03-15 23:15:15,376 | SpamMon | ERROR | Item info@hifiberry.com not found
+2018-03-15 23:15:15,376 | SpamMon | INFO | Address removed from Spam List info@hifiberry.com
+2018-03-15 23:15:15,571 | SpamMon | ERROR | Item support@basic4ppc.com not found
+2018-03-15 23:15:15,572 | SpamMon | INFO | Address removed from Spam List support@basic4ppc.com
+2018-03-15 23:15:38,612 | SpamMon | ERROR | Item annedeltour2@gmail.com not found
+2018-03-15 23:15:38,612 | SpamMon | INFO | Address removed from Spam List annedeltour2@gmail.com
+2018-03-15 23:15:38,866 | SpamMon | ERROR | Item info@fnac.be not found
+2018-03-15 23:15:38,866 | SpamMon | INFO | Address removed from Spam List info@fnac.be
+2018-03-15 23:15:39,062 | SpamMon | ERROR | Item info@roulartaselect.be not found
+2018-03-15 23:15:39,062 | SpamMon | INFO | Address removed from Spam List info@roulartaselect.be
+2018-03-15 23:15:39,256 | SpamMon | ERROR | Item bernardcaymaubuisson@gmail.com not found
+2018-03-15 23:15:39,256 | SpamMon | INFO | Address removed from Spam List bernardcaymaubuisson@gmail.com
+2018-03-15 23:15:39,498 | SpamMon | ERROR | Item bernardcaymaubuisson@gmail.com not found
+2018-03-15 23:15:39,498 | SpamMon | INFO | Address removed from Spam List bernardcaymaubuisson@gmail.com
+2018-03-15 23:15:39,730 | SpamMon | ERROR | Item bernardcaymaubuisson@gmail.com not found
+2018-03-15 23:15:39,730 | SpamMon | INFO | Address removed from Spam List bernardcaymaubuisson@gmail.com
+2018-03-15 23:17:03,581 | SpamMon | INFO | xavier - ... script started
+2018-03-15 23:17:04,157 | SpamMon | INFO | xavier - server connection established
+2018-03-15 23:17:04,295 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 23:17:05,822 | SpamMon | ERROR | Item makro@news.makro.be not found
+2018-03-15 23:17:05,822 | SpamMon | INFO | Address removed from Spam List makro@news.makro.be
+2018-03-15 23:17:06,028 | SpamMon | ERROR | Item bernardcaymaubuisson@gmail.com not found
+2018-03-15 23:17:06,029 | SpamMon | INFO | Address removed from Spam List bernardcaymaubuisson@gmail.com
+2018-03-15 23:17:06,252 | SpamMon | ERROR | Item info@fnac.be not found
+2018-03-15 23:17:06,253 | SpamMon | INFO | Address removed from Spam List info@fnac.be
+2018-03-15 23:17:06,448 | SpamMon | ERROR | Item bernardcaymaubuisson@gmail.com not found
+2018-03-15 23:17:06,449 | SpamMon | INFO | Address removed from Spam List bernardcaymaubuisson@gmail.com
+2018-03-15 23:17:06,676 | SpamMon | ERROR | Item info@roulartaselect.be not found
+2018-03-15 23:17:06,677 | SpamMon | INFO | Address removed from Spam List info@roulartaselect.be
+2018-03-15 23:17:06,869 | SpamMon | ERROR | Item info@hifiberry.com not found
+2018-03-15 23:17:06,869 | SpamMon | INFO | Address removed from Spam List info@hifiberry.com
+2018-03-15 23:17:07,098 | SpamMon | ERROR | Item support@basic4ppc.com not found
+2018-03-15 23:17:07,099 | SpamMon | INFO | Address removed from Spam List support@basic4ppc.com
+2018-03-15 23:17:53,213 | SpamMon | INFO | xavier - ... script started
+2018-03-15 23:17:53,822 | SpamMon | INFO | xavier - server connection established
+2018-03-15 23:17:53,953 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 23:18:07,187 | SpamMon | ERROR | Item makro@news.makro.be not found
+2018-03-15 23:18:11,459 | SpamMon | INFO | Address removed from Spam List makro@news.makro.be
+2018-03-15 23:18:50,260 | SpamMon | ERROR | Item bernardcaymaubuisson@gmail.com not found
+2018-03-15 23:18:51,003 | SpamMon | INFO | Address removed from Spam List bernardcaymaubuisson@gmail.com
+2018-03-15 23:19:04,395 | SpamMon | ERROR | Item info@fnac.be not found
+2018-03-15 23:19:04,620 | SpamMon | INFO | Address removed from Spam List info@fnac.be
+2018-03-15 23:19:25,848 | SpamMon | ERROR | Item bernardcaymaubuisson@gmail.com not found
+2018-03-15 23:19:26,102 | SpamMon | INFO | Address removed from Spam List bernardcaymaubuisson@gmail.com
+2018-03-15 23:19:29,113 | SpamMon | ERROR | Item info@roulartaselect.be not found
+2018-03-15 23:19:29,346 | SpamMon | INFO | Address removed from Spam List info@roulartaselect.be
+2018-03-15 23:19:31,614 | SpamMon | ERROR | Item info@hifiberry.com not found
+2018-03-15 23:19:31,824 | SpamMon | INFO | Address removed from Spam List info@hifiberry.com
+2018-03-15 23:19:33,918 | SpamMon | ERROR | Item support@basic4ppc.com not found
+2018-03-15 23:19:34,099 | SpamMon | INFO | Address removed from Spam List support@basic4ppc.com
+2018-03-15 23:21:28,418 | SpamMon | INFO | xavier - ... script started
+2018-03-15 23:21:29,108 | SpamMon | INFO | xavier - server connection established
+2018-03-15 23:21:29,256 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 23:23:29,159 | SpamMon | INFO | xavier - ... script started
+2018-03-15 23:23:29,748 | SpamMon | INFO | xavier - server connection established
+2018-03-15 23:23:29,887 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 23:24:07,636 | SpamMon | INFO | xavier - ... script started
+2018-03-15 23:24:08,120 | SpamMon | INFO | xavier - server connection established
+2018-03-15 23:24:08,264 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 23:24:12,670 | SpamMon | INFO | xavier - info@fnac.be is a spam
+2018-03-15 23:24:12,852 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
+2018-03-15 23:24:13,029 | SpamMon | INFO | xavier - bernardcaymaubuisson@gmail.com is a spam
+2018-03-15 23:24:13,207 | SpamMon | INFO | xavier - bernardcaymaubuisson@gmail.com is a spam
+2018-03-15 23:24:13,389 | SpamMon | INFO | xavier - bernardcaymaubuisson@gmail.com is a spam
+2018-03-15 23:24:13,962 | SpamMon | INFO | xavier - script stopped...
+2018-03-15 23:37:23,489 | SpamMon | INFO | xavier - ... script started
+2018-03-15 23:37:23,999 | SpamMon | INFO | xavier - server connection established
+2018-03-15 23:37:24,137 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-15 23:37:25,694 | SpamMon | ERROR | Item info@roulartaselect.be not found
+2018-03-15 23:37:25,694 | SpamMon | INFO | Address removed from Spam List info@roulartaselect.be
+2018-03-15 23:37:29,140 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
+2018-03-15 23:37:29,734 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
+2018-03-15 23:37:30,030 | SpamMon | INFO | xavier - script stopped...

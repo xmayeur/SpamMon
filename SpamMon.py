@@ -3,7 +3,7 @@
 # https://imapclient.readthedocs.io/en/stable/
 # Also see https://gist.github.com/shimofuri/4348943 for use of idle
 #
-# http://nas.local:81/phpMyAdmin
+# http://nas.local:81/phpMyAdmin/
 #
 
 import configparser
@@ -88,6 +88,7 @@ def open_config(f):
 
 # Open config file
 config = open_config(INI_file)
+
 
 def get_vault(uid):
     url = config.get('vault', 'vault_url')
@@ -296,23 +297,23 @@ def ScanForNewSpamAddresses(server_, spam_):
     # Select the Spam folder to retrieve new spam addresses
     try:
         server_.select_folder(u'INBOX.Spam')
-        messages = server_.search(['UNSEEN'])
+        messages = server_.search([u'UNSEEN'])
     except:
         return
 
     # fetch new blocked addresses and store them into the dictionary
     for msg in messages:
         try:
-            fetch = server_.fetch(msg, ['RFC822'])
-            mail = email.message_from_string(
-                fetch[msg]['RFC822']
+            fetch = server_.fetch(msg, [b'RFC822'])
+            mail = email.message_from_bytes(
+                fetch[msg][b'RFC822']
             )
             addr, addrfrom = parseaddr(mail['from'])
 
             if not spam_.exist(addrfrom):
                 spam_.add(addrfrom)
                 log.info('New spam address added {0}'.format(addrfrom))
-                server_.add_flags(msg, ['\SEEN'])
+                server_.add_flags(msg, [u'\SEEN'])
         except:
             pass
 
@@ -325,16 +326,16 @@ def ScanToRemoveAddresses(server_, spam_):
 
         # fetch blocked addresses to remove from the list
         for msg in messages:
-            fetch = server_.fetch(msg, ['RFC822'])
-            mail = email.message_from_string(
-                fetch[msg]['RFC822']
+            fetch = server_.fetch(msg, [b'RFC822'])
+            mail = email.message_from_bytes(
+                fetch[msg][b'RFC822']
             )
-            addr, addrfrom = parseaddr(mail['from'])
+            addr, addrfrom = parseaddr(mail[u'from'])
             if spam_.exist(addrfrom):
                 spam_.remove(addrfrom)
                 log.info('Address removed from Spam List {0}'.format(addrfrom))
-                server_.remove_flags(msg, ['\SEEN'])
-                server_.copy(msg, 'INBOX')
+                server_.remove_flags(msg, [u'\SEEN'])
+                server_.copy(msg, u'INBOX')
                 # and delete it from the current folder
                 server_.delete_messages(msg)
     except Exception:
@@ -436,34 +437,34 @@ def mail_monitor(mail_profile):
             try:
                 ScanToRemoveAddresses(server, spamDB)
                 # Select the INBOX folder for monitoring
-                server.select_folder('INBOX')
+                server.select_folder(u'INBOX')
                 # Reads now all INBOX's unseen messages. Should errors occur due to loss of connection,
                 # attempt restablishing connection
 
-                mydate = datetime.datetime.now() - datetime.timedelta(hours=nrhours)
-                messages = server.search(['UNSEEN', 'SINCE', mydate])
+                mydate = (datetime.datetime.now() - datetime.timedelta(hours=24))
+                messages = server.search([u'SINCE', mydate])
 
             except Exception:
                 continue
 
             for msg in messages:
                 try:
-                    fetch = server.fetch(msg, ['RFC822'])
-                    mail = email.message_from_string(
-                        fetch[msg]['RFC822']
-                    )
-                except Exception:
+                    fetch = server.fetch(msg, [b'RFC822'])
+                    s = fetch[msg][b'RFC822']
+                    mail = email.message_from_bytes(s)
+                except Exception as e:
+                    print(e)
                     continue
 
                 addr, addrfrom = parseaddr(mail['from'])
                 if spamDB.exist(addrfrom):
                     # if the mail address exists in the spam list, then move the spam to the Spam folder
                     log.info("%s - %s is a spam" % (mail_profile, addrfrom))
-                    server.copy(msg, 'INBOX.Spam')
+                    server.copy(msg, u'INBOX.Spam')
                     # and delete it from the INBOX
                     server.delete_messages(msg)
                 else:
-                    server.remove_flags(msg, ['\SEEN'])
+                    server.remove_flags(msg, [u'\SEEN'])
                     # do nothing else for non blocked mails
                     # log.info("%s is a mail with subject %s" % (addrfrom, mail['subject']))
 
@@ -481,7 +482,7 @@ def mail_monitor(mail_profile):
 
                 try:
                     # select the folder to monitor
-                    server.select_folder('INBOX')
+                    server.select_folder(u'INBOX')
     
                     # After all unread emails are cleared on initial login, start
                     # monitoring the folder for new email arrivals and process
@@ -503,27 +504,27 @@ def mail_monitor(mail_profile):
                         continue
 
                     mydate = datetime.datetime.now() - datetime.timedelta(hours=nrhours)
-                    messages = server.search(['UNSEEN', 'SINCE', mydate])
+                    messages = server.search([u'SINCE', mydate])
 
                     for msg in messages:
                         try:
-                            fetch = server.fetch(msg, ['RFC822'])
-                            mail = email.message_from_string(
-                                fetch[msg]['RFC822']
+                            fetch = server.fetch(msg, [b'RFC822'])
+                            mail = email.message_from_bytes(
+                                fetch[msg][b'RFC822']
                             )
                         except Exception:
                             continue
 
-                        addr, addrfrom = parseaddr(mail['from'])
+                        addr, addrfrom = parseaddr(mail[u'from'])
 
                         # if the mail address exists in the spam list, then move the spam to the Spam folder
                         if spamDB.exist(addrfrom):
                             log.info("%s - %s is a spam " % (mail_profile, addrfrom))
-                            server.copy(msg, 'INBOX.Spam')
+                            server.copy(msg, u'INBOX.Spam')
                             # and delete it from the INBOX
                             server.delete_messages(msg)
                         else:
-                            server.remove_flags(msg, ['\SEEN'])
+                            server.remove_flags(msg, [u'\SEEN'])
                             # Handle special request as command string in the message subject
                             # log.info("%s is a mail with subject %s" % (addrfrom, mail['subject']))
                             txt = mail['subject']
@@ -531,7 +532,7 @@ def mail_monitor(mail_profile):
                                 if txt.split(' ')[0] == "$SENDLOG":
                                     with open(LOG_file, 'r') as logfile:
                                         log.info('Sending log file to %s' % addrfrom)
-                                        server.add_flags(msg, ['\SEEN'])
+                                        server.add_flags(msg, [u'\SEEN'])
                                         txt = logfile.read()
                                         SendMail(addrfrom, 'Log file', txt)
                                         server.delete_messages(msg)
@@ -582,8 +583,8 @@ def main():
     p1 = multiprocessing.Process(target=mail_monitor, args=('xavier',))
     p1.start()
 
-    p2 = multiprocessing.Process(target=mail_monitor, args=('joelle',))
-    p2.start()
+    # p2 = multiprocessing.Process(target=mail_monitor, args=('joelle',))
+    # p2.start()
     
     signal.signal(signal.SIGINT, exit_gracefully)
     signal.signal(signal.SIGTERM, exit_gracefully)
