@@ -2009,3 +2009,24 @@
 2018-03-15 23:37:29,140 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
 2018-03-15 23:37:29,734 | SpamMon | INFO | xavier - info@roulartaselect.be is a spam
 2018-03-15 23:37:30,030 | SpamMon | INFO | xavier - script stopped...
+2018-03-16 21:57:50,079 | SpamMon | INFO | xavier - ... script started
+2018-03-16 21:57:50,792 | SpamMon | INFO | xavier - server connection established
+2018-03-16 21:57:50,992 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 21:57:56,437 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-16 22:05:14,963 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:05:15,646 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:05:15,843 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:05:20,173 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:05:20,810 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-16 22:05:25,455 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam 
+2018-03-16 22:07:23,778 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam 
+2018-03-16 22:07:24,054 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam 
+2018-03-16 22:08:06,892 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:08:06,909 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:08:07,600 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:08:07,732 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:08:11,061 | SpamMon | INFO | New spam address added adminfa@0010.ch
+2018-03-16 22:08:11,097 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-16 22:08:12,020 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:08:12,499 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:08:12,779 | SpamMon | INFO | xavier - Start monitoring INBOX

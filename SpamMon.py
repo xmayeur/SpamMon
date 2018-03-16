@@ -23,6 +23,7 @@ from time import sleep
 
 import imapclient
 import requests
+from imapclient import SEEN
 from sqlalchemy import Column, String
 from sqlalchemy import create_engine
 from sqlalchemy import exc as sqlError
@@ -288,7 +289,6 @@ def SendMail(address, subject, content):
             content])
         conn.sendmail(SENDER, address, msg)
         conn.close()
-
     except Exception:
         log.critical('Couldn''t send mail: %s' % subject)
 
@@ -296,8 +296,8 @@ def SendMail(address, subject, content):
 def ScanForNewSpamAddresses(server_, spam_):
     # Select the Spam folder to retrieve new spam addresses
     try:
-        server_.select_folder(u'INBOX.Spam')
-        messages = server_.search([u'UNSEEN'])
+        server_.select_folder('INBOX.Spam')
+        messages = server_.search(['UNSEEN'])
     except:
         return
 
@@ -313,7 +313,7 @@ def ScanForNewSpamAddresses(server_, spam_):
             if not spam_.exist(addrfrom):
                 spam_.add(addrfrom)
                 log.info('New spam address added {0}'.format(addrfrom))
-                server_.add_flags(msg, [u'\SEEN'])
+                server_.add_flags(msg, [SEEN])
         except:
             pass
 
@@ -321,7 +321,7 @@ def ScanForNewSpamAddresses(server_, spam_):
 def ScanToRemoveAddresses(server_, spam_):
     # Select the Spam folder to retrieve new spam addresses
     try:
-        server_.select_folder(u'INBOX.NotSpam')
+        server_.select_folder('INBOX.NotSpam')
         messages = server_.search()
 
         # fetch blocked addresses to remove from the list
@@ -330,12 +330,12 @@ def ScanToRemoveAddresses(server_, spam_):
             mail = email.message_from_bytes(
                 fetch[msg][b'RFC822']
             )
-            addr, addrfrom = parseaddr(mail[u'from'])
+            addr, addrfrom = parseaddr(mail['from'])
             if spam_.exist(addrfrom):
                 spam_.remove(addrfrom)
                 log.info('Address removed from Spam List {0}'.format(addrfrom))
-                server_.remove_flags(msg, [u'\SEEN'])
-                server_.copy(msg, u'INBOX')
+                server_.remove_flags(msg, [SEEN])
+                server_.copy(msg, 'INBOX')
                 # and delete it from the current folder
                 server_.delete_messages(msg)
     except Exception:
@@ -437,7 +437,7 @@ def mail_monitor(mail_profile):
             try:
                 ScanToRemoveAddresses(server, spamDB)
                 # Select the INBOX folder for monitoring
-                server.select_folder(u'INBOX')
+                server.select_folder('INBOX')
                 # Reads now all INBOX's unseen messages. Should errors occur due to loss of connection,
                 # attempt restablishing connection
 
@@ -460,11 +460,11 @@ def mail_monitor(mail_profile):
                 if spamDB.exist(addrfrom):
                     # if the mail address exists in the spam list, then move the spam to the Spam folder
                     log.info("%s - %s is a spam" % (mail_profile, addrfrom))
-                    server.copy(msg, u'INBOX.Spam')
+                    server.copy(msg, 'INBOX.Spam')
                     # and delete it from the INBOX
                     server.delete_messages(msg)
                 else:
-                    server.remove_flags(msg, [u'\SEEN'])
+                    server.remove_flags(msg, [SEEN])
                     # do nothing else for non blocked mails
                     # log.info("%s is a mail with subject %s" % (addrfrom, mail['subject']))
 
@@ -520,11 +520,11 @@ def mail_monitor(mail_profile):
                         # if the mail address exists in the spam list, then move the spam to the Spam folder
                         if spamDB.exist(addrfrom):
                             log.info("%s - %s is a spam " % (mail_profile, addrfrom))
-                            server.copy(msg, u'INBOX.Spam')
+                            server.copy(msg, 'INBOX.Spam')
                             # and delete it from the INBOX
                             server.delete_messages(msg)
                         else:
-                            server.remove_flags(msg, [u'\SEEN'])
+                            server.remove_flags(msg, [SEEN])
                             # Handle special request as command string in the message subject
                             # log.info("%s is a mail with subject %s" % (addrfrom, mail['subject']))
                             txt = mail['subject']
@@ -532,7 +532,7 @@ def mail_monitor(mail_profile):
                                 if txt.split(' ')[0] == "$SENDLOG":
                                     with open(LOG_file, 'r') as logfile:
                                         log.info('Sending log file to %s' % addrfrom)
-                                        server.add_flags(msg, [u'\SEEN'])
+                                        server.add_flags(msg, [SEEN])
                                         txt = logfile.read()
                                         SendMail(addrfrom, 'Log file', txt)
                                         server.delete_messages(msg)
@@ -583,8 +583,8 @@ def main():
     p1 = multiprocessing.Process(target=mail_monitor, args=('xavier',))
     p1.start()
 
-    # p2 = multiprocessing.Process(target=mail_monitor, args=('joelle',))
-    # p2.start()
+    p2 = multiprocessing.Process(target=mail_monitor, args=('joelle',))
+    p2.start()
     
     signal.signal(signal.SIGINT, exit_gracefully)
     signal.signal(signal.SIGTERM, exit_gracefully)
