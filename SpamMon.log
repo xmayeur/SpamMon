@@ -2030,3 +2030,169 @@
 2018-03-16 22:08:12,020 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
 2018-03-16 22:08:12,499 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
 2018-03-16 22:08:12,779 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-16 22:09:25,343 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam 
+2018-03-16 22:09:25,583 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam 
+2018-03-16 22:12:06,556 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:12:07,364 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:12:07,495 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:12:07,527 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:12:08,215 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:12:08,407 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:13:37,253 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-16 22:14:01,352 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:14:01,832 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:14:02,350 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-16 22:14:52,067 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:14:52,852 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:14:52,990 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:14:53,022 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:14:53,687 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:14:53,817 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:15:22,043 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:15:22,859 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:15:23,016 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:15:23,058 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:15:23,697 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:15:23,894 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:17:25,524 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:17:26,336 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:17:26,479 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:17:26,541 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:17:27,188 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:17:27,374 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:17:29,896 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-16 22:17:31,239 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:17:31,718 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:18:03,203 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-16 22:18:58,507 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:18:58,526 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:18:59,211 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:18:59,216 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:18:59,344 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:18:59,444 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:19:01,731 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-16 22:19:04,003 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:19:04,482 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:19:04,851 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-16 22:19:34,026 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:19:34,749 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:19:34,940 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:19:34,989 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:19:35,693 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:19:35,821 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:19:38,459 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-16 22:19:39,762 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:19:40,242 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:19:40,621 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-16 22:21:53,328 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam 
+2018-03-16 22:21:53,593 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam 
+2018-03-16 22:22:13,321 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:22:14,094 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:22:14,228 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:22:14,350 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:22:15,055 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:22:15,185 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:22:17,695 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-16 22:22:19,008 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:22:19,487 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:22:19,857 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-16 22:23:01,151 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:23:01,168 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:23:01,855 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:23:01,856 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:23:01,990 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:23:01,993 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:23:08,257 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:23:09,056 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:23:09,182 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:23:09,331 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:23:10,015 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:23:10,146 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:23:12,657 | SpamMon | INFO | joelle - Start monitoring INBOX
+2018-03-16 22:23:13,609 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:23:14,088 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:23:14,458 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-16 22:23:26,209 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam 
+2018-03-16 22:23:26,468 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam 
+2018-03-16 22:27:51,573 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:27:52,384 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:27:52,519 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:27:52,535 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:27:53,239 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:27:53,427 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:27:57,297 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:27:57,780 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:28:32,635 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:28:33,430 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:28:33,565 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:28:33,573 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:28:34,265 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:28:34,406 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:28:38,220 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:28:38,701 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-16 22:30:18,239 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:30:19,024 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:30:19,156 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:30:19,279 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:30:20,008 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:30:20,191 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:30:45,033 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-16 22:31:20,508 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:31:21,313 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:31:21,462 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:31:21,511 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:31:22,146 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:31:22,274 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:31:55,568 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-16 22:32:10,389 | SpamMon | INFO | New spam address added newland@fortnerinsurance.com
+2018-03-16 22:32:10,748 | SpamMon | INFO | New spam address added info@inventivecommunication.pl
+2018-03-16 22:32:11,036 | SpamMon | INFO | New spam address added acashman@srnm.com
+2018-03-16 22:32:11,350 | SpamMon | INFO | New spam address added service@abapartners.com.au
+2018-03-16 22:32:11,950 | SpamMon | INFO | New spam address added cjweqirc1@lioasdero.tk
+2018-03-16 22:32:12,310 | SpamMon | INFO | New spam address added cschillaci@ausarmexpress.com.au
+2018-03-16 22:32:13,748 | SpamMon | INFO | New spam address added contact@email.maje.com
+2018-03-16 22:33:52,053 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:33:52,064 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:33:52,767 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:33:52,769 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:33:52,955 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:33:52,955 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:33:58,475 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-16 22:41:44,735 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:41:44,744 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:41:45,559 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:41:45,562 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:41:45,692 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:41:45,695 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:41:50,924 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-16 22:43:37,530 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam 
+2018-03-16 22:45:10,659 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:45:10,675 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:45:11,363 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:45:11,363 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:45:11,498 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:45:11,502 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:45:16,533 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-03-16 22:45:52,901 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:45:52,918 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:45:53,607 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:45:53,608 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:45:53,810 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:45:58,655 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-03-16 22:45:59,692 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-16 22:46:49,664 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:46:49,682 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:46:50,378 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:46:50,383 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:46:50,570 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:46:55,537 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-03-16 22:46:56,450 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-16 22:47:26,258 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam 
+2018-03-16 22:47:37,182 | SpamMon | INFO | joelle - ... script started
+2018-03-16 22:47:37,200 | SpamMon | INFO | xavier - ... script started
+2018-03-16 22:47:37,885 | SpamMon | INFO | joelle - server connection established
+2018-03-16 22:47:37,903 | SpamMon | INFO | xavier - server connection established
+2018-03-16 22:47:38,015 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-16 22:47:38,092 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-16 22:47:43,060 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-03-16 22:47:44,211 | SpamMon | INFO | xavier - Start monitoring INBOX

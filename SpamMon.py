@@ -296,8 +296,8 @@ def SendMail(address, subject, content):
 def ScanForNewSpamAddresses(server_, spam_):
     # Select the Spam folder to retrieve new spam addresses
     try:
-        server_.select_folder('INBOX.Spam')
-        messages = server_.search(['UNSEEN'])
+        server_.select_folder(r'INBOX.Spam')
+        messages = server_.search()
     except:
         return
 
@@ -313,9 +313,11 @@ def ScanForNewSpamAddresses(server_, spam_):
             if not spam_.exist(addrfrom):
                 spam_.add(addrfrom)
                 log.info('New spam address added {0}'.format(addrfrom))
-                server_.add_flags(msg, [SEEN])
         except:
             pass
+        finally:
+            server_.copy(msg, r'INBOX.Unwanted')
+            server_.delete_messages(msg, True)
 
 
 def ScanToRemoveAddresses(server_, spam_):
@@ -437,7 +439,7 @@ def mail_monitor(mail_profile):
             try:
                 ScanToRemoveAddresses(server, spamDB)
                 # Select the INBOX folder for monitoring
-                server.select_folder('INBOX')
+                server.select_folder(r'INBOX')
                 # Reads now all INBOX's unseen messages. Should errors occur due to loss of connection,
                 # attempt restablishing connection
 
