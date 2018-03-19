@@ -313,14 +313,18 @@ def ScanForNewSpamAddresses(server_, spam_):
                 mail = email.message_from_string(
                     fetch[msg][b'RFC822']
                 )
+
             addr, addrfrom = parseaddr(mail['from'])
 
             if not spam_.exist(addrfrom):
                 spam_.add(addrfrom)
                 log.info('New spam address added {0}'.format(addrfrom))
+
             server_.copy(msg, r'INBOX.Unwanted')
+
         except:
             pass
+
         finally:
             server_.delete_messages(msg, True)
 
