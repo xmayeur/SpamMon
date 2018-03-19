@@ -2196,3 +2196,74 @@
 2018-03-16 22:47:38,092 | SpamMon | INFO | xavier - login successful - b'Logged in'
 2018-03-16 22:47:43,060 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
 2018-03-16 22:47:44,211 | SpamMon | INFO | xavier - Start monitoring INBOX
+2018-03-19 21:50:22,066 | SpamMon | INFO | xavier - ... script started
+2018-03-19 21:50:22,810 | SpamMon | INFO | xavier - server connection established
+2018-03-19 21:50:22,944 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-19 21:50:23,039 | SpamMon | INFO | joelle - ... script started
+2018-03-19 21:50:23,594 | SpamMon | INFO | joelle - server connection established
+2018-03-19 21:50:23,722 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-19 21:54:30,243 | SpamMon | INFO | xavier - ... script started
+2018-03-19 21:54:30,891 | SpamMon | INFO | xavier - server connection established
+2018-03-19 21:54:31,032 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-19 21:54:31,209 | SpamMon | INFO | joelle - ... script started
+2018-03-19 21:54:31,754 | SpamMon | INFO | joelle - server connection established
+2018-03-19 21:54:31,888 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-19 21:55:03,044 | SpamMon | INFO | joelle - ... script started
+2018-03-19 21:55:03,061 | SpamMon | INFO | xavier - ... script started
+2018-03-19 21:55:03,551 | SpamMon | INFO | joelle - server connection established
+2018-03-19 21:55:03,587 | SpamMon | INFO | xavier - server connection established
+2018-03-19 21:55:03,680 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-19 21:55:03,723 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-19 21:55:13,687 | SpamMon | INFO | xavier - script stopped...
+2018-03-19 21:56:23,811 | SpamMon | INFO | joelle - ... script started
+2018-03-19 21:56:23,829 | SpamMon | INFO | xavier - ... script started
+2018-03-19 21:56:24,350 | SpamMon | INFO | joelle - server connection established
+2018-03-19 21:56:24,389 | SpamMon | INFO | xavier - server connection established
+2018-03-19 21:56:24,483 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-19 21:56:24,516 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-19 21:56:33,820 | SpamMon | INFO | xavier - script stopped...
+2018-03-19 21:57:38,290 | SpamMon | INFO | xavier - ... script started
+2018-03-19 21:57:39,036 | SpamMon | INFO | xavier - server connection established
+2018-03-19 21:57:39,171 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-19 21:57:39,337 | SpamMon | INFO | joelle - ... script started
+2018-03-19 21:57:39,943 | SpamMon | INFO | joelle - server connection established
+2018-03-19 21:57:40,077 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-19 21:57:49,187 | SpamMon | INFO | xavier - script stopped...
+2018-03-19 22:17:09,967 | SpamMon | INFO | xavier - ... script started
+2018-03-19 22:17:10,657 | SpamMon | INFO | xavier - server connection established
+2018-03-19 22:17:10,797 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-19 22:17:10,905 | SpamMon | INFO | joelle - ... script started
+2018-03-19 22:17:11,553 | SpamMon | INFO | joelle - server connection established
+2018-03-19 22:17:11,688 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-19 22:17:27,637 | SpamMon | INFO | xavier - script stopped...
+2018-03-19 22:18:06,111 | SpamMon | INFO | joelle - ... script started
+2018-03-19 22:18:06,679 | SpamMon | INFO | joelle - server connection established
+2018-03-19 22:18:06,811 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-19 22:18:55,479 | SpamMon | INFO | New spam address added joelle@mayeur.be
+2018-03-19 22:19:01,992 | SpamMon | INFO | New spam address added xavier@mayeur.be
+2018-03-19 22:19:12,759 | SpamMon | INFO | New spam address added jd@kcs.co.jp
+2018-03-19 22:19:16,241 | SpamMon | INFO | New spam address added jav5@striker.ottawa.on.ca
+2018-03-19 22:19:19,240 | SpamMon | INFO | New spam address added admin@gp-smak.ru
+2018-03-19 22:19:19,411 | SpamMon | INFO | New spam address added stub@tampabay.rr.com
+2018-03-19 22:19:20,438 | SpamMon | INFO | New spam address added no-reply@mail.chimpanze.fr
+2018-03-19 22:19:20,920 | SpamMon | INFO | New spam address added registrar@restonraiders.com
+2018-03-19 22:19:22,123 | SpamMon | INFO | New spam address added epeterl@cpmcast.net
+2018-03-19 22:19:37,722 | SpamMon | INFO | New spam address added Akester.89@wer2go.org
+2018-03-19 22:19:39,159 | SpamMon | INFO | New spam address added admindyiiz@000.nu
+2018-03-19 22:19:40,360 | SpamMon | INFO | New spam address added adminxa@011money.com
+2018-03-19 22:19:40,723 | SpamMon | INFO | New spam address added admine@0007.co.jp
+2018-03-19 22:19:40,961 | SpamMon | INFO | New spam address added adminpyk@0-z.dk
+2018-03-19 22:19:41,131 | SpamMon | INFO | New spam address added admintzd@000.jp
+2018-03-19 22:19:41,559 | SpamMon | INFO | New spam address added adminyeqi@0-0.co.jp
+2018-03-19 22:19:41,728 | SpamMon | INFO | New spam address added adminwkucy@0-8-15.org
+2018-03-19 22:19:41,918 | SpamMon | INFO | New spam address added adminnhigs@00.mn
+2018-03-19 22:19:42,161 | SpamMon | INFO | New spam address added adminljefu@007ticket.co.kr
+2018-03-19 22:19:42,269 | SpamMon | INFO | joelle - script stopped...
+2018-03-19 22:23:45,998 | SpamMon | INFO | xavier - ... script started
+2018-03-19 22:23:46,014 | SpamMon | INFO | joelle - ... script started
+2018-03-19 22:23:46,525 | SpamMon | INFO | xavier - server connection established
+2018-03-19 22:23:46,569 | SpamMon | INFO | joelle - server connection established
+2018-03-19 22:23:46,696 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-19 22:23:47,660 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-19 22:23:48,882 | SpamMon | INFO | joelle - script stopped...
+2018-03-19 22:23:51,530 | SpamMon | INFO | xavier - script stopped...
