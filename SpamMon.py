@@ -73,15 +73,12 @@ def open_config(f):
     log = open_log(project + '.open_config')
     # Read config file - halt script on failure
     config_ = None
-    for loc in os.curdir, os.path.expanduser('~').join('.' + project), os.path.expanduser('~'), \
-               '/etc/' + project, os.environ.get(project + '_CONF'):
-        try:
-            with open(os.path.join(loc, f), 'r+') as config_file:
-                config_ = configparser.ConfigParser()
-                config_.read_file(config_file)
-                break
-        except IOError:
-            pass
+    try:
+        with open(f, 'r+') as config_file:
+            config_ = configparser.ConfigParser()
+            config_.read_file(config_file)
+    except IOError:
+        pass
     if config_ is None:
         log.critical('configuration file is missing')
     return config_
@@ -319,14 +316,10 @@ def ScanForNewSpamAddresses(server_, spam_):
             if not spam_.exist(addrfrom):
                 spam_.add(addrfrom)
                 log.info('New spam address added {0}'.format(addrfrom))
-
             server_.copy(msg, r'INBOX.Unwanted')
-
+            server_.delete_messages(msg, True)
         except:
             pass
-
-        finally:
-            server_.delete_messages(msg, True)
 
 
 def ScanToRemoveAddresses(server_, spam_):
@@ -366,7 +359,23 @@ def mail_monitor(mail_profile):
 
         # Retrieve global params
         try:
-            loopvalue = config.get('global', 'loopforever')
+            if config.get('global', 'debug') == 'True':
+                debug = True
+            else:
+                debug = False
+
+        except configparser.NoOptionError:
+            debug = False
+            return
+
+        try:
+            if not debug:
+                if config.get('global', 'loopforever') == 'True':
+                    loopvalue = True
+                else:
+                    loopvalue = False
+            else:
+                loopvalue = False
 
         except configparser.NoOptionError:
             log.critical('[global] - no "loopforever" option in configuration')
@@ -481,10 +490,10 @@ def mail_monitor(mail_profile):
 
             # Check the Spam address list and save it back to file
             ScanForNewSpamAddresses(server, spamDB)
-            if loopvalue == 'True':
+            if loopvalue:
                 log.info('%s - Start monitoring INBOX' % mail_profile)
 
-            if loopvalue != 'True':
+            if not loopvalue:
                 loopforever = False
                 
             while loopforever:
@@ -591,8 +600,8 @@ def testspam():
 def main():
     global p1, p2
 
-    p1 = multiprocessing.Process(target=mail_monitor, args=('xavier',))
-    p1.start()
+    # p1 = multiprocessing.Process(target=mail_monitor, args=('xavier',))
+    # p1.start()
 
     p2 = multiprocessing.Process(target=mail_monitor, args=('joelle',))
     p2.start()

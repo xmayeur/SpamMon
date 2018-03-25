@@ -2267,3 +2267,17 @@
 2018-03-19 22:23:47,660 | SpamMon | INFO | xavier - login successful - b'Logged in'
 2018-03-19 22:23:48,882 | SpamMon | INFO | joelle - script stopped...
 2018-03-19 22:23:51,530 | SpamMon | INFO | xavier - script stopped...
+2018-03-25 12:28:49,909 | SpamMon | INFO | xavier - ... script started
+2018-03-25 12:28:50,841 | SpamMon | INFO | xavier - server connection established
+2018-03-25 12:28:50,865 | SpamMon | INFO | joelle - ... script started
+2018-03-25 12:28:51,037 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-25 12:28:51,551 | SpamMon | INFO | joelle - server connection established
+2018-03-25 12:28:51,685 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-25 12:31:55,911 | SpamMon | INFO | xavier - ... script started
+2018-03-25 12:31:56,726 | SpamMon | INFO | xavier - server connection established
+2018-03-25 12:31:56,922 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-25 12:32:46,826 | SpamMon | INFO | xavier - script stopped...
+2018-03-25 12:33:05,629 | SpamMon | INFO | joelle - ... script started
+2018-03-25 12:33:06,436 | SpamMon | INFO | joelle - server connection established
+2018-03-25 12:33:06,644 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-25 12:35:25,523 | SpamMon | INFO | joelle - script stopped...
