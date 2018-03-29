@@ -9,8 +9,9 @@ chmod +x *.sh
 sudo cp spammon.sh SpamMon.conf /root
 
 docker build -t spammon . && \
-docker tag spammon xmayeur/spammon && \
-docker push xmayeur/spammon
+docker tag spammon xmayeur/spammon
+
+# docker push xmayeur/spammon
 
 exec ./spammon.sh
 
