@@ -583,10 +583,15 @@ p2 = multiprocessing.Process(target=mail_monitor, args=('joelle',))
 
 
 def exit_gracefully(signum, frame):
-    p1.terminate()
-    p2.terminate()
-    spamDB.close()
+    global p1, p2
     log.info('%s - script stopped...' % 'Main')
+    try:
+        p1.terminate()
+        p2.terminate()
+    except:
+        pass
+    spamDB.close()
+    
     sys.exit(0)
 
 
@@ -603,7 +608,7 @@ def testspam():
 
 
 def main():
-
+    global p1, p2
     p1.start()
     p2.start()
     

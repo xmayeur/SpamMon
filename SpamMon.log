@@ -2334,3 +2334,35 @@
 2018-03-29 22:16:08,962 | SpamMon | INFO | xavier - login successful - b'Logged in'
 2018-03-29 22:16:09,671 | SpamMon | INFO | joelle - script stopped...
 2018-03-29 22:16:15,858 | SpamMon | INFO | xavier - script stopped...
+2018-03-29 22:41:48,239 | SpamMon | INFO | xavier - ... script started
+2018-03-29 22:41:48,278 | SpamMon | INFO | joelle - ... script started
+2018-03-29 22:41:48,838 | SpamMon | INFO | xavier - server connection established
+2018-03-29 22:41:48,890 | SpamMon | INFO | joelle - server connection established
+2018-03-29 22:41:48,979 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-29 22:41:49,025 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-29 22:41:49,854 | SpamMon | INFO | joelle - script stopped...
+2018-03-29 22:41:55,836 | SpamMon | INFO | xavier - script stopped...
+2018-03-29 22:42:18,658 | SpamMon | INFO | xavier - ... script started
+2018-03-29 22:42:18,704 | SpamMon | INFO | joelle - ... script started
+2018-03-29 22:42:19,216 | SpamMon | INFO | xavier - server connection established
+2018-03-29 22:42:19,235 | SpamMon | INFO | joelle - server connection established
+2018-03-29 22:42:19,353 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-29 22:42:19,373 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-29 22:42:20,212 | SpamMon | INFO | joelle - script stopped...
+2018-03-29 22:42:26,420 | SpamMon | INFO | xavier - script stopped...
+2018-03-29 22:43:30,163 | SpamMon | INFO | joelle - ... script started
+2018-03-29 22:43:30,207 | SpamMon | INFO | xavier - ... script started
+2018-03-29 22:43:30,720 | SpamMon | INFO | joelle - server connection established
+2018-03-29 22:43:30,775 | SpamMon | INFO | xavier - server connection established
+2018-03-29 22:43:30,861 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-29 22:43:30,910 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-29 22:43:31,710 | SpamMon | INFO | joelle - script stopped...
+2018-03-29 22:43:37,507 | SpamMon | INFO | xavier - script stopped...
+2018-03-29 22:44:24,174 | SpamMon | INFO | joelle - ... script started
+2018-03-29 22:44:24,196 | SpamMon | INFO | xavier - ... script started
+2018-03-29 22:44:24,703 | SpamMon | INFO | joelle - server connection established
+2018-03-29 22:44:24,774 | SpamMon | INFO | xavier - server connection established
+2018-03-29 22:44:24,836 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-29 22:44:24,908 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-29 22:44:25,631 | SpamMon | INFO | joelle - script stopped...
+2018-03-29 22:44:31,622 | SpamMon | INFO | xavier - script stopped...
