@@ -33,6 +33,9 @@ from sqlalchemy.orm import sessionmaker
 project = 'SpamMon'
 loopforever = True
 
+p1 = None
+p2 = None
+
 if os.name == 'nt':
     INI_file = project + '.conf'
     LOG_file = project + '.log'
