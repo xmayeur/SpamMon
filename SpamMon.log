@@ -2281,3 +2281,56 @@
 2018-03-25 12:33:06,436 | SpamMon | INFO | joelle - server connection established
 2018-03-25 12:33:06,644 | SpamMon | INFO | joelle - login successful - b'Logged in'
 2018-03-25 12:35:25,523 | SpamMon | INFO | joelle - script stopped...
+2018-03-29 22:10:31,100 | SpamMon | INFO | xavier - ... script started
+2018-03-29 22:10:31,144 | SpamMon | INFO | joelle - ... script started
+2018-03-29 22:10:31,677 | SpamMon | INFO | xavier - server connection established
+2018-03-29 22:10:31,745 | SpamMon | INFO | joelle - server connection established
+2018-03-29 22:10:31,810 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-29 22:10:31,870 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-29 22:10:32,584 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-29 22:10:32,729 | SpamMon | INFO | joelle - script stopped...
+2018-03-29 22:10:33,184 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam
+2018-03-29 22:10:33,558 | SpamMon | INFO | xavier - contact@e.alice-delice.com is a spam
+2018-03-29 22:10:34,265 | SpamMon | INFO | xavier - newsletter@mondocultures.com is a spam
+2018-03-29 22:10:34,419 | SpamMon | INFO | xavier - ProfactsTeam@profacts.eu is a spam
+2018-03-29 22:10:36,673 | SpamMon | INFO | xavier - info@news.lesconseilsdujour.be is a spam
+2018-03-29 22:10:37,074 | SpamMon | INFO | xavier - support@rapidapi.com is a spam
+2018-03-29 22:10:37,791 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-03-29 22:10:37,985 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-03-29 22:10:38,137 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam
+2018-03-29 22:10:38,345 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-29 22:10:38,870 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-29 22:10:39,357 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam
+2018-03-29 22:10:41,226 | SpamMon | INFO | xavier - info@news.lesconseilsdujour.be is a spam
+2018-03-29 22:10:41,378 | SpamMon | INFO | xavier - theatrelepublic@theatrelepublic.be is a spam
+2018-03-29 22:13:25,882 | SpamMon | INFO | xavier - ... script started
+2018-03-29 22:13:25,928 | SpamMon | INFO | joelle - ... script started
+2018-03-29 22:13:26,426 | SpamMon | INFO | xavier - server connection established
+2018-03-29 22:13:26,453 | SpamMon | INFO | joelle - server connection established
+2018-03-29 22:13:26,556 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-29 22:13:26,597 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-29 22:13:27,430 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-29 22:13:27,446 | SpamMon | INFO | joelle - script stopped...
+2018-03-29 22:13:27,844 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam
+2018-03-29 22:13:28,198 | SpamMon | INFO | xavier - contact@e.alice-delice.com is a spam
+2018-03-29 22:13:28,870 | SpamMon | INFO | xavier - newsletter@mondocultures.com is a spam
+2018-03-29 22:13:29,029 | SpamMon | INFO | xavier - ProfactsTeam@profacts.eu is a spam
+2018-03-29 22:13:31,276 | SpamMon | INFO | xavier - info@news.lesconseilsdujour.be is a spam
+2018-03-29 22:13:31,677 | SpamMon | INFO | xavier - support@rapidapi.com is a spam
+2018-03-29 22:13:32,354 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-03-29 22:13:32,513 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-03-29 22:13:32,712 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam
+2018-03-29 22:13:32,950 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-29 22:13:33,364 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-29 22:13:33,810 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam
+2018-03-29 22:13:35,643 | SpamMon | INFO | xavier - info@news.lesconseilsdujour.be is a spam
+2018-03-29 22:13:35,830 | SpamMon | INFO | xavier - theatrelepublic@theatrelepublic.be is a spam
+2018-03-29 22:15:16,513 | SpamMon | INFO | xavier - script stopped...
+2018-03-29 22:16:08,283 | SpamMon | INFO | joelle - ... script started
+2018-03-29 22:16:08,314 | SpamMon | INFO | xavier - ... script started
+2018-03-29 22:16:08,817 | SpamMon | INFO | xavier - server connection established
+2018-03-29 22:16:08,823 | SpamMon | INFO | joelle - server connection established
+2018-03-29 22:16:08,951 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-29 22:16:08,962 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-29 22:16:09,671 | SpamMon | INFO | joelle - script stopped...
+2018-03-29 22:16:15,858 | SpamMon | INFO | xavier - script stopped...

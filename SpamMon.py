@@ -33,8 +33,6 @@ from sqlalchemy.orm import sessionmaker
 project = 'SpamMon'
 loopforever = True
 
-p1 = None
-p2 = None
 
 if os.name == 'nt':
     INI_file = project + '.conf'
@@ -214,14 +212,6 @@ class Spam(object):
 
 
 spamDB = Spam()
-
-
-def exit_gracefully(signum, frame):
-    p1.terminate()
-    p2.terminate()
-    spamDB.close()
-    log.info('%s - script stopped...' % 'Main')
-    sys.exit(0)
 
 
 def SendMail(address, subject, content):
@@ -588,6 +578,18 @@ def mail_monitor(mail_profile):
     return
 
 
+p1 = multiprocessing.Process(target=mail_monitor, args=('xavier',))
+p2 = multiprocessing.Process(target=mail_monitor, args=('joelle',))
+
+
+def exit_gracefully(signum, frame):
+    p1.terminate()
+    p2.terminate()
+    spamDB.close()
+    log.info('%s - script stopped...' % 'Main')
+    sys.exit(0)
+
+
 def testspam():
     with Spam() as s:
         s.configure()
@@ -601,12 +603,8 @@ def testspam():
 
 
 def main():
-    global p1, p2
 
-    p1 = multiprocessing.Process(target=mail_monitor, args=('xavier',))
     p1.start()
-
-    p2 = multiprocessing.Process(target=mail_monitor, args=('joelle',))
     p2.start()
     
     signal.signal(signal.SIGINT, exit_gracefully)

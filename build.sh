@@ -5,7 +5,7 @@ docker rm -f spammon
 
 # sed -i "s/debug = True/debug = False/g" SpamMon.conf
 
-chmod +x *.sh
+sudo chmod +x *.sh
 sudo cp spammon.sh SpamMon.conf /root
 
 docker build -t spammon . && \
