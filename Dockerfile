@@ -7,6 +7,11 @@ WORKDIR /SpamMon
 # Copy the current directory contents into the container at /app
 ADD . /SpamMon
 
+# install  cron
+RUN apt-get update && apt-get install -y --no-install-recommends cron
+COPY spammon-cron /etc/cron.d/spammon-cron
+RUN crontab /etc/cron.d/spammon-cron
+
 # Install any needed packages specified in requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
@@ -17,5 +22,6 @@ EXPOSE 80
 ENV NAME SpamMon
 
 # Run app.py when the container launches
-ENTRYPOINT ["python", "SpamMon.py"]
+# ENTRYPOINT ["python", "SpamMon.py"]
+CMD ["cron", "-f"]
 
