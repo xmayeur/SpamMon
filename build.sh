@@ -13,6 +13,6 @@ docker tag spammon xmayeur/spammon
 
 # docker push xmayeur/spammon
 
-exec ./spammon.sh
+docker run -ti --name spammon -v /root/:/conf/ -v /var/log:/var/log/ spammon
 
 
