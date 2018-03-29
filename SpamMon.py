@@ -600,8 +600,8 @@ def testspam():
 def main():
     global p1, p2
 
-    # p1 = multiprocessing.Process(target=mail_monitor, args=('xavier',))
-    # p1.start()
+    p1 = multiprocessing.Process(target=mail_monitor, args=('xavier',))
+    p1.start()
 
     p2 = multiprocessing.Process(target=mail_monitor, args=('joelle',))
     p2.start()
