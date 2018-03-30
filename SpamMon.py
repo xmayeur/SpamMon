@@ -614,9 +614,9 @@ def main():
     global p1, p2
     p1.start()
     p2.start()
-    
-    signal.signal(signal.SIGINT, exit_gracefully)
-    signal.signal(signal.SIGTERM, exit_gracefully)
+
+    # signal.signal(signal.SIGINT, exit_gracefully)
+    # signal.signal(signal.SIGTERM, exit_gracefully)
     
 
 if __name__ == "__main__":

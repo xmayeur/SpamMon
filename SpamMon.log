@@ -45,3 +45,20 @@
 2018-03-30 10:01:21,505 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam
 2018-03-30 10:01:21,988 | SpamMon | INFO | xavier - us@sumofus.org is a spam
 2018-03-30 10:01:31,572 | SpamMon | INFO | xavier - script stopped...
+2018-03-30 10:21:34,748 | SpamMon | INFO | Connected to Spam DB
+2018-03-30 10:21:35,238 | SpamMon | INFO | Connected to Spam DB
+2018-03-30 10:21:35,238 | SpamMon | INFO | xavier - ... script started
+2018-03-30 10:21:35,269 | SpamMon | INFO | Connected to Spam DB
+2018-03-30 10:21:35,269 | SpamMon | INFO | joelle - ... script started
+2018-03-30 10:21:35,736 | SpamMon | INFO | xavier - server connection established
+2018-03-30 10:21:35,799 | SpamMon | INFO | joelle - server connection established
+2018-03-30 10:21:35,861 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-30 10:21:35,937 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-30 10:21:36,419 | SpamMon | INFO | joelle - script stopped...
+2018-03-30 10:21:39,061 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-03-30 10:21:39,266 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-03-30 10:21:39,422 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam
+2018-03-30 10:21:39,753 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-30 10:21:40,457 | SpamMon | INFO | xavier - us@sumofus.org is a spam
+2018-03-30 10:21:40,942 | SpamMon | INFO | xavier - support@domadoo.com is a spam
+2018-03-30 10:21:52,484 | SpamMon | INFO | xavier - script stopped...
