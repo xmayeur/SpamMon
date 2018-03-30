@@ -144,6 +144,7 @@ class Spam(object):
             self.engine = init_engine()
             self.sql = init_db_session(self.engine)
             self.__status = ''
+            log.info('Connected to Spam DB')
         except sqlError.SQLAlchemyError:
             log.error('Cannot initiate connection to database')
     
@@ -397,6 +398,8 @@ def mail_monitor(mail_profile):
         # retrieve the cacert.pem file - it is needed under Windows
         try:
             cafile = config.get(mail_profile, 'cafile')
+            if os.name == 'nt':
+                cafile = cafile.split('/')[2]
         except configparser.NoOptionError:
             log.warning('%s - no "cafile" option in configuration' % mail_profile)
             cafile = None

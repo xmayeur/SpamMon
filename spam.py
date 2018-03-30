@@ -47,6 +47,7 @@ class Spam(object):
             self.engine = init_engine()
             self.sql = init_db_session(self.engine)
             self.__status = ''
+            log.info('Connected to Spam DB')
         except sqlError.SQLAlchemyError:
             log.error('Cannot initiate connection to database')
 
