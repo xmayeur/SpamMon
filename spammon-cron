@@ -1,1 +1,1 @@
-*/15 * * * * /usr/local/bin/python /SpamMon/SpamMon.py
+*/15 * * * * /bin/sh /SpamMon/run.sh
