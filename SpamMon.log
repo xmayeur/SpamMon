@@ -62,3 +62,34 @@
 2018-03-30 10:21:40,457 | SpamMon | INFO | xavier - us@sumofus.org is a spam
 2018-03-30 10:21:40,942 | SpamMon | INFO | xavier - support@domadoo.com is a spam
 2018-03-30 10:21:52,484 | SpamMon | INFO | xavier - script stopped...
+2018-03-30 15:27:12,085 | SpamMon | INFO | Connected to Spam DB
+2018-03-30 15:27:12,582 | SpamMon | INFO | Connected to Spam DB
+2018-03-30 15:27:12,585 | SpamMon | INFO | joelle - ... script started
+2018-03-30 15:27:12,616 | SpamMon | INFO | Connected to Spam DB
+2018-03-30 15:27:12,620 | SpamMon | INFO | xavier - ... script started
+2018-03-30 15:27:13,152 | SpamMon | INFO | joelle - server connection established
+2018-03-30 15:27:13,157 | SpamMon | INFO | xavier - server connection established
+2018-03-30 15:27:13,284 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-30 15:27:13,294 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2018-03-30 15:27:14,571 | SpamMon | INFO | New spam address added adminebcej@0-8-0.net
+2018-03-30 15:27:14,768 | SpamMon | INFO | joelle - script stopped...
+2018-03-30 15:27:17,048 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-03-30 15:27:17,287 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-03-30 15:27:17,452 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam
+2018-03-30 15:27:17,887 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-30 15:27:18,525 | SpamMon | INFO | xavier - us@sumofus.org is a spam
+2018-03-30 15:27:19,087 | SpamMon | INFO | xavier - support@domadoo.com is a spam
+2018-03-30 15:27:32,888 | SpamMon | INFO | Connected to Spam DB
+2018-03-30 15:29:04,909 | SpamMon | INFO | Connected to Spam DB
+2018-03-30 15:29:10,230 | SpamMon | INFO | xavier - ... script started
+2018-03-30 15:29:10,891 | SpamMon | INFO | xavier - server connection established
+2018-03-30 15:29:11,026 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-03-30 15:29:14,320 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-03-30 15:29:14,529 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-03-30 15:29:14,703 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam
+2018-03-30 15:29:15,030 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-03-30 15:29:15,658 | SpamMon | INFO | xavier - us@sumofus.org is a spam
+2018-03-30 15:29:16,125 | SpamMon | INFO | xavier - support@domadoo.com is a spam
+2018-03-30 15:29:32,702 | SpamMon | INFO | xavier - script stopped...
+2018-03-30 15:29:32,704 | SpamMon | INFO | joelle - ... script started
+2018-03-30 15:29:32,704 | SpamMon | INFO | joelle - script stopped...

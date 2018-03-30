@@ -577,7 +577,7 @@ def mail_monitor(mail_profile):
         break
 
     log.info('%s - script stopped...' % mail_profile)
-    os.kill(os.getpid(), signal.SIGTERM)
+    # os.kill(os.getpid(), signal.SIGTERM)
     return
 
 
@@ -612,11 +612,15 @@ def testspam():
 
 def main():
     global p1, p2
-    p1.start()
-    p2.start()
 
-    # signal.signal(signal.SIGINT, exit_gracefully)
-    # signal.signal(signal.SIGTERM, exit_gracefully)
+    if config.get('global', 'loopforever') == 'True':
+        p1.start()
+        p2.start()
+        signal.signal(signal.SIGINT, exit_gracefully)
+        signal.signal(signal.SIGTERM, exit_gracefully)
+    else:
+        mail_monitor('xavier')
+        mail_monitor('joelle')
     
 
 if __name__ == "__main__":
