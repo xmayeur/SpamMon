@@ -13,6 +13,6 @@ docker tag spammon xmayeur/spammon
 
 # docker push xmayeur/spammon
 
-docker run -ti --name spammon -v /root/:/conf/ -v /var/log:/var/log/ spammon
+docker run -ti --name spammon --dns 8.8.8.8 -v /root/:/conf/ -v /var/log:/var/log/ spammon
 
 
