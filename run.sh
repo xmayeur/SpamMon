@@ -1,2 +1,2 @@
 cd /SpamMon
-python ./SpamMon.py
+/usr/local/bin/python /SpamMon/SpamMon.py
