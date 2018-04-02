@@ -29,7 +29,7 @@ deploy:
   - |-
     ssh -t pi@home.mayeur.be /usr/bin/sudo << EOF
       docker rm -f spammon
-      docker pull xmayeur spammon
+      docker pull xmayeur/spammon
       cd /root
       /bin/sh /root/spammon.sh
     EOF
