@@ -30,6 +30,7 @@ from sqlalchemy import exc as sqlError
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
+version = 1.2
 project = 'SpamMon'
 loopforever = True
 
@@ -613,6 +614,10 @@ def testspam():
 def main():
     global p1, p2
 
+    if sys.argv[1] == '--version':
+        print('Version %s' % version)
+        sys.exit(0)
+        
     if config.get('global', 'loopforever') == 'True':
         p1.start()
         p2.start()
@@ -621,7 +626,8 @@ def main():
     else:
         mail_monitor('xavier')
         mail_monitor('joelle')
-    
+        sys.exit(0)
+
 
 if __name__ == "__main__":
     main()

@@ -9,10 +9,12 @@ script:
   - docker run --rm --privileged multiarch/qemu-user-static:register --reset
   # build image
   - docker build -t spammon .
+  # test image
+  - docker run spammon spammon --version
   # push image
   - >
     if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
-      docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
+      echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
       # TAG=$(grep "ENV MYSQL_VERSION" Dockerfile | awk 'NF>1{print $NF}')
       docker tag spammon xmayeur/spammon
       docker push xmayeur/spammon
