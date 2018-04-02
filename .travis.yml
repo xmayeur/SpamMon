@@ -4,6 +4,8 @@ python:
 sudo: required
 services:
 - docker
+
+# See https://sebest.github.io/post/using-travis-ci-to-build-docker-images/
 script:
 - docker run --rm --privileged multiarch/qemu-user-static:register --reset
 - docker build -t spammon .
@@ -16,12 +18,15 @@ script:
   fi
 addons:
   ssh_known_hosts: home.mayeur.be
+
+# See https://oncletom.io/2016/travis-ssh-deploy/
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_af10b53936f5_key -iv $encrypted_af10b53936f5_iv
   -in deploy_rsa.enc -out /tmp/deploy_rsa -d
 - eval "$(ssh-agent -s)"
 - chmod 600 /tmp/deploy_rsa
 - ssh-add /tmp/deploy_rsa
+
 deploy:
   provider: script
   skip_cleanup: true
