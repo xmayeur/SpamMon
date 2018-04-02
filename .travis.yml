@@ -25,14 +25,8 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script:
-  - |-
-    ssh -t pi@home.mayeur.be /usr/bin/sudo << EOF
-      docker rm -f spammon
-      docker pull xmayeur/spammon
-      cd /root
-      /bin/sh /root/spammon.sh
-    EOF
+  script: ssh -t pi@home.mayeur.be /usr/bin/sudo -u root -i sh ./spammon.sh
+
 env:
   global:
   - secure: jnJoks7wjGAQU2lkm65bPAwEeyaVmM1+M9RTUzEmXqQfFDJIRuH8B+9jUl+1E4pyPwEZCVwYHzJB/Wn2peV4UkiwNqHqDWLOqNLpH0t+bupXa/gHH9/bwSX1g4SeVh116Aayes9idkZNwrBkvKSq2197/xEgDqk2YVqoiwUhb6XHWieeQKeKv/SumgPkB/CfIn3djOfc8i83RKBOF1sOAnmY7/XJHbQkDJE0483nuUDJuVhkGJ/a9sfjtccQhUoKzIHmLHrwOcSoEYxoCB9KiI093gw3MJcO+XOdFUBpPiBiBCSLtzVWl+N5bFNhGlPfPcmBYkUnznAi3xs9yQkDZGsYv0xBg2RcsDgoiwKsT5bfEXv+j5vt9NWvW3i8obxIo55Mp+W/ZiFbCNeLuDJA0MpZhkmX5JTy53oD1R4lC9i2QDXG9dYOvIqdv6GBaSXiKbVtGnpqmkmpayXM5Pv6/LPCMMudKVfOFN+9Jc7bjuFq+CBVN/VHhqCia8WZI2FxO46gZ3dDgNbptcEfivmmv8tQ5WrN4zJGL79hYm3R7W0GF76fVIwDpOZ+4zbWlN+ORqA2vuB9uq78Gx4DA+fLfz+85PREfiqwDCweTd6ZiIMtUrscxqAjl4umdg06EzcWHsv/L99LtOdfsyb0aFB8IaQ+cRTrLETjuns73KhTsm4=
