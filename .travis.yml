@@ -1,7 +1,9 @@
 language: python
+python:
+  - "3.6"
 sudo: required
 services:
-- docker
+  - docker
 script:
 # prepare qemu
 - docker run --rm --privileged multiarch/qemu-user-static:register --reset
@@ -10,8 +12,8 @@ script:
 # push image
 - >
   if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
-    docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
-    TAG=$(grep "ENV MYSQL_VERSION" Dockerfile | awk 'NF>1{print $NF}')
-    docker tag spammon xmayeur/spammon:$TAG
-    docker push xmayeur/spammon:$TAG
+#    docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
+#    TAG=$(grep "ENV MYSQL_VERSION" Dockerfile | awk 'NF>1{print $NF}')
+    docker tag spammon xmayeur/spammon
+    docker push xmayeur/spammon
   fi
