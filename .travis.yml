@@ -25,7 +25,7 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: ssh -t pi@home.mayeur.be /usr/bin/sudo -u root -i sh ./spammon.sh
+  script: ssh -t pi@home.mayeur.be /usr/bin/sudo -u root -i sh ./spammon.sh &
 
 env:
   global:
