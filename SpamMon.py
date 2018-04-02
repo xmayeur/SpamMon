@@ -614,9 +614,10 @@ def testspam():
 def main():
     global p1, p2
 
-    if sys.argv[1] == '--version':
-        print('Version %s' % version)
-        sys.exit(0)
+    if len(sys.argv) > 1:
+        if sys.argv[1] == '--version':
+            print('Version %s' % version)
+            sys.exit(0)
         
     if config.get('global', 'loopforever') == 'True':
         p1.start()
