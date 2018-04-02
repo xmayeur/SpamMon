@@ -1,9 +1,9 @@
 language: python
 python:
-  - "3.6"
+- "3.6"
 sudo: required
 services:
-  - docker
+- docker
 script:
 # prepare qemu
 - docker run --rm --privileged multiarch/qemu-user-static:register --reset
