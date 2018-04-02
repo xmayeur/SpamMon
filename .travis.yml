@@ -1,19 +1,40 @@
 language: python
 python:
-  - "3.6"
+- '3.6'
 sudo: required
 services:
-  - docker
+- docker
 script:
-  # prepare qemu
-  - docker run --rm --privileged multiarch/qemu-user-static:register --reset
-  # build image
-  - docker build -t spammon .
-  # push image
-  - >
-    if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
-      echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
-      # TAG=$(grep "ENV MYSQL_VERSION" Dockerfile | awk 'NF>1{print $NF}')
-      docker tag spammon xmayeur/spammon
-      docker push xmayeur/spammon
-    fi
+- docker run --rm --privileged multiarch/qemu-user-static:register --reset
+- docker build -t spammon .
+- |-
+  if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+    echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
+    # TAG=$(grep "ENV MYSQL_VERSION" Dockerfile | awk 'NF>1{print $NF}')
+    docker tag spammon xmayeur/spammon
+    docker push xmayeur/spammon
+  fi
+addons:
+  ssh_known_hosts: home.mayeur.be
+before_deploy:
+- openssl aes-256-cbc -K $encrypted_af10b53936f5_key -iv $encrypted_af10b53936f5_iv
+  -in deploy_rsa.enc -out /tmp/deploy_rsa -d
+- eval "$(ssh-agent -s)"
+- chmod 600 /tmp/deploy_rsa
+- ssh-add /tmp/deploy_rsa
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+  - |-
+    ssh -t pi@home.mayeur.be /usr/bin/sudo << EOF
+      docker rm -f spammon
+      docker pull xmayeur spammon
+      cd /root
+      /bin/sh /root/spammon.sh
+    EOF
+env:
+  global:
+  - secure: jnJoks7wjGAQU2lkm65bPAwEeyaVmM1+M9RTUzEmXqQfFDJIRuH8B+9jUl+1E4pyPwEZCVwYHzJB/Wn2peV4UkiwNqHqDWLOqNLpH0t+bupXa/gHH9/bwSX1g4SeVh116Aayes9idkZNwrBkvKSq2197/xEgDqk2YVqoiwUhb6XHWieeQKeKv/SumgPkB/CfIn3djOfc8i83RKBOF1sOAnmY7/XJHbQkDJE0483nuUDJuVhkGJ/a9sfjtccQhUoKzIHmLHrwOcSoEYxoCB9KiI093gw3MJcO+XOdFUBpPiBiBCSLtzVWl+N5bFNhGlPfPcmBYkUnznAi3xs9yQkDZGsYv0xBg2RcsDgoiwKsT5bfEXv+j5vt9NWvW3i8obxIo55Mp+W/ZiFbCNeLuDJA0MpZhkmX5JTy53oD1R4lC9i2QDXG9dYOvIqdv6GBaSXiKbVtGnpqmkmpayXM5Pv6/LPCMMudKVfOFN+9Jc7bjuFq+CBVN/VHhqCia8WZI2FxO46gZ3dDgNbptcEfivmmv8tQ5WrN4zJGL79hYm3R7W0GF76fVIwDpOZ+4zbWlN+ORqA2vuB9uq78Gx4DA+fLfz+85PREfiqwDCweTd6ZiIMtUrscxqAjl4umdg06EzcWHsv/L99LtOdfsyb0aFB8IaQ+cRTrLETjuns73KhTsm4=
+  - secure: XEcWJVZtoeMomdprE2iczpu32mdzRb/YL9IqbalPvOtyrgVgcqUt2BZnoQoqobRxIWNWu5uOiOjWvqDPPIgLLUi/2HmK8TNLdxfAz4jUnyNXPigFIEcTd01ClqdbZkBtVVsxNhPW6BBixXyszy5G3RAZ8HOUnWUmbjTyeGh/VcTd7/e32SiyJB20PRaZUehYpwfeTdhM1Bf1cLODeZhMiqT/oK8pGG/3KC1qZ6m+f34R3RpwZf6R8AXZoNjriR8UoaIIyfDi71q7KB+B5VxcfU+FTrFOvPG+pvaXsiymJCDLIUmhs7lHSD/bDC1yX2kKdAaH9BorNrAwClRqM0b8IdAA6d1aL8STj+7Kxf/S/DzOd3GLP8STzzqGcjovKuJrlj8+4MxUGzVU+Sc66wksPAZ22Z1K+PrSBHgWRGbkqoIDy23pp7Kxp2XGiONRULyX6kffHgvIH1xkmg8SIx7Bk4kyCHJbwNaHFh3YLa4J0gOdzLvCKTnL8pV5hB3qG2sNfBvQ6xXI2wOyrV9vG6Bo3475+mDo3NJeOIXEKzwgXZRJKGvrX8s0NJVj/GRJA83WH00MabSDQ8VcHWlPFLpIPDAs0LxThv9Y/SirJqkF/LXHeu44hZo59/0yuMjh8aNurl4kfkfG6RKJ+YG/Gvlnd/2j9XNINYBvqadDQBX22b4=
+  - secure: bRFi13pHpYAuxD8EjABLO/NL7V/vJY+IMmUV43F6OjNOgnNjpBjFXh+kLY8p+DtzT6Mx0z9uerNbmE8QX5I5dhK3h5/AsW/pcBph0pPXC6x54PaJ5cLtCbWqZ7AGcWfguCMUCypesFHEOP3BjriU69NByRqF5S9T1JHAPMZA6jKXY3Fv5PZRv+mTpzxGlov+9I9ELf0/Vpa/78UquJi2GmxsIr6ZFRceGRVwI0K7o6b1SK036V01j1OdoPO5a5miTj35TfxXXc868ufOpr05l4gwoVL4JwUp6nrYekm4Cw5vv6A1ipgUCXa8dzNPZ01mQ0YYBA18TPUKWjElaH2BSHKCQBANHunkGHP6sRCs3CKBZw3wf0AYvW38xYZZK0LarQsVksYy4durqltEiAxPFj9IWuDV+Jiozzt5vSJY126VI2VO9VYURJrsc7jaegIrljqmHK5+qf3LgnPZ2GljgZVnWazfe52JM+qlq5ta7Ne2+r6G0Oj/57IceZ6+TYoTK/nrCUvPuMd1LTObU4Ta2MzM6XPMZCX/yqo0goqyrhp1rLsDIoKhkH3ZXgbFXYoKLqXFH9GCVKRh+S2Y4q487oCCwnKw0WZjXMUmlBJzXCj1emEWdYJVWpycWndsKhoo1MCBlsde645ndn3Kq7FlaH1B/FHJSEa/IVa76qVJ6Oc=
