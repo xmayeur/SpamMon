@@ -93,3 +93,50 @@
 2018-03-30 15:29:32,702 | SpamMon | INFO | xavier - script stopped...
 2018-03-30 15:29:32,704 | SpamMon | INFO | joelle - ... script started
 2018-03-30 15:29:32,704 | SpamMon | INFO | joelle - script stopped...
+2018-04-02 22:13:47,646 | SpamMon | INFO | Connected to Spam DB
+2018-04-02 22:13:47,654 | SpamMon | INFO | xavier - ... script started
+2018-04-02 22:13:48,304 | SpamMon | INFO | xavier - server connection established
+2018-04-02 22:13:48,446 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-04-02 22:13:48,970 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-04-02 22:13:49,163 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-04-02 22:13:49,389 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam
+2018-04-02 22:13:49,566 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-04-02 22:13:49,889 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-04-02 22:13:50,212 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam
+2018-04-02 22:13:50,755 | SpamMon | INFO | xavier - info@news.lesconseilsdujour.be is a spam
+2018-04-02 22:13:51,491 | SpamMon | INFO | xavier - ProfactsTeam@profacts.eu is a spam
+2018-04-02 22:13:51,945 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam
+2018-04-02 22:13:52,312 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-04-02 22:13:52,489 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-04-02 22:13:52,664 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-04-02 22:13:53,559 | SpamMon | INFO | xavier - petervancoppenolle@telenet.be is a spam
+2018-04-02 22:13:53,743 | SpamMon | INFO | xavier - info@news.lesconseilsdujour.be is a spam
+2018-04-02 22:13:53,928 | SpamMon | INFO | xavier - pinbot@explore.pinterest.com is a spam
+2018-04-02 22:13:55,394 | SpamMon | INFO | xavier - ProfactsTeam@profacts.eu is a spam
+2018-04-02 22:31:11,058 | SpamMon | INFO | Connected to Spam DB
+2018-04-02 22:31:15,579 | SpamMon | INFO | xavier - ... script started
+2018-04-02 22:31:16,278 | SpamMon | INFO | xavier - server connection established
+2018-04-02 22:31:16,426 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-04-02 22:33:28,469 | SpamMon | INFO | xavier - newsletter@achatdesoffres.be is a spam
+2018-04-02 22:34:23,026 | SpamMon | INFO | Connected to Spam DB
+2018-04-02 22:34:23,036 | SpamMon | INFO | xavier - ... script started
+2018-04-02 22:34:23,730 | SpamMon | INFO | xavier - server connection established
+2018-04-02 22:34:23,867 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-04-02 22:34:54,797 | SpamMon | INFO | Connected to Spam DB
+2018-04-02 22:34:54,807 | SpamMon | INFO | xavier - ... script started
+2018-04-02 22:34:55,407 | SpamMon | INFO | xavier - server connection established
+2018-04-02 22:34:55,534 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-04-02 22:37:58,155 | SpamMon | INFO | Connected to Spam DB
+2018-04-02 22:37:58,165 | SpamMon | INFO | xavier - ... script started
+2018-04-02 22:37:58,847 | SpamMon | INFO | xavier - server connection established
+2018-04-02 22:37:58,982 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-04-02 22:38:47,283 | SpamMon | INFO | xavier - script stopped...
+2018-04-02 22:38:50,532 | SpamMon | INFO | joelle - ... script started
+2018-04-02 22:38:50,533 | SpamMon | INFO | joelle - script stopped...
+2018-04-02 22:39:05,764 | SpamMon | INFO | Connected to Spam DB
+2018-04-02 22:39:05,764 | SpamMon | INFO | xavier - ... script started
+2018-04-02 22:39:06,283 | SpamMon | INFO | xavier - server connection established
+2018-04-02 22:39:06,416 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-04-02 22:39:08,910 | SpamMon | INFO | xavier - script stopped...
+2018-04-02 22:39:08,911 | SpamMon | INFO | joelle - ... script started
+2018-04-02 22:39:08,911 | SpamMon | INFO | joelle - script stopped...
