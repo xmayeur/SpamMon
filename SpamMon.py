@@ -311,11 +311,10 @@ def ScanForNewSpamAddresses(server_, spam_):
             if not spam_.exist(addrfrom):
                 spam_.add(addrfrom)
                 log.info('New spam address added {0}'.format(addrfrom))
-            # server_.move((msg, ), r'INBOX.Unwanted')
-            # server_.delete_messages(msg, True)
+                server_.move((msg,), r'INBOX.Unwanted')
+                # server_.delete_messages(msg, True)
         except:
             pass
-    server_.move(messages, r'INBOX.Unwanted')
 
 
 def ScanToRemoveAddresses(server_, spam_):
