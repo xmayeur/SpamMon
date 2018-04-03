@@ -609,6 +609,7 @@ def testspam():
 
 def main():
     global p1, p2
+    global loopforever
 
     if len(sys.argv) > 1:
         if sys.argv[1] == '--version':

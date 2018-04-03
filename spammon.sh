@@ -4,5 +4,5 @@
 
 docker rm -f spammon
 docker pull xmayeur/spammon
-docker run -ti --name spammon -v /root/:/conf/ -v /var/log:/var/log/ xmayeur/spammon
+docker run --name spammon --restart always -v /root/:/conf/ -v /var/log:/var/log/ xmayeur/spammon
 
