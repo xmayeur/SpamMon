@@ -18,6 +18,10 @@ RUN apt-get update
 RUN apt-get install -y --no-install-recommends cron
 COPY spammon-cron /etc/cron.d/spammon-cron
 RUN crontab /etc/cron.d/spammon-cron
+RUN chmod 0644 /etc/cron.d/spammon-cron
+
+# Create the log file to be able to run tail
+RUN touch /var/log/cron.log
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
@@ -29,6 +33,6 @@ EXPOSE 80
 ENV NAME SpamMon
 
 # Run app.py when the container launches
-# ENTRYPOINT ["python", "SpamMon.py"]
-CMD ["cron", "-f"]
+ENTRYPOINT ["python", "SpamMon.py"]
+CMD ["cron"]
 
