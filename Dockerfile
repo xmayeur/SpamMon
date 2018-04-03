@@ -35,6 +35,6 @@ EXPOSE 80
 # ENV NAME SpamMon
 
 # Run app.py when the container launches
-ENTRYPOINT ["python", "SpamMon.py --version"]
+ENTRYPOINT ["python", "SpamMon.py"]
 CMD ["cron &"]
 
