@@ -140,3 +140,22 @@
 2018-04-02 22:39:08,910 | SpamMon | INFO | xavier - script stopped...
 2018-04-02 22:39:08,911 | SpamMon | INFO | joelle - ... script started
 2018-04-02 22:39:08,911 | SpamMon | INFO | joelle - script stopped...
+2018-04-03 16:22:37,674 | SpamMon | INFO | Connected to Spam DB
+2018-04-03 16:22:37,695 | SpamMon | INFO | xavier - ... script started
+2018-04-03 16:22:38,400 | SpamMon | INFO | xavier - server connection established
+2018-04-03 16:22:38,541 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-04-03 16:22:43,860 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam
+2018-04-03 16:22:44,035 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-04-03 16:22:44,210 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-04-03 16:22:45,226 | SpamMon | INFO | xavier - team@datacamp.com is a spam
+2018-04-03 16:22:45,400 | SpamMon | INFO | xavier - info@news.lesconseilsdujour.be is a spam
+2018-04-03 16:23:31,999 | SpamMon | INFO | xavier - script stopped...
+2018-04-03 16:23:37,276 | SpamMon | INFO | joelle - ... script started
+2018-04-03 16:23:40,972 | SpamMon | INFO | joelle - script stopped...
+2018-04-03 16:23:48,403 | SpamMon | INFO | Connected to Spam DB
+2018-04-03 16:23:48,406 | SpamMon | INFO | xavier - ... script started
+2018-04-03 16:23:48,874 | SpamMon | INFO | xavier - server connection established
+2018-04-03 16:23:49,011 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-04-03 16:23:50,156 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam
+2018-04-03 16:23:50,375 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-04-03 16:23:50,572 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam

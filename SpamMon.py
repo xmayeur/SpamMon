@@ -626,7 +626,10 @@ def main():
         signal.signal(signal.SIGTERM, exit_gracefully)
     else:
         mail_monitor('xavier')
+        # reset the loopforever var and restart a new job
+        loopforever = True
         mail_monitor('joelle')
+        spamDB.close()
         sys.exit(0)
 
 
