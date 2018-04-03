@@ -17,8 +17,8 @@ ADD . /SpamMon
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends cron
 COPY spammon-cron /etc/cron.d/spammon-cron
-COPY entry.sh /usr/bin/entry.sh
-RUN chmod +x /usr/bin/entry.sh
+# COPY entry.sh /usr/bin/entry.sh
+# RUN chmod +x /usr/bin/entry.sh
 RUN crontab /etc/cron.d/spammon-cron
 RUN chmod 0644 /etc/cron.d/spammon-cron
 
