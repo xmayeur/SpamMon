@@ -311,10 +311,11 @@ def ScanForNewSpamAddresses(server_, spam_):
             if not spam_.exist(addrfrom):
                 spam_.add(addrfrom)
                 log.info('New spam address added {0}'.format(addrfrom))
-            server_.copy(msg, r'INBOX.Unwanted')
-            server_.delete_messages(msg, True)
+            # server_.move((msg, ), r'INBOX.Unwanted')
+            # server_.delete_messages(msg, True)
         except:
             pass
+    server_.move(messages, r'INBOX.Unwanted')
 
 
 def ScanToRemoveAddresses(server_, spam_):
@@ -334,9 +335,9 @@ def ScanToRemoveAddresses(server_, spam_):
                 spam_.remove(addrfrom)
                 log.info('Address removed from Spam List {0}'.format(addrfrom))
                 server_.remove_flags(msg, [SEEN])
-                server_.copy(msg, 'INBOX')
+                server_.move((msg,), 'INBOX')
                 # and delete it from the current folder
-                server_.delete_messages(msg)
+                # server_.delete_messages(msg)
     except Exception:
         log.critical('Folder INBOX.NotSpam does not exist!')
 
@@ -351,17 +352,13 @@ def mail_monitor(mail_profile):
     
     while loopforever:
         # <--- Start configuration script
-
+        debug = False
         # Retrieve global params
         try:
             if config.get('global', 'debug') == 'True':
                 debug = True
-            else:
-                debug = False
-
         except configparser.NoOptionError:
-            debug = False
-            return
+            pass
 
         try:
             if not debug:
@@ -477,9 +474,9 @@ def mail_monitor(mail_profile):
                 if spamDB.exist(addrfrom):
                     # if the mail address exists in the spam list, then move the spam to the Spam folder
                     log.info("%s - %s is a spam" % (mail_profile, addrfrom))
-                    server.copy(msg, 'INBOX.Spam')
+                    server.move((msg,), 'INBOX.Spam')
                     # and delete it from the INBOX
-                    server.delete_messages(msg)
+                    # server.delete_messages(msg)
                 else:
                     server.remove_flags(msg, [SEEN])
                     # do nothing else for non blocked mails

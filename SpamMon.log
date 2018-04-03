@@ -159,3 +159,28 @@
 2018-04-03 16:23:50,156 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam
 2018-04-03 16:23:50,375 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
 2018-04-03 16:23:50,572 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-04-03 16:30:36,114 | SpamMon | INFO | Connected to Spam DB
+2018-04-03 16:30:36,120 | SpamMon | INFO | xavier - ... script started
+2018-04-03 16:30:36,766 | SpamMon | INFO | xavier - server connection established
+2018-04-03 16:30:36,900 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-04-03 16:32:22,964 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam
+2018-04-03 16:36:21,167 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-04-03 16:36:25,242 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-04-03 16:36:40,866 | SpamMon | INFO | xavier - team@datacamp.com is a spam
+2018-04-03 16:36:41,067 | SpamMon | INFO | xavier - info@news.lesconseilsdujour.be is a spam
+2018-04-03 16:37:35,583 | SpamMon | INFO | Connected to Spam DB
+2018-04-03 16:37:35,588 | SpamMon | INFO | xavier - ... script started
+2018-04-03 16:37:36,160 | SpamMon | INFO | xavier - server connection established
+2018-04-03 16:37:36,294 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-04-03 16:37:56,606 | SpamMon | INFO | xavier - newsletter@les-annonces-du-jour2.be is a spam
+2018-04-03 16:38:09,876 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-04-03 16:45:47,787 | SpamMon | INFO | xavier - newsletter@slp.conseildesoffres.be is a spam
+2018-04-03 16:45:57,621 | SpamMon | INFO | xavier - team@datacamp.com is a spam
+2018-04-03 16:45:57,811 | SpamMon | INFO | xavier - info@news.lesconseilsdujour.be is a spam
+2018-04-03 16:48:45,704 | SpamMon | INFO | Connected to Spam DB
+2018-04-03 16:48:45,704 | SpamMon | INFO | xavier - ... script started
+2018-04-03 16:48:46,205 | SpamMon | INFO | xavier - server connection established
+2018-04-03 16:48:46,346 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-04-03 16:49:05,031 | SpamMon | INFO | xavier - script stopped...
+2018-04-03 16:49:05,033 | SpamMon | INFO | joelle - ... script started
+2018-04-03 16:49:05,033 | SpamMon | INFO | joelle - script stopped...
