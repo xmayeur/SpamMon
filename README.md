@@ -1,5 +1,7 @@
 # SpamMon
 
+[![Build Status](https://travis-ci.org/xmayeur/spammon.svg?branch=master)](https://travis-ci.org/xmayeur/spammon)
+
  SpamMon application monitor mailboxes to supress known spam addresses stored in mysql database
  Spam's addresses are added by dropping the spam un-read mail into the spam folder
  Found spam mails are moved to the spam folder
