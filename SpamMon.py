@@ -473,7 +473,7 @@ def mail_monitor(mail_profile):
                 if spamDB.exist(addrfrom):
                     # if the mail address exists in the spam list, then move the spam to the Spam folder
                     log.info("%s - %s is a spam" % (mail_profile, addrfrom))
-                    server.move((msg,), 'INBOX.Spam')
+                    server.move((msg,), 'INBOX.Unwanted')
                     # and delete it from the INBOX
                     # server.delete_messages(msg)
                 else:
