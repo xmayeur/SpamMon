@@ -8,7 +8,7 @@ services:
 # See https://sebest.github.io/post/using-travis-ci-to-build-docker-images/
 script:
 - docker run --rm --privileged multiarch/qemu-user-static:register --reset
-- docker build -t spammon .
+# - docker build -t spammon .
 - |-
   if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
@@ -30,7 +30,7 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: ssh -t root@home.mayeur.be -p 2202 "/root/spammon.sh &"
+  script: ssh -o "StrictHostKeyChecking no" -t root@home.mayeur.be -p 2202 "/root/spammon.sh &"
 
 env:
   global:
