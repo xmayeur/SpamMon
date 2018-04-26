@@ -15,8 +15,8 @@ WORKDIR /SpamMon
 ADD . /SpamMon
 
 # install  cron
-RUN apt-get update
-RUN apt-get install -y --no-install-recommends cron
+# RUN apt-get update
+# RUN apt-get install -y --no-install-recommends cron
 COPY spammon-cron /etc/cron.d/spammon-cron
 # COPY entry.sh /usr/bin/entry.sh
 # RUN chmod +x /usr/bin/entry.sh
