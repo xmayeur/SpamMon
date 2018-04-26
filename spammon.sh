@@ -7,5 +7,5 @@ echo "pull the latest version"
 docker pull xmayeur/spammon
 echo "run the container"
 docker run --name spammon --restart always -v /root/:/conf/ -v /var/log:/var/log/ xmayeur/spammon &
-sleep 15
+sleep 16
 echo "bye-bye"
