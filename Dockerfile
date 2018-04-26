@@ -5,7 +5,8 @@
 # run the following command to build a rpi image
 # docker run --rm --privileged multiarch/qemu-user-static:register --reset
  
-FROM resin/raspberrypi3-python:3.6-slim
+# FROM resin/raspberrypi3-python:3.6-slim
+FROM xmayeur/cron
 
 # Set the working directory to /app
 WORKDIR /SpamMon
