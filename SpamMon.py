@@ -187,7 +187,7 @@ class Spam(object):
             row = self.sql.query(SpamItem).filter(SpamItem.address == domain).first()
             if row is not None:
                 return True
-        except IndexError:
+        except Exception as e:
             pass
         
         try:
@@ -325,6 +325,7 @@ def ScanToRemoveAddresses(server_, spam_):
         messages = server_.search()
     except Exception:
         log.critical('Folder INBOX.NotSpam does not exist!')
+        messages = None
 
     # fetch blocked addresses to remove from the list
     for msg in messages:
@@ -342,7 +343,7 @@ def ScanToRemoveAddresses(server_, spam_):
                 # and delete it from the current folder
                 # server_.delete_messages(msg)
         except Exception:
-            log.info('Error fetching in INBOX.NotSpam')
+            log.info('Error fetching in INBOX.NotSpam - Check if MySql is running')
 
 
 def mail_monitor(mail_profile):

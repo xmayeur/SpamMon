@@ -253,3 +253,26 @@
 2019-03-06 22:03:15,033 | SpamMon | INFO | joelle - server connection established
 2019-03-06 22:03:15,202 | SpamMon | INFO | joelle - login successful - b'Logged in'
 2019-03-06 22:03:17,877 | SpamMon | INFO | joelle - script stopped...
+2019-03-17 21:24:55,730 | SpamMon | INFO | Connected to Spam DB
+2019-03-17 21:24:55,743 | SpamMon | INFO | xavier - ... script started
+2019-03-17 21:24:56,565 | SpamMon | INFO | xavier - server connection established
+2019-03-17 21:24:56,695 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2019-03-17 21:25:41,859 | SpamMon | INFO | Error fetching in INBOX.NotSpam
+2019-03-17 21:26:01,193 | SpamMon | INFO | Error fetching in INBOX.NotSpam
+2019-03-17 21:26:25,890 | SpamMon | INFO | Error fetching in INBOX.NotSpam
+2019-03-17 21:26:52,089 | SpamMon | INFO | Error fetching in INBOX.NotSpam
+2019-03-17 21:27:11,634 | SpamMon | INFO | Error fetching in INBOX.NotSpam
+2019-03-17 21:27:23,743 | SpamMon | INFO | Error fetching in INBOX.NotSpam
+2019-03-17 21:27:52,321 | SpamMon | INFO | Error fetching in INBOX.NotSpam
+2019-03-17 21:29:19,355 | SpamMon | INFO | Connected to Spam DB
+2019-03-17 21:29:19,356 | SpamMon | INFO | xavier - ... script started
+2019-03-17 21:29:20,053 | SpamMon | INFO | xavier - server connection established
+2019-03-17 21:29:20,182 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2019-03-17 21:40:33,780 | SpamMon | INFO | Connected to Spam DB
+2019-03-17 21:40:33,781 | SpamMon | INFO | xavier - ... script started
+2019-03-17 21:40:34,432 | SpamMon | INFO | xavier - server connection established
+2019-03-17 21:40:34,559 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2019-03-17 21:52:31,265 | SpamMon | INFO | Connected to Spam DB
+2019-03-17 21:52:31,266 | SpamMon | INFO | xavier - ... script started
+2019-03-17 21:52:31,931 | SpamMon | INFO | xavier - server connection established
+2019-03-17 21:52:32,058 | SpamMon | INFO | xavier - login successful - b'Logged in'
