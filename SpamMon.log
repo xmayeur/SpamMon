@@ -216,3 +216,40 @@
 2018-04-03 17:13:30,307 | SpamMon | INFO | joelle - server connection established
 2018-04-03 17:13:30,436 | SpamMon | INFO | joelle - login successful - b'Logged in'
 2018-04-03 17:13:31,358 | SpamMon | INFO | joelle - script stopped...
+2018-11-14 11:15:55,091 | SpamMon | INFO | Connected to Spam DB
+2018-11-14 11:15:55,102 | SpamMon | INFO | xavier - ... script started
+2018-11-14 11:15:55,834 | SpamMon | INFO | xavier - server connection established
+2018-11-14 11:15:55,966 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-11-14 11:16:06,428 | SpamMon | CRITICAL | Folder INBOX.NotSpam does not exist!
+2018-11-14 11:16:23,325 | SpamMon | INFO | Connected to Spam DB
+2018-11-14 11:16:23,325 | SpamMon | INFO | xavier - ... script started
+2018-11-14 11:16:23,995 | SpamMon | INFO | xavier - server connection established
+2018-11-14 11:16:24,127 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-11-14 11:16:43,079 | SpamMon | INFO | Connected to Spam DB
+2018-11-14 11:16:43,079 | SpamMon | INFO | xavier - ... script started
+2018-11-14 11:16:43,832 | SpamMon | INFO | xavier - server connection established
+2018-11-14 11:16:43,979 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-11-14 11:17:50,952 | SpamMon | CRITICAL | Folder INBOX.NotSpam does not exist!
+2018-11-14 11:20:14,561 | SpamMon | INFO | Connected to Spam DB
+2018-11-14 11:20:14,569 | SpamMon | INFO | xavier - ... script started
+2018-11-14 11:20:15,291 | SpamMon | INFO | xavier - server connection established
+2018-11-14 11:20:15,423 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-11-14 11:21:32,399 | SpamMon | CRITICAL | Error fetching in INBOX.NotSpam
+2018-11-14 11:29:07,519 | SpamMon | INFO | Connected to Spam DB
+2018-11-14 11:29:07,519 | SpamMon | INFO | xavier - ... script started
+2018-11-14 11:29:08,998 | SpamMon | INFO | xavier - server connection established
+2018-11-14 11:29:09,129 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2018-11-14 11:29:12,034 | SpamMon | INFO | xavier - us@sumofus.org is a spam
+2019-02-10 15:25:24,938 | SpamMon | INFO | Connected to Spam DB
+2019-02-10 15:25:24,938 | SpamMon | INFO | xavier - ... script started
+2019-02-10 15:25:25,660 | SpamMon | INFO | xavier - server connection established
+2019-02-10 15:25:25,782 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2019-03-06 22:03:11,481 | SpamMon | INFO | Connected to Spam DB
+2019-03-06 22:03:11,521 | SpamMon | INFO | xavier - ... script started
+2019-03-06 22:03:12,364 | SpamMon | INFO | xavier - server connection established
+2019-03-06 22:03:14,670 | SpamMon | CRITICAL | xavier - failed to login to IMAP server - imapclient.exceptions.LoginError: b'[AUTHENTICATIONFAILED] Authentication failed.'; 
+2019-03-06 22:03:14,670 | SpamMon | INFO | xavier - script stopped...
+2019-03-06 22:03:14,670 | SpamMon | INFO | joelle - ... script started
+2019-03-06 22:03:15,033 | SpamMon | INFO | joelle - server connection established
+2019-03-06 22:03:15,202 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2019-03-06 22:03:17,877 | SpamMon | INFO | joelle - script stopped...

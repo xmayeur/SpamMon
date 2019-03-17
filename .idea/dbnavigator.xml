@@ -27,7 +27,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="a32c27fb-76f9-4075-903d-2f4e760cb2d1">
-      <console name="Connection" type="STANDARD"><![CDATA[select
+      <console name="Connection" type="STANDARD" schema="" session="Main"><![CDATA[select
     tt.ACTION,
     tt.FEE_EUR,
     tt.ISIN,
@@ -41,26 +41,29 @@ from
     tbl_transaction tt;]]></console>
     </connection>
   </component>
+  <component name="DBNavigator.Project.DatabaseFileManager">
+    <open-files />
+  </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="a32c27fb-76f9-4075-903d-2f4e760cb2d1" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-list connection-id="a32c27fb-76f9-4075-903d-2f4e760cb2d1" dataset="portfolio.tbl_transaction" active-filter-id="">
+    <filter-actions connection-id="a32c27fb-76f9-4075-903d-2f4e760cb2d1" dataset="portfolio.tbl_transaction" active-filter-id="">
       <filter id="1d888a89-ec34-4a5d-a2e6-ea3018493a9e" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="ACTION" operator="=" value="" active="true" />
       </filter>
-    </filter-list>
-    <filter-list connection-id="a32c27fb-76f9-4075-903d-2f4e760cb2d1" dataset="mayeur_be.spam" active-filter-id="EMPTY_FILTER">
+    </filter-actions>
+    <filter-actions connection-id="a32c27fb-76f9-4075-903d-2f4e760cb2d1" dataset="mayeur_be.spam" active-filter-id="EMPTY_FILTER">
       <filter id="294d601e-f794-4e6b-b5d9-1623600ea8b5" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="address" operator="=" value="" active="true" />
       </filter>
-    </filter-list>
-    <filter-list connection-id="a32c27fb-76f9-4075-903d-2f4e760cb2d1" dataset="portfolio.tbl_security" active-filter-id="">
+    </filter-actions>
+    <filter-actions connection-id="a32c27fb-76f9-4075-903d-2f4e760cb2d1" dataset="portfolio.tbl_security" active-filter-id="">
       <filter id="2cdd63d2-9845-4e4b-b0bd-902bd30189b0" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="ISIN" operator="=" value="" active="true" />
       </filter>
-    </filter-list>
-    <filter-list connection-id="a32c27fb-76f9-4075-903d-2f4e760cb2d1" dataset="mayeur_be.user" active-filter-id="EMPTY_FILTER" />
+    </filter-actions>
+    <filter-actions connection-id="a32c27fb-76f9-4075-903d-2f4e760cb2d1" dataset="mayeur_be.user" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -100,9 +103,9 @@ from
           <port value="3306" />
           <database value="mysql" />
           <os-authentication value="false" />
-          <empty-password value="false" />
+          <empty-authentication value="false" />
           <user value="admin" />
-          <password value="QnJldHplbDU4" />
+          <deprecated-pwd value="QnJldHplbDU4" />
         </database>
         <properties>
           <auto-commit value="false" />
@@ -112,11 +115,17 @@ from
           <proxy-host value="" />
           <proxy-port value="22" />
           <proxy-user value="" />
-          <proxy-password value="" />
+          <deprecated-proxy-pwd value="" />
           <auth-type value="PASSWORD" />
           <key-file value="" />
           <key-passphrase value="" />
         </ssh-settings>
+        <ssl-settings>
+          <active value="false" />
+          <certificate-authority-file value="" />
+          <client-certificate-file value="" />
+          <client-key-file value="" />
+        </ssl-settings>
         <details>
           <charset value="UTF-8" />
           <session-management value="true" />
@@ -127,7 +136,8 @@ from
           <restore-workspace-deep value="true" />
           <environment-type value="default" />
           <idle-time-to-disconnect value="30" />
-          <password-expiry-time value="10" />
+          <idle-time-to-disconnect-pool value="5" />
+          <credential-expiry-time value="10" />
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
         </details>
@@ -266,11 +276,11 @@ from
         <data-length-threshold value="100" />
         <popup-delay value="1000" />
       </text-editor-popup>
-      <values-list-popup>
+      <values-actions-popup>
         <show-popup-button value="true" />
         <element-count-threshold value="1000" />
         <data-length-threshold value="250" />
-      </values-list-popup>
+      </values-actions-popup>
       <general>
         <fetch-block-size value="100" />
         <fetch-timeout value="30" />
@@ -294,7 +304,6 @@ from
           <content-type name="SQL" enabled="true" />
           <content-type name="PL/SQL" enabled="true" />
           <content-type name="YAML" enabled="true" />
-          <content-type name="Bash" enabled="true" />
         </content-types>
       </qualified-text-editor>
       <record-navigation>

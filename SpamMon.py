@@ -95,6 +95,7 @@ def get_vault(uid):
     r = requests.get(url=url + '?uid=%s' % uid)
     id = r.json()
     r.close()
+
     if id['status'] == 200:
         _username = id['username']
         _password = id['password']
@@ -322,9 +323,12 @@ def ScanToRemoveAddresses(server_, spam_):
     try:
         server_.select_folder('INBOX.NotSpam')
         messages = server_.search()
+    except Exception:
+        log.critical('Folder INBOX.NotSpam does not exist!')
 
-        # fetch blocked addresses to remove from the list
-        for msg in messages:
+    # fetch blocked addresses to remove from the list
+    for msg in messages:
+        try:
             fetch = server_.fetch(msg, [b'RFC822'])
             mail = email.message_from_bytes(
                 fetch[msg][b'RFC822']
@@ -337,8 +341,8 @@ def ScanToRemoveAddresses(server_, spam_):
                 server_.move((msg,), 'INBOX')
                 # and delete it from the current folder
                 # server_.delete_messages(msg)
-    except Exception:
-        log.critical('Folder INBOX.NotSpam does not exist!')
+        except Exception:
+            log.info('Error fetching in INBOX.NotSpam')
 
 
 def mail_monitor(mail_profile):
