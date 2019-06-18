@@ -136,10 +136,10 @@ class Spam(object):
     def exist(self, address):
 
         domain = '*@' + address.split('@')[1]
-        if domain in self.list.keys():
+        if domain in self.list: # .keys():
             return True
 
-        return address in self.list.keys()
+        return address in self.list # .keys()
         
     def close(self):
         try:
