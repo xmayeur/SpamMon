@@ -482,3 +482,62 @@
 2019-06-14 17:51:44,262 | SpamMon | INFO | joelle - server connection established
 2019-06-14 17:51:44,378 | SpamMon | INFO | joelle - login successful - b'Logged in'
 2019-06-14 17:51:46,321 | SpamMon | INFO | joelle - script stopped...
+2019-06-29 21:50:57,190 | SpamMon | INFO | xavier - ... script started
+2019-06-29 21:50:58,763 | SpamMon | INFO | xavier - server connection established
+2019-06-29 21:50:59,048 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2019-06-29 21:52:05,188 | SpamMon | INFO | New spam address added news@conseildesoffres.be
+2019-06-29 21:52:06,010 | SpamMon | INFO | New spam address added copy@gelukstudio.online
+2019-06-29 21:52:06,975 | SpamMon | INFO | New spam address added newsletter@ruedushopping.be
+2019-06-29 21:52:08,031 | SpamMon | INFO | New spam address added newsletter@slp.conseildesoffres.be
+2019-06-29 21:52:13,155 | SpamMon | INFO | New spam address added newsletter@mailmagique.be
+2019-06-29 21:52:13,972 | SpamMon | INFO | New spam address added newsletter@achatdesoffres.be
+2019-06-29 21:52:31,268 | SpamMon | INFO | New spam address added newsletter@instantachat.be
+2019-06-29 21:52:37,414 | SpamMon | INFO | New spam address added makro@news.makro.be
+2019-06-29 21:52:56,614 | SpamMon | INFO | xavier - ... script started
+2019-06-29 21:52:57,901 | SpamMon | INFO | xavier - server connection established
+2019-06-29 21:52:58,757 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2019-06-29 21:54:47,758 | SpamMon | INFO | New spam address added news@conseildesoffres.be
+2019-06-29 21:55:24,720 | SpamMon | INFO | New spam address added copy@gelukstudio.online
+2019-06-29 21:55:33,743 | SpamMon | INFO | New spam address added newsletter@ruedushopping.be
+2019-06-29 21:55:36,002 | SpamMon | INFO | New spam address added newsletter@mailmagique.be
+2019-06-29 21:57:53,441 | SpamMon | INFO | New spam address added newsletter@slp.conseildesoffres.be
+2019-06-29 23:27:21,328 | SpamMon | INFO | xavier - ... script started
+2019-06-29 23:27:24,362 | SpamMon | INFO | xavier - server connection established
+2019-06-29 23:27:24,763 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2019-06-29 23:27:53,125 | SpamMon | INFO | xavier - us@sumofus.org is a spam
+2019-06-29 23:27:55,029 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam
+2019-06-29 23:28:00,487 | SpamMon | INFO | xavier - assistance@domadoo.com is a spam
+2019-06-29 23:28:03,050 | SpamMon | INFO | xavier - info@email.thefork.be is a spam
+2019-06-29 23:28:04,594 | SpamMon | INFO | xavier - info@mailing.pixum.com is a spam
+2019-06-29 23:28:06,923 | SpamMon | INFO | xavier - newsletter@geneanet.org is a spam
+2019-06-29 23:28:49,656 | SpamMon | INFO | xavier - ... script started
+2019-06-29 23:28:50,981 | SpamMon | INFO | xavier - server connection established
+2019-06-29 23:28:51,356 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2019-06-29 23:29:34,650 | SpamMon | INFO | xavier - contact@thepihut.com is a spam
+2019-06-29 23:29:37,487 | SpamMon | INFO | xavier - info@info.qobuz.com is a spam
+2019-06-29 23:29:43,080 | SpamMon | INFO | xavier - pinbot@inspire.pinterest.com is a spam
+2019-06-29 23:29:44,329 | SpamMon | INFO | xavier - newsletter@geneanet.org is a spam
+2019-06-29 23:29:49,019 | SpamMon | INFO | xavier - info@info.qobuz.com is a spam
+2019-06-29 23:29:50,031 | SpamMon | INFO | xavier - TomTom@email.tomtom.com is a spam
+2019-06-29 23:29:51,871 | SpamMon | INFO | xavier - Offers@Tradepubs.nl00.net is a spam
+2019-06-29 23:30:54,626 | SpamMon | INFO | xavier - script stopped...
+2019-06-29 23:30:54,628 | SpamMon | INFO | joelle - ... script started
+2019-06-29 23:30:55,953 | SpamMon | INFO | joelle - server connection established
+2019-06-29 23:30:56,305 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2019-06-29 23:31:06,798 | SpamMon | INFO | joelle - script stopped...
+2019-06-29 23:32:35,017 | SpamMon | INFO | xavier - ... script started
+2019-06-29 23:32:36,468 | SpamMon | INFO | xavier - server connection established
+2019-06-29 23:32:36,855 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2019-06-29 23:33:01,442 | SpamMon | INFO | Error fetching in INBOX.NotSpam - Check if MySql is running
+2019-06-29 23:35:11,278 | SpamMon | INFO | xavier - ... script started
+2019-06-29 23:35:12,913 | SpamMon | INFO | xavier - server connection established
+2019-06-29 23:35:13,314 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2019-06-29 23:35:26,168 | SpamMon | INFO | Address removed from Spam List mail@mail.adobe.com
+2019-06-29 23:35:36,577 | SpamMon | INFO | Address removed from Spam List info@news.ing.be
+2019-06-29 23:35:38,181 | SpamMon | INFO | Address removed from Spam List info@info.qobuz.com
+2019-06-29 23:36:55,482 | SpamMon | INFO | xavier - script stopped...
+2019-06-29 23:36:55,482 | SpamMon | INFO | joelle - ... script started
+2019-06-29 23:36:56,839 | SpamMon | INFO | joelle - server connection established
+2019-06-29 23:36:57,224 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2019-06-29 23:37:17,261 | SpamMon | INFO | New spam address added info@news.ing.be
+2019-06-29 23:37:26,065 | SpamMon | INFO | joelle - script stopped...

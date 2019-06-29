@@ -107,8 +107,9 @@ class Spam(object):
     
     def __init__(self, db=None):
         try:
-            with open(db, 'rb') as f:
-                self.list = pickle.load(f)
+            with open(db, 'r') as f:
+                reader = csv.reader(f)
+                self.list = list(reader)[0]
         except:
             self.list = []
    
@@ -132,7 +133,7 @@ class Spam(object):
     def remove(self, address):
         # delete a record
         if address in self.list: # .keys():
-            self.list.pop(address)
+            self.list.remove(address)
         return True
     
     def exist(self, address):
@@ -145,25 +146,16 @@ class Spam(object):
         
     def close(self):
         try:
-            with open(db, 'wb') as f:
-                pickle.dump(self.list, f)
+            with open(db, 'w', newline='') as f:
+                w = csv.writer(f, quoting=csv.QUOTE_ALL)
+                w.writerow(self.list)
         except:
             pass
         
-    def load(self, csv_file):
-        with open(csv_file, 'r') as f:
-            reader = csv.reader(f)
-            self.list = list(reader)
-            
-    def dump(self, csv_file):
-        with open('spam.csv', 'w', newline='') as f:
-            w = csv.writer(f, quoting=csv.QUOTE_ALL)
-            w.writerow(self.list)
-
-    
+   
 db = config.get('db', 'db')
 if os.name == 'nt':
-    db='spam.db'
+    db='spam.csv'
 spamDB = Spam(db)
 
 
@@ -557,14 +549,6 @@ def main():
     if len(sys.argv) > 1:
         if sys.argv[1] == '--version':
             print('Version %s' % version)
-            sys.exit(0)
-        elif sys.argv[1] == "--load":
-            with Spam(db) as s:
-                s.load('spam.csv')
-            sys.exit(0)
-        elif sys.argv[1] == "--dump":
-            with Spam(db) as s:
-                s.dump('spam.csv')
             sys.exit(0)
         
     if config.get('global', 'loopforever') == 'True':
