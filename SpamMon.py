@@ -110,7 +110,7 @@ class Spam(object):
             with open(db, 'rb') as f:
                 self.list = pickle.load(f)
         except:
-            self.list = {}
+            self.list = []
    
     def __exit__(self, exc_type, exc_val, exc_tb):
         try:
@@ -124,23 +124,24 @@ class Spam(object):
     
     def add(self, address):
         # Add a new record
-        if not address in self.list.keys():
-            self.list[address] = 1
+        if not address in self.list: #  .keys():
+            # self.list[address] = 1
+            self.list.append(address)
         return True
     
     def remove(self, address):
         # delete a record
-        if address in self.list.keys():
+        if address in self.list: # .keys():
             self.list.pop(address)
         return True
     
     def exist(self, address):
 
         domain = '*@' + address.split('@')[1]
-        if domain in self.list.keys():
+        if domain in self.list: # .keys():
             return True
 
-        return address in self.list.keys()
+        return address in self.list # .keys()
         
     def close(self):
         try:
