@@ -30,7 +30,7 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: ssh -o "StrictHostKeyChecking no" -t root@home.mayeur.be -p 2202 /root/spammon.sh
+  script: ssh -o "StrictHostKeyChecking=no" -t root@home.mayeur.be -p 2202 /root/spammon.sh
 
 env:
   global:

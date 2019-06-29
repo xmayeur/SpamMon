@@ -21,6 +21,7 @@ from logging.handlers import RotatingFileHandler
 from smtplib import SMTP, SMTP_SSL
 from time import sleep
 import pickle
+import csv
 
 import imapclient
 import requests
@@ -104,7 +105,7 @@ def get_vault(uid):
 
 class Spam(object):
     
-    def __init__(self, db):
+    def __init__(self, db=None):
         try:
             with open(db, 'rb') as f:
                 self.list = pickle.load(f)
@@ -147,6 +148,16 @@ class Spam(object):
                 pickle.dump(self.list, f)
         except:
             pass
+        
+    def load(self, csv_file):
+        with open(csv_file, 'r') as f:
+            reader = csv.reader(f)
+            self.list = list(reader)
+            
+    def dump(self, csv_file):
+        with open('spam.csv', 'w', newline='') as f:
+            w = csv.writer(f, quoting=csv.QUOTE_ALL)
+            w.writerow(self.list)
 
     
 db = config.get('db', 'db')
@@ -538,18 +549,6 @@ def exit_gracefully(signum, frame):
     sys.exit(0)
 
 
-def testspam():
-    with Spam() as s:
-        s.configure()
-        if s.status == '':
-            if not s.add("www@ads.com"):
-                print('duplicate')
-            if s.exist("www@ads.com"):
-                print('found')
-                if s.remove("www@ads.com"):
-                    print('removed')
-
-
 def main():
     global p1, p2
     global loopforever
@@ -557,6 +556,14 @@ def main():
     if len(sys.argv) > 1:
         if sys.argv[1] == '--version':
             print('Version %s' % version)
+            sys.exit(0)
+        elif sys.argv[1] == "--load":
+            with Spam(db) as s:
+                s.load('spam.csv')
+            sys.exit(0)
+        elif sys.argv[1] == "--dump":
+            with Spam(db) as s:
+                s.dump('spam.csv')
             sys.exit(0)
         
     if config.get('global', 'loopforever') == 'True':

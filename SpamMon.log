@@ -276,3 +276,209 @@
 2019-03-17 21:52:31,266 | SpamMon | INFO | xavier - ... script started
 2019-03-17 21:52:31,931 | SpamMon | INFO | xavier - server connection established
 2019-03-17 21:52:32,058 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2019-04-27 22:41:07,451 | SpamMon | INFO | Connected to Spam DB
+2019-04-27 22:41:07,451 | SpamMon | INFO | xavier - ... script started
+2019-04-27 22:41:09,725 | SpamMon | INFO | xavier - server connection established
+2019-04-27 22:41:11,396 | SpamMon | CRITICAL | xavier - failed to login to IMAP server - imapclient.exceptions.LoginError: b'[UNAVAILABLE] Temporary authentication failure. [mailstorage11:2019-04-27 20:41:11]'; 
+2019-04-27 22:41:11,396 | SpamMon | INFO | xavier - script stopped...
+2019-04-27 22:41:11,396 | SpamMon | INFO | joelle - ... script started
+2019-04-27 22:41:12,576 | SpamMon | INFO | joelle - server connection established
+2019-04-27 22:41:12,752 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2019-04-27 22:41:14,717 | SpamMon | INFO | joelle - script stopped...
+2019-04-27 22:44:10,550 | SpamMon | INFO | Connected to Spam DB
+2019-04-27 22:44:10,551 | SpamMon | INFO | xavier - ... script started
+2019-04-27 22:44:11,633 | SpamMon | INFO | xavier - server connection established
+2019-04-27 22:44:11,831 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2019-04-27 22:44:21,879 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:21,879 | SpamMon | INFO | New spam address added newsletter@slp.conseildesoffres.be
+2019-04-27 22:44:22,799 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:22,799 | SpamMon | INFO | New spam address added news@conseildesoffres.be
+2019-04-27 22:44:23,169 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:23,169 | SpamMon | INFO | New spam address added newsletter@achatdesoffres.be
+2019-04-27 22:44:23,555 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:23,555 | SpamMon | INFO | New spam address added user2@crunch.vn
+2019-04-27 22:44:23,764 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:23,765 | SpamMon | INFO | New spam address added dhvcxgdmuzh@throwawaymail.com
+2019-04-27 22:44:24,853 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:24,853 | SpamMon | INFO | New spam address added marriottbonvoy@email-marriott.com
+2019-04-27 22:44:25,185 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:25,185 | SpamMon | INFO | New spam address added makro@news.makro.be
+2019-04-27 22:44:25,754 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:25,754 | SpamMon | INFO | New spam address added flotte@glr.doubleflash.pro
+2019-04-27 22:44:26,518 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:26,518 | SpamMon | INFO | New spam address added email.campaign@sg.booking.com
+2019-04-27 22:44:27,085 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:27,085 | SpamMon | INFO | New spam address added news@conseildesoffres.be
+2019-04-27 22:44:27,761 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:27,761 | SpamMon | INFO | New spam address added news@conseildesoffres.be
+2019-04-27 22:44:28,276 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:28,276 | SpamMon | INFO | New spam address added newsletter@achatdesoffres.be
+2019-04-27 22:44:28,396 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:28,396 | SpamMon | INFO | New spam address added juxpyxjtxwb@throwawaymail.com
+2019-04-27 22:44:30,179 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:30,179 | SpamMon | INFO | New spam address added immo-entreprise@glr.doublefacile.pro
+2019-04-27 22:44:30,584 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:30,584 | SpamMon | INFO | New spam address added xavier@mayeur.be
+2019-04-27 22:44:30,802 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:30,802 | SpamMon | INFO | New spam address added theatrelepublic@theatrelepublic.be
+2019-04-27 22:44:31,232 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:31,232 | SpamMon | INFO | New spam address added news@conseildesoffres.be
+2019-04-27 22:44:31,596 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:31,597 | SpamMon | INFO | New spam address added newsletter@ruedushopping.be
+2019-04-27 22:44:32,164 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:32,165 | SpamMon | INFO | New spam address added newsletter@mailmagique.be
+2019-04-27 22:44:33,222 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:33,223 | SpamMon | INFO | New spam address added news@conseildesoffres.be
+2019-04-27 22:44:33,681 | SpamMon | ERROR | Cannot add an item into the database
+2019-04-27 22:44:33,681 | SpamMon | INFO | New spam address added newsletter@slp.conseildesoffres.be
+2019-04-27 23:10:41,598 | SpamMon | INFO | xavier - ... script started
+2019-04-27 23:10:41,924 | SpamMon | INFO | xavier - server connection established
+2019-04-27 23:10:42,056 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2019-04-27 23:10:45,004 | SpamMon | INFO | New spam address added newsletter@mailmagique.be
+2019-04-27 23:10:45,171 | SpamMon | INFO | New spam address added newsletter@achatdesoffres.be
+2019-04-27 23:10:45,248 | SpamMon | INFO | New spam address added mdmuky@throwawaymail.com
+2019-04-27 23:10:45,325 | SpamMon | INFO | New spam address added nikoluch@ulr.net
+2019-04-27 23:10:45,535 | SpamMon | INFO | New spam address added email.campaign@sg.booking.com
+2019-04-27 23:10:45,692 | SpamMon | INFO | New spam address added mngdbzxzeqq@throwawaymail.com
+2019-04-27 23:10:45,845 | SpamMon | INFO | New spam address added news@conseildesoffres.be
+2019-04-27 23:10:46,044 | SpamMon | INFO | New spam address added newsletter@slp.conseildesoffres.be
+2019-04-27 23:10:46,262 | SpamMon | INFO | New spam address added makro@news.makro.be
+2019-04-27 23:10:46,337 | SpamMon | INFO | New spam address added cajvitco@throwawaymail.com
+2019-04-27 23:10:46,488 | SpamMon | INFO | New spam address added info@s30.reserver.ru
+2019-04-27 23:10:46,866 | SpamMon | INFO | New spam address added newsletter@ruedushopping.be
+2019-04-27 23:10:47,060 | SpamMon | INFO | New spam address added newsletter@geneanet.org
+2019-04-27 23:10:47,398 | SpamMon | INFO | New spam address added bsorzhmnve@throwawaymail.com
+2019-04-27 23:10:47,534 | SpamMon | INFO | New spam address added puram_mal2chada@seobeast.in
+2019-04-27 23:10:47,658 | SpamMon | INFO | New spam address added kiran234_my@lycee-tech.com
+2019-04-27 23:10:47,959 | SpamMon | INFO | New spam address added securite@lag.doubleextras.pro
+2019-04-27 23:10:48,045 | SpamMon | INFO | New spam address added odiadzdwx@throwawaymail.com
+2019-04-27 23:10:48,344 | SpamMon | INFO | New spam address added evfaliya@mail2abby.com
+2019-04-27 23:10:48,428 | SpamMon | INFO | New spam address added uljadiz@throwawaymail.com
+2019-04-27 23:10:48,649 | SpamMon | INFO | New spam address added theatrelepublic@theatrelepublic.be
+2019-04-27 23:10:48,956 | SpamMon | INFO | New spam address added campagne@lag.doublefacile.pro
+2019-04-27 23:10:49,115 | SpamMon | INFO | New spam address added info@email.thefork.be
+2019-04-27 23:10:49,202 | SpamMon | INFO | New spam address added gxybur@throwawaymail.com
+2019-04-27 23:10:49,875 | SpamMon | INFO | New spam address added pkobpts@throwawaymail.com
+2019-04-27 23:10:50,018 | SpamMon | INFO | New spam address added infowogyq@isp1.siteko.ru
+2019-04-27 23:10:50,365 | SpamMon | INFO | New spam address added prestataire@qdm.doubleflash.pro
+2019-04-27 23:10:50,595 | SpamMon | INFO | New spam address added mail@comms.canon-europe.com
+2019-04-27 23:10:50,851 | SpamMon | INFO | New spam address added ingbehrp@service-now.com
+2019-04-27 23:10:50,937 | SpamMon | INFO | New spam address added sgzllfraaq@throwawaymail.com
+2019-04-27 23:10:51,423 | SpamMon | INFO | New spam address added lusy_12chat@pay2done.xyz
+2019-04-27 23:10:52,120 | SpamMon | INFO | New spam address added noreply@ipemusic.com
+2019-04-27 23:10:52,380 | SpamMon | INFO | New spam address added myevrss@throwawaymail.com
+2019-04-27 23:10:52,549 | SpamMon | INFO | New spam address added nftpqiz@throwawaymail.com
+2019-04-27 23:10:52,974 | SpamMon | INFO | New spam address added info@lessecretsduchef.be
+2019-04-27 23:10:53,211 | SpamMon | INFO | New spam address added info@newsletter.planit.be
+2019-04-27 23:10:53,716 | SpamMon | INFO | New spam address added fruits-frais@ohh.doubleforce.pro
+2019-04-27 23:10:53,832 | SpamMon | INFO | New spam address added noreply@mail.mediafin.be
+2019-04-27 23:10:54,218 | SpamMon | INFO | New spam address added Offers@Tradepubs.nl00.net
+2019-04-27 23:10:54,478 | SpamMon | INFO | New spam address added us@sumofus.org
+2019-04-27 23:10:55,363 | SpamMon | INFO | New spam address added yvor@breezeuseful.icu
+2019-04-27 23:10:55,705 | SpamMon | INFO | New spam address added marriottbonvoy@email-marriott.com
+2019-04-27 23:10:56,015 | SpamMon | INFO | New spam address added lusy_innl2@human2work.xyz
+2019-04-27 23:10:56,094 | SpamMon | INFO | New spam address added azznyvqib@throwawaymail.com
+2019-04-27 23:10:56,216 | SpamMon | INFO | New spam address added billetterie@theatredenamur.be
+2019-04-27 23:10:56,416 | SpamMon | INFO | New spam address added kalli_0kiran@sky2alanding.info
+2019-04-27 23:10:57,232 | SpamMon | INFO | New spam address added info@mailing.pixum.com
+2019-04-27 23:10:57,409 | SpamMon | INFO | New spam address added idnyiutz@throwawaymail.com
+2019-04-27 23:10:58,549 | SpamMon | INFO | New spam address added fax@gwkbsn.co.kr
+2019-04-27 23:10:58,629 | SpamMon | INFO | New spam address added ildkmemb@throwawaymail.com
+2019-04-27 23:10:59,402 | SpamMon | INFO | New spam address added paydayifo3@payday2all.com
+2019-04-27 23:10:59,920 | SpamMon | INFO | New spam address added ioycduks@throwawaymail.com
+2019-04-27 23:11:00,539 | SpamMon | INFO | New spam address added xavier@mayeur.be
+2019-04-27 23:11:00,623 | SpamMon | INFO | New spam address added eowgqgpsjob@throwawaymail.com
+2019-04-27 23:11:01,674 | SpamMon | INFO | New spam address added cdpiue@throwawaymail.com
+2019-04-27 23:11:01,793 | SpamMon | INFO | New spam address added my_ifo2@ipe4table.top
+2019-04-27 23:11:02,839 | SpamMon | INFO | New spam address added sdjqyojzr@throwawaymail.com
+2019-04-27 23:11:02,962 | SpamMon | INFO | New spam address added ramesh_fb@sky2alanding.info
+2019-04-27 23:11:03,319 | SpamMon | INFO | New spam address added contact@thepihut.com
+2019-04-27 23:11:03,404 | SpamMon | INFO | New spam address added adlyigv@throwawaymail.com
+2019-04-27 23:11:03,563 | SpamMon | INFO | New spam address added assistance@domadoo.com
+2019-04-27 23:11:03,862 | SpamMon | INFO | New spam address added bureautique@jjn.doubleextras.pro
+2019-04-27 23:11:05,555 | SpamMon | INFO | New spam address added devisnettoyage@hcl.doublefacile.pro
+2019-04-27 23:11:06,029 | SpamMon | INFO | New spam address added mbldbfxowt@throwawaymail.com
+2019-04-27 23:11:06,155 | SpamMon | INFO | New spam address added nieuwsbrief@tonershop.nl
+2019-04-27 23:11:07,423 | SpamMon | INFO | New spam address added pinbot@inspire.pinterest.com
+2019-04-27 23:11:07,510 | SpamMon | INFO | New spam address added ofxfsrtrg@throwawaymail.com
+2019-04-27 23:11:08,223 | SpamMon | INFO | New spam address added auto-defibrillateur@kni.doubleforce.pro
+2019-04-27 23:11:08,541 | SpamMon | INFO | New spam address added karni_02fb@sky2alanding.info
+2019-04-27 23:11:08,956 | SpamMon | INFO | New spam address added uzicekn@throwawaymail.com
+2019-04-27 23:11:09,212 | SpamMon | INFO | New spam address added contact@modelisme.com
+2019-04-27 23:11:09,748 | SpamMon | INFO | New spam address added offre-sur-mesure@tip.doubleflash.pro
+2019-04-27 23:11:10,542 | SpamMon | INFO | New spam address added sgoffin@datanewsjobs.be
+2019-04-27 23:11:10,781 | SpamMon | INFO | New spam address added brain_wt02@dietgurus.info
+2019-04-27 23:11:11,032 | SpamMon | INFO | New spam address added rapport@tip.doubleflash.pro
+2019-04-27 23:11:11,119 | SpamMon | INFO | New spam address added bekcqi@throwawaymail.com
+2019-04-27 23:11:12,157 | SpamMon | INFO | New spam address added devis-distributeur@trm.doubleextras.pro
+2019-04-27 23:11:12,249 | SpamMon | INFO | New spam address added oomazgta@throwawaymail.com
+2019-04-27 23:11:12,777 | SpamMon | INFO | New spam address added user2@crunch.vn
+2019-04-27 23:11:12,871 | SpamMon | INFO | New spam address added dhvcxgdmuzh@throwawaymail.com
+2019-04-27 23:11:13,314 | SpamMon | INFO | New spam address added flotte@glr.doubleflash.pro
+2019-04-27 23:11:14,015 | SpamMon | INFO | New spam address added juxpyxjtxwb@throwawaymail.com
+2019-04-27 23:11:14,495 | SpamMon | INFO | New spam address added immo-entreprise@glr.doublefacile.pro
+2019-04-27 23:11:15,344 | SpamMon | INFO | xavier - script stopped...
+2019-04-27 23:11:15,345 | SpamMon | INFO | joelle - ... script started
+2019-04-27 23:11:16,039 | SpamMon | INFO | joelle - server connection established
+2019-04-27 23:11:16,168 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2019-04-27 23:11:17,033 | SpamMon | INFO | joelle - email.campaign@sg.booking.com is a spam
+2019-04-27 23:11:17,622 | SpamMon | INFO | joelle - script stopped...
+2019-04-27 23:16:33,535 | SpamMon | INFO | xavier - ... script started
+2019-04-27 23:16:34,289 | SpamMon | INFO | xavier - server connection established
+2019-04-27 23:16:34,422 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2019-04-27 23:17:26,552 | SpamMon | INFO | New spam address added newsletter@mailmagique.be
+2019-04-27 23:17:40,981 | SpamMon | INFO | New spam address added news@conseildesoffres.be
+2019-04-27 23:17:41,123 | SpamMon | INFO | New spam address added newsletter@achatdesoffres.be
+2019-04-27 23:17:41,453 | SpamMon | INFO | New spam address added newsletter@slp.conseildesoffres.be
+2019-04-27 23:17:42,562 | SpamMon | INFO | New spam address added newsletter@geneanet.org
+2019-04-27 23:17:42,897 | SpamMon | INFO | New spam address added makro@news.makro.be
+2019-04-27 23:17:43,037 | SpamMon | INFO | New spam address added email.campaign@sg.booking.com
+2019-04-27 23:17:43,181 | SpamMon | INFO | New spam address added info@email.thefork.be
+2019-04-27 23:17:43,313 | SpamMon | INFO | New spam address added ingbehrp@service-now.com
+2019-04-27 23:17:43,731 | SpamMon | INFO | New spam address added newsletter@ruedushopping.be
+2019-04-27 23:17:44,633 | SpamMon | INFO | New spam address added mail@comms.canon-europe.com
+2019-04-27 23:17:44,765 | SpamMon | INFO | New spam address added theatrelepublic@theatrelepublic.be
+2019-04-27 23:17:45,179 | SpamMon | INFO | New spam address added noreply@mail.mediafin.be
+2019-04-27 23:17:46,135 | SpamMon | INFO | New spam address added noreply@ipemusic.com
+2019-04-27 23:17:46,270 | SpamMon | INFO | New spam address added info@newsletter.planit.be
+2019-04-27 23:17:46,397 | SpamMon | INFO | New spam address added puram_mal2chada@seobeast.in
+2019-04-27 23:17:46,525 | SpamMon | INFO | New spam address added kiran234_my@lycee-tech.com
+2019-04-27 23:17:47,059 | SpamMon | INFO | New spam address added Offers@Tradepubs.nl00.net
+2019-04-27 23:17:48,374 | SpamMon | INFO | New spam address added us@sumofus.org
+2019-04-27 23:17:49,971 | SpamMon | INFO | New spam address added paydayifo3@payday2all.com
+2019-04-27 23:17:52,233 | SpamMon | INFO | New spam address added info@mailing.pixum.com
+2019-04-27 23:17:52,459 | SpamMon | INFO | New spam address added xavier@mayeur.be
+2019-04-27 23:17:55,131 | SpamMon | INFO | New spam address added marriottbonvoy@email-marriott.com
+2019-04-27 23:17:55,439 | SpamMon | INFO | New spam address added ramesh_fb@sky2alanding.info
+2019-04-27 23:17:55,570 | SpamMon | INFO | New spam address added kalli_0kiran@sky2alanding.info
+2019-04-27 23:17:59,845 | SpamMon | INFO | New spam address added pkobpts@throwawaymail.com
+2019-04-27 23:17:59,973 | SpamMon | INFO | New spam address added infowogyq@isp1.siteko.ru
+2019-04-27 23:18:00,294 | SpamMon | INFO | New spam address added prestataire@qdm.doubleflash.pro
+2019-04-27 23:18:00,480 | SpamMon | INFO | xavier - script stopped...
+2019-04-27 23:18:00,481 | SpamMon | INFO | joelle - ... script started
+2019-04-27 23:18:00,842 | SpamMon | INFO | joelle - server connection established
+2019-04-27 23:18:00,976 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2019-04-27 23:18:02,042 | SpamMon | INFO | joelle - script stopped...
+2019-04-27 23:19:51,742 | SpamMon | INFO | xavier - ... script started
+2019-04-27 23:19:52,104 | SpamMon | INFO | xavier - server connection established
+2019-04-27 23:19:52,234 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2019-04-27 23:20:18,242 | SpamMon | INFO | Address removed from Spam List xavier@mayeur.be
+2019-04-27 23:20:18,609 | SpamMon | INFO | xavier - newsletter@geneanet.org is a spam
+2019-04-27 23:20:18,858 | SpamMon | INFO | xavier - info@newsletter.planit.be is a spam
+2019-04-27 23:20:18,976 | SpamMon | INFO | xavier - ingbehrp@service-now.com is a spam
+2019-04-27 23:20:19,095 | SpamMon | INFO | xavier - ingbehrp@service-now.com is a spam
+2019-04-27 23:20:19,895 | SpamMon | INFO | xavier - marriottbonvoy@email-marriott.com is a spam
+2019-04-27 23:20:30,692 | SpamMon | INFO | New spam address added xavier@mayeur.be
+2019-04-27 23:20:35,370 | SpamMon | INFO | xavier - script stopped...
+2019-04-27 23:20:35,372 | SpamMon | INFO | joelle - ... script started
+2019-04-27 23:20:35,693 | SpamMon | INFO | joelle - server connection established
+2019-04-27 23:20:35,823 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2019-04-27 23:20:36,820 | SpamMon | INFO | joelle - script stopped...
+2019-06-14 17:51:38,053 | SpamMon | INFO | xavier - ... script started
+2019-06-14 17:51:38,469 | SpamMon | INFO | xavier - server connection established
+2019-06-14 17:51:38,607 | SpamMon | INFO | xavier - login successful - b'Logged in'
+2019-06-14 17:51:43,860 | SpamMon | INFO | xavier - script stopped...
+2019-06-14 17:51:43,860 | SpamMon | INFO | joelle - ... script started
+2019-06-14 17:51:44,262 | SpamMon | INFO | joelle - server connection established
+2019-06-14 17:51:44,378 | SpamMon | INFO | joelle - login successful - b'Logged in'
+2019-06-14 17:51:46,321 | SpamMon | INFO | joelle - script stopped...
