@@ -9,3 +9,4 @@
  To remove an address from the list, move the mail to the NotSpam folder.
  His address will be removed from the database and the mail copied to the INBOX folder
 
+Move to Azure devops
